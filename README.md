@@ -1,2 +1,2 @@
 # reveriadive.github.io
- Your source for Reveria Info.
+ Your source for Reveria info.
