@@ -1,0 +1,397 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		<ul class="nav navbar-nav navbar-left" role="menu">
+        <li><a class="navbar-brand" href="/">ReveriaDive</a></li>
+		</ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/shops" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/recipes" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+              <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<h1>Shops</h1>
+
+<table id="shops" class="table table-hover">
+
+  <thead>
+  <tr>
+    <th>Shop</th>
+    <th>Location</th>
+  </tr>
+  </thead>
+    <tbody><tr>
+      <td><a href="/shops/1">Castele Fashion Boutique</a></td>
+      <td><a href="/locations/1">Castele Square</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/2">Castele General Goods</a></td>
+      <td><a href="/locations/1">Castele Square</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/3">Castele Fine Arms</a></td>
+      <td><a href="/locations/1">Castele Square</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/4">Furniture Shop (Castele)</a></td>
+      <td><a href="/locations/1">Castele Square</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/5">Fruit &amp; Veg Shop (Castele)</a></td>
+      <td><a href="/locations/2">Castele Shopping District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/6">Fish Shop (Castele)</a></td>
+      <td><a href="/locations/2">Castele Shopping District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/7">Meat Shop (Castele)</a></td>
+      <td><a href="/locations/2">Castele Shopping District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/8">The Crown (Tavern)</a></td>
+      <td><a href="/locations/2">Castele Shopping District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/9">Alfredo's Bistro (Restaurant)</a></td>
+      <td><a href="/locations/2">Castele Shopping District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/10">Appleseed Cafe</a></td>
+      <td><a href="/locations/6">Castele Artisan District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/11">The Buttonhook (Castele)</a></td>
+      <td><a href="/locations/6">Castele Artisan District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/12">Ores and Mine (Castele)</a></td>
+      <td><a href="/locations/6">Castele Artisan District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/13">Fine Woods and Leather (Castele)</a></td>
+      <td><a href="/locations/6">Castele Artisan District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/14">Material Wonders (Castele)</a></td>
+      <td><a href="/locations/6">Castele Artisan District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/15">Cocina Rica (Restaurant)</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/16">Snoot's Emporium</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/17">Port Puerto Fashion Boutique</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/18">Anglers' Association</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/19">Port Puerto Fine Furnishings</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/20">The Buttonhook (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/21">Fruit &amp; Veg Shop (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/22">Fish Shop (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/23">Fine Woods and Leather (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/24">Meat Shop (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/25">Port Puerto Fine Arms</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/26">Material Wonders (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/27">The Eyepatch and Cutlass (Tavern)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/28">Port Puerto Cafe</a></td>
+      <td><a href="/locations/9">Port Puerto Beach District</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/29">Al Maajik General Goods</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/31">Al Maajik Fashion Boutique</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/32">The Watering Hole (Tavern)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/33">The Buttonhook (Al Maajik)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/34">Ores and Mine (Al Maajik)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/35">Fine Woods and Leather (Al Maajik)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/36">Al Maajik Fine Arms (Weapons)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/37">Furniture Shop (Al Maajik)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/38">Fruit &amp; Veg Shop (Al Maajik)</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/39">Meat Shop (Al Maajik)</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/40">Fish Shop (Al Maajik)</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/41">The Spice Rack (Restaurant)</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/42">Travelling Seller (Mt Snowpeak)</a></td>
+      <td><a href="/locations/18">Mt Snowpeak</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/43">The Crowned Champion's House</a></td>
+      <td><a href="/locations/18">Mt Snowpeak</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/44">Moley (Royal Cabin Well)</a></td>
+      <td><a href="/locations/21">Mt Snowpeak Summit</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/45">Travelling Seller (Mt Snowpeak Summit)</a></td>
+      <td><a href="/locations/21">Mt Snowpeak Summit</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/46">Armour and Furniture Store (Elderwood Village)</a></td>
+      <td><a href="/locations/24">Elderwood Village</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/47">Madam Purl's House</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/48">Snoot's Emporium (Upstairs)</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/49">Ores and Mine (Port Puerto)</a></td>
+      <td><a href="/locations/8">Port Puerto Marina</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/50">Phileas' Shop</a></td>
+      <td><a href="/locations/29">Tortuga Archipelago</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/51">Woodcutter Shop (Elderwood Village)</a></td>
+      <td><a href="/locations/24">Elderwood Village</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/52">General Goods Store (Elderwood Village)</a></td>
+      <td><a href="/locations/24">Elderwood Village</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/53">Prof. Snooze's Laboratory</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/54">Al Maajik Fine Arms (Armour)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/55">Tome of Shadows</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/56">Mercenary Merchant (Spelltown)</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/57">Esmerelda's Academy of Magic</a></td>
+      <td><a href="/locations/12">Al Maajik Spelltown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/58">Travelling Seller (Drysand Desert)</a></td>
+      <td><a href="/locations/32">Drysand Desert</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/59">Travelling Seller (East Grassy Plains)</a></td>
+      <td><a href="/locations/16">East Grassy Plains</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/60">Farley's Plantation (Eggs and Vegetables)</a></td>
+      <td><a href="/locations/27">Farley's Plantation</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/61">Merchant (West Grassy Plains)</a></td>
+      <td><a href="/locations/26">West Grassy Plains</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/62">Bo's Shop</a></td>
+      <td><a href="/locations/26">West Grassy Plains</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/63">General Goods Store (Plushling Camp)</a></td>
+      <td><a href="/locations/38">Plushling Camp</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/64">Material Wonders (Al Maajik)</a></td>
+      <td><a href="/locations/11">Al Maajik Sandtown</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/65">Travelling Seller (Cacto Cove)</a></td>
+      <td><a href="/locations/36">Cacto Cove</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/66">Secret Smithy</a></td>
+      <td><a href="/locations/19">Lava Cave</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/67">Beavus's Shop (Elderwood Village)</a></td>
+      <td><a href="/locations/24">Elderwood Village</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/68">Agent of Divinus's Shop</a></td>
+      <td><a href="/locations/42">Starlight Garden</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/69">Cocina Rica (Chef Shop)</a></td>
+      <td><a href="/locations/7">Port Puerto Palace Way</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/70">Fluffkin Grotto Merchant</a></td>
+      <td><a href="/locations/44">Penguin Beach</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/71">Forest Shrine Merchant</a></td>
+      <td><a href="/locations/45">Forest Shrine</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/72">Rocky Hill Shrine Merchant</a></td>
+      <td><a href="/locations/46">Rocky Hill Shrine</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/73">Trial of Time Store</a></td>
+      <td><a href="/locations/47">Trial of Time - 7th Floor</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/74">Mysterious Fairy's Store</a></td>
+      <td><a href="/locations/26">West Grassy Plains</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/75">Trial of Light Store</a></td>
+      <td><a href="/locations/58">Trial of Light - 11th Floor</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/76">Trial of Darkness Store</a></td>
+      <td><a href="/locations/68">Trial of Darkness - 9th Floor</a></td>
+    </tr>
+    <tr>
+      <td><a href="/shops/77">Exchange Clerk (Lunares Coin Shop)</a></td>
+      <td><a href="/locations/1">Castele Square</a></td>
+    </tr>
+</tbody></table>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

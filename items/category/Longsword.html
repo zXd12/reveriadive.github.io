@@ -1,0 +1,282 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/63">Squire's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A wooden sword used for training Paladins. More bark than bite.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/64">Bronze Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword made of bronze. Easy to wield but not the strongest sword out there.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/65">Iron Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A heavy iron sword. Looks imposing, but it's actually a pretty common weapon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/307">Silver Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>An easy-to-handle sword made of silver. Perfect for those with some experience.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/308">Azure Rose</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A ritual sword used by Port Puerto nobles. An elegant design belies its lethal edge.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/522">Key Cutter</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>Said to be the "key" to any monster's heart. If only it opened locked treasure chests...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/658">Crystal Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword that reflects the heart of its wielder. Negativity dulls its usually brilliant glow.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/751">Gold Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A flashy sword made of shiny gold. For those well versed in swordsmanship.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/752">Maajik Blade</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword used by Al Maajik's Maajiknights. Perfect for any adventure into the desert.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/788">Bone Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A cursed sword. It is recommended that the wielder take great care in using it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/872">Adventurer's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword housing the spirit of an adventurer, passed down from generation to generation.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1001">Captain's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword used by the Paladin captain himself. Better hope he doesn't catch you with it...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1002">Paladin's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword used by Castele's Paladins. It glows with the light of a Paladin's valour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1064">Relic Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>Once used by an ancient sect of Paladins. Crafted using techniques long forgotten.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1153">Rune Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword with an ominous curse. It steadily consumes the wielder's life force.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1321">Joyeuse</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A legendary sword tempered from the finest materials and honed for ultimate strength.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1325">Blossom Blade</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword embodying all that is just. Simply looking at it inspires valiant acts of justice!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1329">Divine Blade</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword blessed by the gods. It grants the wielder the power of the gods themselves.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1332">Gallant Blade</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword belonging to a famous swordsman. Its style and strength are unmatched.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1600">Erik's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>Used by King Erik in his younger days. It is a symbol of the Stone family dynasty.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1601">Olivia's Scimitar</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>The blade of the legendary Pirate King. It's seen countless fierce and sea battles.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1602">Dragonslayer's Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>A sword used by the Dragonslayer. It has a long history, steeped in blood and glory.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1685">Dragon King Sword</a></td>
+        <td><a href="/items/category/Weapon">Weapon</a></td>
+        <td>
+            <a href="/items/category/Longsword">Longsword</a>
+        </td>
+        <td>Sword of Castele's legendary Dragon King. Few people have ever seen it in person.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

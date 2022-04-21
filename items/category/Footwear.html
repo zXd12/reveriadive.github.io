@@ -1,0 +1,882 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/21">Lowtop Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Simple shoes fashioned from leather. Perfect with almost any outfit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/22">Highland Loafers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Old-fashioned, rounded loafers. Worn for generations alongside a tradtional kilt.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/23">Artisan's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Versatile shoes worn by artisans. Equally suited to use indoors and out.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/24">Duelling Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made specially for duellists. Soft and flexible to allow for quick movements.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/25">Quilted Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes suited to the cold of Mt Snowpeak. Soft, fluffy lining keeps feet nice and snug.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/26">Castele Heels</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Glamorous shoes for a formal occasion. The highest of heels at the height of fashion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/86">Leather Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Cheap boots made of leather. Not the most comfortable, nor the most protective.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/87">Iron Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Versatile boots used in many walks of Life. Especially useful for those seeking battle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/227">Harbour Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals commonly worn by Port Puertans. Made to be easily slipped on and off.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/228">Warrior's Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals worn by brave gladiators of the past. Extremely light for maximum manoeuvrability.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/229">Ribbon-Laced Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Casual shoes tied with a red ribbon. Perfect for any occasion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/230">Beach Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals for Reveria's hot, sandy beaches. Keeps your feet cool, whatever the weather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/231">Mules</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Footwear made of interwoven leather strips. Fashionable, but a pain to put on.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/233">Formal Dress Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Smart shoes for a formal occasion. Designed to complement any suit perfectly.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/324">Mermaid Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made using fish scales. Difficult to produce, but effective as a result.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/325">Shell Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made from an assortment of shells. Deceptively comfy, and strong to boot!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/499">Paladin's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Paladins. Perfect for both swordplay and the saddle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/508">Miner's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Miners. Ensure your footing will be solid as a rock.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/519">Frigid Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for use in freezing environments. A balance of insulation and manoeuvrability.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/527">Grotto Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for exploring Reveria's dark caverns. They grip even the slipperiest of surfaces.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/534">Beastly Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made of top grade leather. Combine excellent protection with undeniable style.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/591">Pair of Babouches</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Soft shoes with a pointed toe. Make walking on even the most uneven of roads a breeze.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/592">Comfy Slippers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Slippers worn in Al Maajik. Their main appeal is hat they are easy to wear. Slip on, slip off!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/593">Moccasins</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sof, comfortable footwear, made from a single piece of leather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/594">High-Toe Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Fance shoes worn by Al Maajik's elite. A long point signifies the wearer's importance.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/595">Maharaja Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Quality shoes made for a maharaja. Extremely pointed toes signify royalty.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/649">Tailor's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Tailors. Nice and comfortable for life at the loom.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/663">Gaudy Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes popular among Port Puerto's elite. They certainly leave an impression.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/685">Coastal Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for use in tropical climates. Don't sweat it - they can deal with perspiration!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/699">Cutter's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Woodcutters. Make traipsing through the forest a cinch.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/710">Alchemist's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Alchemists. Perfect for work in the lab, and in the field.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/769">Gold Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Heavy boots made of pure gold. A bit difficult to pull on and off.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/770">Magic Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made using Magic Ingots. Incredibly comfortable, despite being made of metal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/798">Platform Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots popular on Reveria's punk scene. Not the best quality, but full of attitude.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/807">Mercenary's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes designed for Mercenaries which protect against any blows to the feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/815">Magician's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Magicians. Perfect for channeling the earth's power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/820">Magic Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes containing great magical power. They enable you to perform great magical works.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/847">Sandy Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for use in harsh desert regions. They are specially made for traversing the dunes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/852">Snakeskin Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made from snake scales. Not the best for protection, but they have a certain style.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/859">Hunter's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Hunters. Hard wearing for when you're on the move.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/879">Sky-High Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for exploring Levitania. Perfect for hiking across the floating land.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/884">Dragon Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made using dragon scales. Top of the scale when it comes to this type of boot.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/905">Tidal Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made using Marine Ingots. Imbued with the power of water. Stay cool, kids.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/910">Blacksmith's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Blacksmith's shoes that provide comfort and support when working the forge.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/925">Carpenter's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes specially designed for Carpenters. Plenty of grip for the dusty workshop floor.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/932">Holy Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made of the highest quality materials. Strong and lightweight for easy movement.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/950">Inferno Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made using Magma Ingots. The power of flames they contain will keep you warm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/959">Gladiator's Metal Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Mighty boots of the great gladiators. Your feet won't feel a thing in these!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1073">Origin Island Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots designed for the Origin Island climate. They make you feel like an explorer.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1078">Rune Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Strange power is sealed within. They guard your feet from sneaky attacks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1140">Minerva's Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Black sandals for female warriors. Said to have been worn by a warring goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1169">Freya's Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals for female warriors, modelled after those worn by a battle goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1350">Savage Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>High-quality leather boots. Provide good protection, and don't look too shabby either.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1358">Fafnir's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made from Ancient Dragon's Scales. Gives your kicks more power. Dragon power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1364">Godly Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made from godly materials. So divine, even monsters may kneel before you.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1370">Shadow Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Fine boots made of Monster Hide. So comfy, it feels like they're cuddling your feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1374">Officer's Tabi</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Worn by foreign warriors. You could walk a few miles in them without getting sore feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1377">Lord's Tabi</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Worn by foreign warriors to walk hundreds of miles without getting sore feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1381">Shogun Tabi</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Worn by foreign warriors to walk thousands of miles without getting sore feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1387">Ares Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Finest sandals made from godly materials. They make you tread more nimbly.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1393">Crusader's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Gauntlets for heroic Paladins. Befitting of a true hero of the realm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1401">Steel-Toe Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Mercenaries. So tough that you'll barely notice blows to your feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1496">Philosopher's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for enlightened sages. They inspire you to further your quest for knowledge.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1499">Sacred Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Containing the power of a Protection Stone, these boots make your stride somewhat holy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1507">Valkyrie Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shiny sandals for female warriors, blessed by divine spirits of battle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1511">Hammer Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Blacksmiths. Thick and heatproof, for all the dangers of the forge.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1514">Woodland Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for heroic Woodcutters. Perfect for traversing Reveria's dense forests.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1517">Grand Miner's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Miners. Keep you perfectly anchored while you swing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1520">Chief's Safety Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for heroic Carpenters. Nothing is better suited to life in the workshop.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1523">Famous Fisher's Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals for heroic Anglers. Perfect for fishing any time, anywhere!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1525">Doctor's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Alchemists. Designed after years of study on the perfect footwear.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1528">Fashionista Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Tailors. Because true fashion starts with the feet.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1530">Five Star Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Cooks. Because to serve the best, you need to look your best.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1536">Sniper's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots for heroic Hunters. Comfortable and durable, so you can hunt 24/7.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1538">Grand Magician's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for heroic Magicians. Be at one with each of the elements.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1541">Monarch Loafers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Loafers inspired by the King's official garb. Not the real deal, but the quality is genuine.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1575">Millionaire's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Special bejewelled boots that get you more Dosh when defeating opponents.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1576">Hermes Sandals</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sandals as light as a feather. Wear them to dash without ever getting tired.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1577">Fanciful Feet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Extraordinary, light shoes that increase the amount of experience points gained.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1658">Elegant Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Elegant shoes decorated with frilly ribbons. The round tips give them a graceful look.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1659">Cute Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Somewhat cutesy enamelled shoes with neat, tapering tips.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1660">Bandit Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Casual shoes worn by chic sneaks. The very best in Bandit fashion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1661">Pam's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Sensible shoes popular with more mature ladies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1662">Danuta's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes resembling the Great Spirit's hind paws. Toe beans give them a good grip.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1663">Pino's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes made from Elderwood tree bark. They make forest walks even more pleasant.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1664">Buccaneer's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes popular among pirates. They have good grip to keep you steady on the deck.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1665">Celestial Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes good for anything, from trudging through fields to visiting the world below.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1666">Goddess's Heels</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes made from the night sky itself. Make you want to walk among the stars.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1667">Princely Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Royal boots to serve a prince well in whatever situation he finds himself.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1668">Leilah's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made from Elderwood tree bark. So soft, it feels like walking on grass barefoot.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1669">Gold Dragon Feet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Golden Dragon feet. Will they make your kicks as powerful as a dragon's? ...No.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1670">Odin's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Maajiknight Captain Odin's boots. Designed to keep pesky desert sand out.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1671">Dragon King's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots worn by the Dragon King, the hero of centuries-old Castele legend.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1672">Sea Lord's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots worn by the Sea Lord, tales of whom have long been told in Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1673">Dark Sultan's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots of the Legendary Dark Sultan, hero of tales told through the ages of Al Maajik.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1674">Spirit King's Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots of the Spirit King, featuring in old legends of the Elderwood.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1705">Carrotella Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots imitating a Carrotella's feet. The root of any good carrot costume.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1709">Daemon's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes for the Dark Sultan, made from the finest Al Maajikan materials.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

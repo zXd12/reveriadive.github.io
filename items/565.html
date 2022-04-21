@@ -1,0 +1,318 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');
+  </script>
+  <script data-turbolinks-track="true" src="../assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+              <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+<div class="col-md-2">
+</div>
+<div class="col-md-8">
+<h1>Flare Wool</h1>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Item description</h3>
+    <div class="">
+      <table class="table table-bordered">
+        <tbody>
+		  <tr>
+            <td colspan="2">
+              <p class="text-center">
+                <img alt="565" src="/assets/items/Flare_Wool.png">
+              </p>
+            </td>
+          </tr>		
+		<tr>
+          <th>Category</th>
+          <td><a href="/items/category/Material">Material</a></td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+              Toasty warm woollen material.
+          </td>
+        </tr>
+        <tr>
+          <th>Rarity</th>
+          <td>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+      <h3>Recipe Info</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>Life</th>
+            <td>Tailor</td>
+          </tr>
+          <tr>
+            <th>Ranking</th>
+            <td>
+              Expert
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+          </tr>
+            <tr>
+              <td><a href="/items/422">Golden Sheep Fleece</a></td>
+              <td>2</td>
+            </tr>
+        </tbody></table>
+      </div>
+      <h3>Ingredient Info</h3>
+      This item is used to craft:
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>Item</th>
+            <th>Quantity required</th>
+          </tr>
+            <tr>
+              <td><a href="/items/881">Dragon Mail</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/882">Dragon Leggings</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/883">Dragon Gloves</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/884">Dragon Boots</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/719">Starry Night Chair</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/731">Starry Night Bed</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1008">Royal Low Table</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1435">Imaginary Window</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/580">Checkered Skirt</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/844">Sandy Brigandine</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/845">Sandy Bottoms</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/521">Flame Robe</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/687">Aqua Robe</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1467">Heatwave Apron</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1471">Chief's Apron</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1472">Chief's Breeches</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/819">Magic Mittens</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/820">Magic Shoes</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/843">Sandy Headwear</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/846">Sandy Gloves</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/847">Sandy Boots</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/520">Flame Hood</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/686">Aqua Hood</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1492">Tiger Carp Helm</a></td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1509">Hammer Head</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1510">Hammer Gloves</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1511">Hammer Boots</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1518">Chief's Bandana</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="/items/733">Starry Night Curtains</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/737">Starry Night Mat</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/735">Starry Night Rug</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1006">Royal Mat</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="/items/1005">Royal Rug</a></td>
+              <td>3</td>
+            </tr>
+        </tbody></table>
+      </div>
+  </div>
+  <div class="col-md-6">
+      <h3>Shops</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Shop</th>
+            <th>Price</th>
+          </tr>
+          </thead>
+            <tbody><tr>
+              <td><a href="/shops/52">General Goods Store (Elderwood Village)</a></td>
+              <td>1200</td>
+            </tr>
+            <tr>
+              <td><a href="/shops/33">The Buttonhook (Al Maajik)</a></td>
+              <td>1200</td>
+            </tr>
+            <tr>
+              <td><a href="/shops/47">Madam Purl's House</a></td>
+              <td>1200</td>
+            </tr>
+        </tbody></table>
+      </div>
+  </div>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

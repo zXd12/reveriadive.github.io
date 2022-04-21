@@ -1,0 +1,746 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/7">Castele Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A traditional woven skirt from Castele. The short skirt with a long history.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/8">Striped Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A stripy skirt popular in Castele. Comfortable and colourful - a winning combination!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/9">Sunshine Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A pretty skirt with a flowery design. It is very popular with the girls of Port Puerto</td>
+      </tr>
+      <tr>
+        <td><a href="/items/10">Castele Slacks</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional woven slacks from Castele. Well loved by Castelians, even to this day.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/11">Highland Kilt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional menswear from Castele. Lately, it is popular among both men and women.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/12">Artisan's Puffy Shorts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Specially-made legwear for all walks of Life. Affectionately referred to as "puffers".</td>
+      </tr>
+      <tr>
+        <td><a href="/items/13">Duelling Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Light trousers worn to take part in a duel. Be challenged by your foe, not your clothes!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/14">Quilted Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Toasty legwear padded around the thighs. Fashionable if worn with a Quilted Coat.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/15">Formal Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers made for more formal situations. Tapered in the middle for extra flair.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/80">Leather Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards made from leather. They offer more protection than everyday trousers.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/81">Iron Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Shin guards wrought of iron. The first choice for any newcomer to plate armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/214">Harbour Hunny Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A vibrant skirt popular with Port Puerto girls. Casual yet stylish, it'll be a hit anywhere!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/215">Lined Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A wrap-around skirt with a banded design. Simple yet stylish, it goes with anything.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/216">Frilly Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A medium-length, frilled skirt. It's really making waves in the fashion world.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/217">Harbour Hunk Slacks</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers worn by Reveria's sailors. Still popular with the people of Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/218">Seafarer's Capris</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional trousers from Port Puerto. The older generation calls them "pantalones".</td>
+      </tr>
+      <tr>
+        <td><a href="/items/219">Watermeloons</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers with a watermelon design. Gives you a fantasticaly fruity feeling!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/223">Sea Sarong</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A summery skirt worn over some shorts. The skirt can be removed for swimming.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/224">Sea Trunks</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple trunks, perfectly made for swimming. Just don't wander around town in them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/261">Carp Trousers (Male)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple legwear for Anglers, inspired by a single question: "What if fish had legs?"</td>
+      </tr>
+      <tr>
+        <td><a href="/items/318">Mermaid Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards fashioned using fish scales. Very useful against some enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/319">Shell Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear made from an assortment of shells. More mussel than muscle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/496">Paladin's Leg Guards (Male)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>The proper legwear for a male Paladin. Tight fitting, but made of flexible materials.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/497">Paladin's Leg Guards (Female)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>The proper legwear for a female Paladin. Tight fitting, but made of flexible materials.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/503">Rock Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Baggy legwear designed for Miners. Frees up your legs to let you swing with power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/504">Miner Short-Shorts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Short legwear designed for Miners. Frees up your legs to let you swing with power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/517">Frigid Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear for those living in freezing climes. Provides excellent protection from the cold.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/525">Grotto Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear for intrepid cave explorers. Perfect for the harsh conditions of Reveria's caves.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/532">Beastly Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards crafted from top-grade leather. Light and resilient, this hide will save yours!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/576">Desert Diva Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A long, flowing skirt often worn in Al Maajik. Similar in style to the Harbour Hunny skirt.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/577">Chic Maajik Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A pink miniskirt designed for ease of movement. Part of the Chic Maajik range.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/578">Banded Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A long skirt that falls just below the knees. For those looking for a more refined style.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/579">Denim Long Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A long skirt made of denim. A bold, modern look that can stand up to wear and tear.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/580">Chequered Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A skirt with a chequered design. Don't be a square - this design is the height of fashion!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/581">Loose Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional Al Maajik menswear. Light and airy, making ir perfect for desert journeys.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/582">Chic Maajik Capris</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A pair of loose-fitting capris popular with youngsters. Part of the Chic Maajik range.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/583">Linen Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Light, well-ventialted linen trousers. Sometimes, simple really is the best.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/584">Loose Stripies</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Loose-fitting striped trousers. They are popular with the upper class.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/585">Maharaja Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>All the range in Al Maajik. The pinnable of fine tailoring.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/660">Gaudy Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers popular with Port Puerto's elite. Apparently, they are the pinnacle of fashion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/683">Coastal Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear for those in more tropical climes. Well ventilated, despite their bulky looks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/696">Kodama Pantaloons</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple legwear designed for Woodcutters. Perfectly suited to life in the forest.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/697">Kodama Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple legwear designed for Woodcutters. Perfectly suited to life in the forest.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/763">Gold Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Shin guards made of pure gold. Strong, but rather heavy, so some prefer to avoid them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/764">Magic Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Shin guards made from Magic Ingots. Tough and very light, they are a wondrous creation.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/773">Savage Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards made from high-quality leather. More protective than ordinary leather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/793">Prisoner's Shorts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers given to those behind bars. They have many practical uses, not all noble...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/796">Punk Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers with attitude! Bring out the rebel in you.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/804">Mercenary's Greaves (Male)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>SImple legwear for Mercenaries. Light and resilient, with great freedom of movement.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/805">Mercenary's Greaves (Female)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple legwear for Mercenaries. Light and resilient, with great freedom of movement.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/845">Sandy Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear for those adventuring in the desert. Protects against the scorching desert sun.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/850">Snakeskin Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards fashioned using snake scales. Easy to craft, they are reasonably resilient.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/855">Hunter's Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear designed for Hunters who live for the chases. Made for being on the move.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/856">Huntress's Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear designed for Hunters who live for the chases. Made for being on the move.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/857">Hunter's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A headpiece used by Hunters. Blocks out noise to help you focus.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/877">Sky-High Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Legwear for adventuring in Levitania. Suited to the floating Isle's unique conditions.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/882">Dragon Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards fashioned using dragon scales. These could tip the scales in your favour!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/903">Tidal Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Shin guards made using Marine Ingots. They are incredibly cool to the touch.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/922">Carpenter's Slimfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Basic legwear for Carpenters. A must for work that's demanding on the whole body.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/923">Carpenter's Baggies</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Basic legwear for Carpenters. Has a unique design that balloons out around the thighs.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/930">Holy Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards made from a rare, valuable metal. Pricey, but you'll find no better protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/948">Inferno Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards made using Magma Ingots. They give off a comforting warmth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/957">Gladiator's Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leg guards made famous by gladiators. Often bought by tourists as a souvenir.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1071">Origin Island Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Bottoms made for Origin Island's climate. How about wearing them in the hot springs?</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1076">Rune Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Strange power is sealed within. They keep your most vulnerable spots well-protected.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1362">Godly Leggings</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Leggings made from godly materials. Divinely comfortable.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1391">Crusader's Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Paladins. Only a few elite are worthy of wearing them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1392">Crusader's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Paladins. Only a few elite are worthy of wearing them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1399">Tough Leg Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Mercenaries. Repels almost any attack on the legs.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1456">Polka Dot Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A cute skirt with a polka dot design. Show off your bubbly personality!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1460">Sacred Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>It is said that these trousers only fit wise people of pure heart.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1462">Freya's Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Skirt for female warriors, modelled on one worn by a battle goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1464">Minerva's Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Skirt for female warriors. Offers protection and makes you battle-thirsty.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1469">Woodland Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Woodcutters. It is said the Forest Lady herself made them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1470">Grand Miner's Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Miners. So light, you won't notice them. Happily, others will.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1472">Chief's Breeches</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Fine legwear for heroic Carpenters. Designed for perfect comfort while crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1481">Buccaneer's Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers worn by a legendary pirate. Somehow, they make you yearn for the sea.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1487">Monarch Tights</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Tights inspired by a portrait of King Erik. They are of truly magnificent quality.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1626">Surf's Up Shorts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Shorts popular among beach-going hunks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1627">Lovely Sarong</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>You'll be a hit at the beach when you wear this fashionable sarong.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1721">Carp Trousers (Female)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Simple legwear for Anglers, inspired by a single question: "what if fish had legs"?</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

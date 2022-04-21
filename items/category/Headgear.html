@@ -1,0 +1,946 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/16">Highland Beret</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A simple beret with a tartan pattern. Complete the look with matching bottoms!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/17">Artisan's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat designed for artisans of all crafts. Not very suitable for battle...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/18">Quilted Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat made of a thick, quilted material. Protects against attacks and the cold.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/82">Leather Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A sturdy helmet made of leather. It's light and durable, but not the most protective.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/83">Iron Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm wrought of iron. Heavy and a little uncomfortable, but offers good protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/220">Netted Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat resembling nets used by Port Puerto's Anglers. Matches the Seafarer's Outfit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/225">Flower Hairclip</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A pretty pink flower worn in the hair. A must for any summer party.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/226">Diving Mask</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A mask that lets you see the underwater world. A must for anybody in Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/262">Fishy Green Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood resembling a Castele Carp. It is said that wearing it grants great fishing prowess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/263">Fishy Pink Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood resembling an Ornamental Carp. It is said to help understanding a fish's mind.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/264">Shark Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat in the shape of a fearsome shark. This style might just CATCH on...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/320">Mermaid Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using fish scales. It's fairly sturdy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/321">Shellmet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helmet made from shells. Well, what were you expecting it to be?</td>
+      </tr>
+      <tr>
+        <td><a href="/items/505">Miner's Helmet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A leather headpiece used by Miners. Guards the head from rock-related mishaps.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/506">Miner's Puffy Helmet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A leather headpiece used by Miners. Practical, and the ladies certainly dig it!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/515">Frigid Headwear</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat made for frolicking in the snow of Mt Snowpeak. Keeps heat in, and cold OUT!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/520">Flame Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of fire. For those who like all things red.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/523">Grotto Headwear</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat for spelunking in Reveria's caves. A must for any cave exploration. Safety first!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/528">Earth Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of the earth. For those who like all things green.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/530">Beastly Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helmet made of very tough leather. Protects your noggin from knocks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/586">Cup Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat designed to resemble a cup. Al Maajik sewing technology keeps your head cool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/587">Desert Headdress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>The perfect headgear to keep the sun off your head. An absolute must for desert life.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/588">Jade Turban</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A white turban fastened with a fine peice of jade. It simply radiates elegance.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/589">Maharaja Turban</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>The symbol of a great desert king. Though it appears plain, it holds deep meaning.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/661">Gaudy Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A garish hat, popular among Port Puerto's elite. You'll certainly stand out wearing it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/681">Coastal Headwear</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat made for splashing around by the sea. Shields your head from those pesky UV rays!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/686">Aqua Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of water. For those who like all things blue.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/698">Cutter's Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat used by Woodcutters. It lets the wearer hear the voices of the forest spirits.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/709">Alchemist's Bandana</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A headpiece used by Alchemists. Said to put the "chemist" in "Alchemist".</td>
+      </tr>
+      <tr>
+        <td><a href="/items/766">Magic Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using Magic Ingots. Its mystical properties provide excellent protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/771">Savage Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helmet made of high-quality leather. It provides a reasonable level of protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/791">Prisoner's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat worn by those sent to the dungeons. Strangely, kids really seem to love this look.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/794">Spikeband</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A thick headband with large, protuding spikes. Popular on the punk scene.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/800">Slugger's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm used by Mercenaries. Protects well against attacks to the back of the head.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/801">Plain Helmet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm used by Mercenaries. SImple but effective.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/811">Mage's Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood used by Magicians. Wearing one is a magical experience.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/812">Witch's Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood used by female Magicians. Filled to the brim with magical power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/816">Grinning Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A dark witch's hat with a mischievous smile. Some reports say the hat speaks on its own.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/817">Wind Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of wind. For those who like to gaze up at the sky.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/843">Sandy Headwear</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat for braving fierce desert sandstorms. Fantastic at keeping your hair sand-free!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/848">Snakeskin Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using snake scales. It doesn't provide much protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/858">Huntress's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A headpiece used by Hunters. Designed not to stick out in the foliage.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/875">Sky-High Headwear</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>The perfect hat for exploring Levitanians. Sadly, won't help alleviate fear of heights.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/880">Dragon Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using dragon scales. It provides excellent protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/901">Tidal Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using a Marine Ingot. Very sturdy, and cool to the touch.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/908">Blacksmith's Beanie</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A headpiece used by Blacksmiths. Keeps hair and sweat out of your face.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/909">Blacksmith's Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A headpiece used by Blacksmiths for protection. Hair and furnaces do not mix.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/918">Brave Bandana</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A bandana used by Carpenters. One size fits all!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/919">Bright Bandana</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A bandana used by Carpenters. One size fits all!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/928">Holy Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>One of the finest helms around. Only for those who have proven themselves worthy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/946">Inferno Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helm made using a Magma Ingot. Very sturdy, and gives off a gentle heat.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/955">Gladiator's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A helmet like those of ancient gladiators. A reminder of Al Maajik's colourful history.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/981">Pan-Fried Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A special pan made to be worn as a helmet. For those who prefer al-dente to a la mode.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/982">Potluck Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A special pan designed as a helmet. Might need washing before cooking with it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1069">Origin Island Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Gear suited to Origin Island's climate Stops wind, rain and the smell of the hot springs!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1074">Rune Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Strange powers are sealed within. Brings out your secret abilities, improving SP recovery.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1185">Fafnir's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helmet made from the scales of an ancient dragon, able to withstand even heavy blows.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1193">Shadow Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Finest, close-fitting cap made from Monster Hide.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1351">Gold Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A shining golden helm. Made using precious gold, it provides very good protection.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1360">Godly Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helmet made from godly materials. Won't make you immortal, but it's pretty tough.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1371">Officer's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Blue helm of a warrior from some other land. Makes you want to go wild on a battlefield.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1375">Lord's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Red helm of a warrior from some other land. Makes you want to command armies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1378">Shogun Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Black helm of a warrior from some other land. Only for supreme commanders.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1382">Ares Circlet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Fine headgear made using godly materials. Put it on to look like a fierce, divine warrior.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1389">Crusader's Circlet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A circlet worn by heroic Paladins. Bestowed upon those who earn the Queen's blessing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1390">Crusader's Tiara</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A tiara worn by heroic Paladins. Bestowed upon those who earn the King's blessing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1395">Avalanche Helmet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A fine helmet worn by heroic Miners. Sturdy enough to protect you from cave-ins.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1397">Steel Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A steel helm worn by heroic Mercenaries. It'll protect you from some serious attacks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1403">Cursed Dragon Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Replica of a cursed dragon's head. Put it on to feel like a fearsome dragon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1490">Umbral Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of darkness. For those who see darkness in everything.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1491">Light Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood imbued with the power of light. For those who love gazing at the moon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1492">Tiger Carp Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Fishy Headgear that covers your whole head. Certain to inspire fear in your enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1493">Rainbow Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>There's always a rainbow after the rain. The most optimistic hood there is.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1494">Philosopher's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Hat designed for old, wise sages. Just wearing it makes you feel smarter.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1497">Sacred Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Made using a Protection Stone, this hood spreads a protective aura around your head.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1501">Freya's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helmet for female warriors, modelled on one worn by a battle goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1502">Minerva's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Black helmet for female warriors, blessed by a goddess of defence.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1505">Valkyrie Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Sparkling helmet for female warriors, blessed by divine spirits of battle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1509">Hammer Head</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A headpiece worn by heroic Blacksmiths. Tempers the spirit of a true crafting genius.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1512">Woodland Beret</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A fine beret worn by heroic Woodcutters. Proof that the wearer is one with the forest.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1518">Chief's Bandana</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A fine bandana worn by heroic Carpenters. Helps you become one with the lumber.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1521">Whale Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood worn by heroic Anglers. Hear the sounds of the ocean wherever you go!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1524">Creativity Cap</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat worn by heroic Alchemists. Sharpens the mind and makes any concoction a snap!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1529">Five Star Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat worn by heroic Cooks. Received five stars in last month's Finicky Food magazine!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1533">Buccaneer's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>The hat of a great pirate who terrorised the seven seas. Walk the plank in style!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1534">Sniper's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A fine hat worn by heroic Hunters. It allows you to sense even the tiniest creatures.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1537">Grand Magician's Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood worn by heroic Magicians. Let those around you know how grand you really are!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1539">Monarch Crown</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A crown fit for a King! Although it's a replica, the quality is second to none.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1609">Elegant Headband</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Chic headband that will keep your hair in place and make you look charming.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1610">Frilly Headband</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Cute, frilly headband worn by romantic girls who love to dream.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1611">Bandit Hood</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hood worn by Bandits to conceal their faces.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1612">Pam's Bandana</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Headwear popular among more mature ladies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1613">Danuta's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat to make you look like the Great Spirit of the forest. It's warm and fluffy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1614">Pino's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Carved from the bark of Elderwood trees. Whispers of forest spirits come from within.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1615">Buccaneer's Headband</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Bandana worn by pirates. Good for wiping hands and keeping sweat out of your face.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1616">Celestial Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Light straw hat perfect for farmers working in the bright sunlight of the heavens.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1617">Goddess's Hairpiece</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Hairpiece with the symbol of Lunares, made from some mysterious metal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1618">Princely Crown</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A marvellous gilded crown that's been in the Royal Family for centuries.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1619">Leilah's Floral Circlet</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Made from Elderwood tree leaves. Smells of the forest. Aaah...leafy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1620">Gold Dragon Head</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Part of the Gold Dragon costume set. It can make you breathe fire...well, maybe not.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1621">Odin's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Special equipment for Captain Odin, topped with a crest.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1622">Dragon King's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helm worn by the Dragon King, the hero of centuries-old Castele legend.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1623">Sea Lord's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helm worn by the Sea Lord, tales of whom have long been told in Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1624">Dark Sultan's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helm of the Legendary Dark Sultan, the hero of age-old Al Maajikan tales.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1625">Spirit King's Helm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>Helm of the Spirit King, featuring in old legends of the Elderwood.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1702">Carrotella Head</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat that will make your head look like a giant carrot monster.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

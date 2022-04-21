@@ -1,0 +1,458 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/529">Earth Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A magical robe imbued with the power of the earth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/647">Weaver's Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A shirt and overalls for keen Tailors. Tough fabric stops any wayward needles.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/648">Seamstress's Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A skirt and blouse for keen Tailors. Tough fabric stops any wayward needles.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/687">Aqua Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A magical robe imbued with the power of water.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/707">Alchemic Coat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A coat for aspiring Alchemists. Designed to protect against any leaks and spillages.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/708">Alchemic Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A dress for aspiring Alchemists. Designed to protect against any leaks and spillages.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/813">Mage's Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A long robe worn by Magicians. Just wearing it makes you feel like a master of magic!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/814">Witch's Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A long robe worn by Magicians. Just wearing it makes you feel like a master of magic!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/818">Wind Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A magical robe imbued with the power of wind.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/911">Furnace Apron (Male)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>An apron used by Blacksmiths. Provides protection from the furnace's searing heat.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/912">Furnace Apron (Female)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>An apron used by Blacksmiths. Provides protection from the furnace's searing heat.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/979">Chef's Apron (Male)</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>An apron worn by Cooks. A must for anyone wanting to become a seasoned chef.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1372">Officer's Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Blue armour worn by foreign warriors. Deflects all sword blows.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1376">Lord's Cuirass</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Red armour worn by foreign warriors. Swords and arrows are no match for it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1379">Shogun Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Black armour worn by foreign warriors. Seems impervious to many attacks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1454">Umbral Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A magical robe imbued with the power of darkness.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1455">Light Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A magical robe imbued with the power of light.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1457">Rainbow Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A robe containing the power of the rainbow.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1458">Philosopher's Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Gown for enlightened sages, usually donned by those who seek knowledge.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1467">Heatwave Apron</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>An apron for heroic Blacksmiths. Even the hottest of flames won't trouble this gear.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1471">Chief's Apron</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A fine apron given to heroic Carpenters. Many pockets for holding all the best tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1473">Famous Fisher's Smock</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Gear for heroic Anglers. This gear is the stuff of fishing legend.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1475">Doctor's Garb</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A coat for heroic Alchemists. Passed down through generations of master Alchemists.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1476">Fashionista Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Attire for heroic Tailors. An outfit befitting of Reveria's leaders in fashion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1478">Five Star Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Clothing for heroic Cooks. It stands as proof of their mastery of the culinary art.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1485">Elder Wizard's Robe</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A robe for heroic Magicians. Crafted to release all your inner power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1628">Elegant Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Chic dress, wider towards the hem. High-quality item for refined ladies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1629">Cute Ribbon Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A bit of a cutesy ribbon dress. Classic touches give it a surprisingly modern look.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1630">Bandit Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Used by Bandits to make them appear tougher.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1631">Pam's Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>This dress is a staple in more mature ladies' wardrobes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1632">Danuta's Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Clothing modelled on the Great Spirit. May make the forest friendlier towards you.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1633">Pino's Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A top made from Elderwood tree bark. Much softer than you'd expect.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1634">Buccaneer's Costume</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Traditional pirate outfit, appropriate for sailing the high seas in search of treasure.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1635">Celestial Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A top worn by celestial dwellers. The design has quite a long history.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1636">Goddess's Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A dress woven from the night sky itself. Its rustling is like the whispering of the stars.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1637">Princely Suit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>A suit made from top-quality ingredients. Only those of nobility can wear it properly.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1638">Leilah's Dress</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Clothing woven from the Elderwood breeze. Put it on and you'll feel like a forest spirit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1639">Gold Dragon Body</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>The Golden Dragon has sky-high HP... but you won't, even with this outfit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1642">Maajik General's Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Armour worn by Maajiknight Captain Odin, with a characteristic dark colour scheme.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1643">Dragon King Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Armour worn by the Dragon King, the hero of centuries-old Castele legend.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1644">Sea Lord Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Armour worn by the Sea Lord, tales of whom have long been told in Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1645">Dark Sultan's Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Armour of the Legendary Dark Sultan, the hero of age-old tales in Al Maajik.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1646">Spirit King Armor</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Armour of the Spirit King, featuring in old legends of the Elderwood.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1703">Carrotella Costume</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Carrotella costume. Experience what it feels like to be a Carrotella.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1706">Daemon's Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/One-piece">One-piece</a>
+        </td>
+        <td>Made with the finest Al Maajik materials to satisfy the needs of a Dark Sultan.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

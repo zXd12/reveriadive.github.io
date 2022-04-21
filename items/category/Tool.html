@@ -1,0 +1,924 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="false" href="/assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="./Armour">Armour</a></li>
+            <li><a href="./Consumable">Consumables</a></li>
+            <li><a href="./Decor">Decor</a></li>
+			<li><a href="./Material">Materials</a></li>
+			<li><a href="./Tool">Tools</a></li>
+			<li><a href="./Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="../43">Bronze Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe made of bronze. Good for the more brittle rocks.</td>
+      </tr>
+      <tr>
+        <td><a href="../44">Oak Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe with a handle made of oak. Somewhat decent.</td>
+      </tr>
+      <tr>
+        <td><a href="../45">Pine Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe with a handle made of pine. Be careful! It's sharp!</td>
+      </tr>
+      <tr>
+        <td><a href="../46">Guppy Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Fishing rod made for practising. For those still fishing in the kiddy pool.</td>
+      </tr>
+      <tr>
+        <td><a href="../47">Oak Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Crude fishing rod made of oak. An entry-level rod, at best.</td>
+      </tr>
+      <tr>
+        <td><a href="../48">Pine Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Tough fishing rod made of pine. Fort hose who want to fish but lack technique.</td>
+      </tr>
+      <tr>
+        <td><a href="../49">Bronze Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer made of bronze. It's okay for most forging.</td>
+      </tr>
+      <tr>
+        <td><a href="../50">Iron Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Solid hammer made of iron. Great for those aspiring Blacksmiths.</td>
+      </tr>
+      <tr>
+        <td><a href="../51">Oak Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw with a handle made of oak. Not terrible, not great.</td>
+      </tr>
+      <tr>
+        <td><a href="../52">Pine Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw with a handle made from pine. Easy on the hands, tough on the wood.</td>
+      </tr>
+      <tr>
+        <td><a href="../53">Bronze Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle made of bronze. Expert Tailors should look elsewhere.</td>
+      </tr>
+      <tr>
+        <td><a href="../54">Iron Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle made of iron. Sews through thick materials like a hot knife through butter.</td>
+      </tr>
+      <tr>
+        <td><a href="../55">Bronze Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Frying pan made of bronze. Sturdy, and gets the job done.</td>
+      </tr>
+      <tr>
+        <td><a href="../56">Iron Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Frying pan made of iron. Great for cooking delicious dishes!</td>
+      </tr>
+      <tr>
+        <td><a href="../57">Science Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Small flask used for science. Perfect for budding Alchemists.</td>
+      </tr>
+      <tr>
+        <td><a href="../58">Inventor's Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask with a slightly foul smell. Smelly but effective!</td>
+      </tr>
+      <tr>
+        <td><a href="../163">Pretend Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Frying pan for practising. Also used by kids when playing house.</td>
+      </tr>
+      <tr>
+        <td><a href="../175">Training Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A basic needle. Made for beginner Tailors.</td>
+      </tr>
+      <tr>
+        <td><a href="../193">Silver Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>A frying pan made of sparkling silver. Its silver finish makes for non-stick meals.</td>
+      </tr>
+      <tr>
+        <td><a href="../197">Iron Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Basic pickaxe made of iron. It digs. What more could you want?</td>
+      </tr>
+      <tr>
+        <td><a href="../198">Silver Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Light pickaxe made of silver. Sometimes used for sculpting statues!</td>
+      </tr>
+      <tr>
+        <td><a href="../199">Palm Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Glittering axe made with a handle made of palm. A blessing from the forest lady.</td>
+      </tr>
+      <tr>
+        <td><a href="../200">Palm Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Decent fishing rod made of palm. Requires technique to get the most out of it.</td>
+      </tr>
+      <tr>
+        <td><a href="../201">Silver Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Sleek hammer made of silver. For intermediate users and up.</td>
+      </tr>
+      <tr>
+        <td><a href="../202">Palm Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw with a handle made of palm. Loved by Carpenters far and wide.</td>
+      </tr>
+      <tr>
+        <td><a href="../203">Silver Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle made of sleek silver. Slides through fabrics of all kinds!</td>
+      </tr>
+      <tr>
+        <td><a href="../204">Bubbling Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask that's always bubbling. Who knows what mixtures it can make?</td>
+      </tr>
+      <tr>
+        <td><a href="../247">Worn Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe belonging to a former Woodcutter. Her name is still written on its handle.</td>
+      </tr>
+      <tr>
+        <td><a href="../248">Makeshift Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw for beginners. Shows signs of rusting.</td>
+      </tr>
+      <tr>
+        <td><a href="../257">Famous Angler's Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>A fishing rod made for a famous Angler. Any Angler worth their worms would want one</td>
+      </tr>
+      <tr>
+        <td><a href="../258">Whirlpool Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Fishing rod able to withstand a whirlpool. Good stability in raging waters.</td>
+      </tr>
+      <tr>
+        <td><a href="../275">Beginner's Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>A basic pickaxe for practising. Leaves every stone unturned.</td>
+      </tr>
+      <tr>
+        <td><a href="../276">Fledgling's Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>A basic hammer for practising. Puts the "ease" in "easy"!</td>
+      </tr>
+      <tr>
+        <td><a href="../293">Experimental Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>A flask for practising. Not suitable for dangerous mixtures.</td>
+      </tr>
+      <tr>
+        <td><a href="../555">Gold Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Dazzling pickaxe made of gold. Has an aristocratic air about it.</td>
+      </tr>
+      <tr>
+        <td><a href="../556">Sugar Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>A golden axe with sugar wood handle. A blessing from the forest lady.</td>
+      </tr>
+      <tr>
+        <td><a href="../557">Sugar Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Balanced fishing rod made of sugar wood. Perfect for fishing whenever you go!</td>
+      </tr>
+      <tr>
+        <td><a href="../558">Gold Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Glittering hammer made of gold. Often more status symbol than tool.</td>
+      </tr>
+      <tr>
+        <td><a href="../559">Sugar Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>A saw with a handle made from sugar wood. Responds to even delecate movements.</td>
+      </tr>
+      <tr>
+        <td><a href="../560">Gold Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle made of gold. Excellent for nuanced techniques.</td>
+      </tr>
+      <tr>
+        <td><a href="../561">Gold Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Frying pan made of gold. Cooks food evenly first time, every time.</td>
+      </tr>
+      <tr>
+        <td><a href="../562">Wisdom Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask that emits mysterious white smoke. You have to see it to believe it!</td>
+      </tr>
+      <tr>
+        <td><a href="../654">Deep Sea Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe infused with the power of the sea.</td>
+      </tr>
+      <tr>
+        <td><a href="../655">Marine Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe infused with the breath of the sea god. Its usability is quite high.</td>
+      </tr>
+      <tr>
+        <td><a href="../656">New Wave Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle for a new age of tailoring. Sure to help your clothing make a splash!</td>
+      </tr>
+      <tr>
+        <td><a href="../657">Sea Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>A saw believed to be used by shipbuilders. If it's enough for a boat, it's fine for you.</td>
+      </tr>
+      <tr>
+        <td><a href="../693">Sparkle Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe made of both razzle and dazzle. So sparkly, it'll never rust!</td>
+      </tr>
+      <tr>
+        <td><a href="../785">Rockcrusher Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer with spikes on both ends. Sure to get its point across.</td>
+      </tr>
+      <tr>
+        <td><a href="../786">Gothic Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A dark needle for the brooding Tailor. Terrible poetry not included.</td>
+      </tr>
+      <tr>
+        <td><a href="../787">Forbidden Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>The most forbidden of flasks. Only Castele-certified Alchemists can use it.</td>
+      </tr>
+      <tr>
+        <td><a href="../840">Sandstorm Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>A fishing rod holding the power of the desert. Perfect for sand fishing.</td>
+      </tr>
+      <tr>
+        <td><a href="../841">Enchanted Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>A frying pan with a magical aura. Its enchanted coating makes for magical meats!</td>
+      </tr>
+      <tr>
+        <td><a href="../842">Bolt Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask infused with the power of lightning. Strikes the user with a bolt of inspiration.</td>
+      </tr>
+      <tr>
+        <td><a href="../867">Ancient Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe brimming with ancient power. Gives literal meaning to "having a break".</td>
+      </tr>
+      <tr>
+        <td><a href="../868">Giant's Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe infused with the power of the ancient giants. Perfectly balanced.</td>
+      </tr>
+      <tr>
+        <td><a href="../869">Sea Cloud Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>A special Levitanian fishing rod. The perfect rod for sky fishing!</td>
+      </tr>
+      <tr>
+        <td><a href="../870">Spark Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with lightning. One electrifying experience!</td>
+      </tr>
+      <tr>
+        <td><a href="../871">Ancient Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw made from reptillian materials. Radiates with pure power.</td>
+      </tr>
+      <tr>
+        <td><a href="../889">Sol Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask infused with the power of fire. Some say it's too hot to handle.</td>
+      </tr>
+      <tr>
+        <td><a href="../890">Icicle Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask infused with the power of water. Some say it's the coolest flask in town.</td>
+      </tr>
+      <tr>
+        <td><a href="../896">Fashionista's Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle for the fashion-conscious. Weaves through stitching like nobody's business.</td>
+      </tr>
+      <tr>
+        <td><a href="../897">Industry Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle used for making top brand clothing. Runway fashion in half the time!</td>
+      </tr>
+      <tr>
+        <td><a href="../916">Lava Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe infused with fire power. Practically melts the ore when hit!</td>
+      </tr>
+      <tr>
+        <td><a href="../917">Mole Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe infused with mighty mole might. Dig through rocks like a mole machine!</td>
+      </tr>
+      <tr>
+        <td><a href="../926">Goddess's Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe blessed by the Goddess. Almost like it adjusts to the user's hand.</td>
+      </tr>
+      <tr>
+        <td><a href="../944">Super Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer finely tuned for balance. It's almost like it adjusts to the user's hand.</td>
+      </tr>
+      <tr>
+        <td><a href="../945">Flame Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with fire. Lets you strike while the iron's hot!</td>
+      </tr>
+      <tr>
+        <td><a href="../967">Royal Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw once used by the King of Castele. Said to have been used on castle DIY.</td>
+      </tr>
+      <tr>
+        <td><a href="../968">Gold Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw made from dazzling gold. Raises the quality of items produced with it.</td>
+      </tr>
+      <tr>
+        <td><a href="../977">Clam Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Frying pan designed like a clam shell. Retains heat extremely well.</td>
+      </tr>
+      <tr>
+        <td><a href="../978">Foreign Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>A frying pan from a distant land. Brings out the best in any dish.</td>
+      </tr>
+      <tr>
+        <td><a href="../1026">Gigaga Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe made for an ancient hero. Contains the power of the Fluffkin.</td>
+      </tr>
+      <tr>
+        <td><a href="../1027">Gigaga Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe from a time long forgotten. Contains the power of the Fluffkin.</td>
+      </tr>
+      <tr>
+        <td><a href="../1028">Gigaga Fishing Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Legendary fishing rod crafted long ago. Contains the power of the Fluffkin.</td>
+      </tr>
+      <tr>
+        <td><a href="../1029">Gigaga Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Said to have forged many a famed weapon. Infused with Fluffkin power. Quite the rarity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1030">Vintage Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle used to stitch legendary clothing. For making a more vintage look.</td>
+      </tr>
+      <tr>
+        <td><a href="../1031">Gigaga Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw created in ancient times. Contains the power of the Fluffkin.</td>
+      </tr>
+      <tr>
+        <td><a href="../1032">Ancient Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Unique pan made from age-old stone. Holds the ancient secret for perfect fried eggs!</td>
+      </tr>
+      <tr>
+        <td><a href="../1033">Flask of Dawn</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask containing the ancient wisdom. Allows for the creation of forgotten mixtures.</td>
+      </tr>
+      <tr>
+        <td><a href="../1135">Athena's Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>A needle said to belong to a divine Tailor. It almost seems to sew all on its own.</td>
+      </tr>
+      <tr>
+        <td><a href="../1138">Pan de Cuisine</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>An exceptional pan for exceptional chefs. A flavour explosion in every meal. Tres bien!</td>
+      </tr>
+      <tr>
+        <td><a href="../1139">Spirit Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe favoured by the gods. Said to infuse life into anything it touches.</td>
+      </tr>
+      <tr>
+        <td><a href="../1156">Star Smasher</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Toughest hammer around. Its durability is out of this world!</td>
+      </tr>
+      <tr>
+        <td><a href="../1166">Solar Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw containing the power of the sun. Guaranteed to brighten the user's day!</td>
+      </tr>
+      <tr>
+        <td><a href="../1171">Yggdrasil Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Ultimate flask, imbued with the power of life. Its tree shape evokes images of creation.</td>
+      </tr>
+      <tr>
+        <td><a href="../1229">Big Bang Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>Flask filled with cosmic energy. One wrong move and the universe is DOOMED!</td>
+      </tr>
+      <tr>
+        <td><a href="../1230">Miracle Flask</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Flask">Flask</a>
+        </td>
+        <td>The ultimate in alchemy flasks. Allows the user to make anything!</td>
+      </tr>
+      <tr>
+        <td><a href="../1338">Hornet Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle shaped like an insect stinger. Cross stitching with this is the bee's knees!</td>
+      </tr>
+      <tr>
+        <td><a href="../1341">Clockwork Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer that can smash through time itself. Said to be THE cure for insomnia.</td>
+      </tr>
+      <tr>
+        <td><a href="../1342">Phoenix Frying Pan</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>Pan of mythical origin. Brings any botched meal back to life!</td>
+      </tr>
+      <tr>
+        <td><a href="../1344">Demonic Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe of darkness and destruction. Can take over the user's soul.</td>
+      </tr>
+      <tr>
+        <td><a href="../1345">Vogue Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle that can pierce any fabric. Its mystical design is the new black!</td>
+      </tr>
+      <tr>
+        <td><a href="../1346">Spirit Hammer</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with spiritual energy. Said to strengthen the user's swings.</td>
+      </tr>
+      <tr>
+        <td><a href="../1347">Solar Pickaxe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe blessed with the power of the sun. The pride and joy of all Miners!</td>
+      </tr>
+      <tr>
+        <td><a href="../1348">Haute Needle</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Needle">Needle</a>
+        </td>
+        <td>Needle for the best of the best. The culmination of sewing technology.</td>
+      </tr>
+      <tr>
+        <td><a href="../1349">Frymaster 2000</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Frying%20Pan">Frying Pan</a>
+        </td>
+        <td>A frying pan crafted from divine materials. It doesn't make meals, it makes legends!</td>
+      </tr>
+      <tr>
+        <td><a href="../1420">Victory Fishing Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Fishing rod that brings glory to its user. Widely considered THE must-have rod!</td>
+      </tr>
+      <tr>
+        <td><a href="../1421">Cutterfly</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe reminiscent of a butterfly. It looks cute, but it packs a punch!</td>
+      </tr>
+      <tr>
+        <td><a href="../1422">Plume Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw blessed by the gods. Literally flies through wood!</td>
+      </tr>
+      <tr>
+        <td><a href="../1423">Star Fishing Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>A quality fishing rod endorsed by the gods. Perfect for catching a falling star...fish.</td>
+      </tr>
+      <tr>
+        <td><a href="../1424">Meteor Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>An axe infused with the power of the gods. So mighty, it can cut a meteorite right in half.</td>
+      </tr>
+      <tr>
+        <td><a href="../1425">Great Forest Axe</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Axe">Axe</a>
+        </td>
+        <td>Axe crafted deep within the forest. It is said there is no tree it cannot cut.</td>
+      </tr>
+      <tr>
+        <td><a href="../1426">Master Saw</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Saw">Saw</a>
+        </td>
+        <td>Saw passed down by famous Carpenters. Just brimming with cutting power!</td>
+      </tr>
+      <tr>
+        <td><a href="../1428">Marine Rod</a></td>
+        <td><a href="../category/Tool">Tool</a></td>
+        <td>
+            <a href="../category/Rod">Rod</a>
+        </td>
+        <td>Fishing rod said to have been used by the gods. No fish can escape its allure!</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

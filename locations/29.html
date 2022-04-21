@@ -1,0 +1,290 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown"><a href="/monsters" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/items/category/Armour">Armour</a></li><li><a href="/items/category/Consumable">Consumables</a></li><li><a href="/items/category/Decor">Decor</a></li><li><a href="/items/category/Material">Materials</a></li><li><a href="/items/category/Tool">Tools</a></li><li><a href="/items/category/Weapon">Weapons</a></li></ul></li><li class="dropdown">
+        <li class="dropdown">
+          <a href="/shops" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/recipes" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<h1 id="name">Tortuga Archipelago</h1>
+<h2 id="town"></h2>
+<div id="map"></div>
+  <h3>Shops</h3>
+  <ul>
+    <li><a href="/shops/50">Phileas' Shop</a></li>
+  </ul>
+  <h3>Monsters</h3>
+  <ul>
+      <li>
+        <a href="/monsters/132">Zombie Pirate</a>
+          (Night only)
+      </li>
+      <li>
+        <a href="/monsters/133">Angry Zombie</a>
+          (Night only)
+      </li>
+      <li>
+        <a href="/monsters/134">Turtortle</a>
+      </li>
+      <li>
+        <a href="/monsters/135">Chop-chop Piranha</a>
+      </li>
+      <li>
+        <a href="/monsters/136">Octoshell</a>
+      </li>
+      <li>
+        <a href="/monsters/137">Island Shark</a>
+      </li>
+      <li>
+        <a href="/monsters/138">Punching Palm</a>
+      </li>
+      <li>
+        <a href="/monsters/139">Toothy Piranha</a>
+      </li>
+      <li>
+        <a href="/monsters/140">Electro Jellyfish</a>
+          (Night only)
+      </li>
+      <li>
+        <a href="/monsters/141">Spirit of Water</a>
+      </li>
+      <li>
+        <a href="/monsters/142">Turtanic</a>
+      </li>
+      <li>
+        <a href="/monsters/143">Croc</a>
+      </li>
+      <li>
+        <a href="/monsters/116">Spirit of Wind</a>
+          (God Hunter request only)
+      </li>
+      <li>
+        <a href="/monsters/148">Typhoon Bird</a>
+          (God Hunter request only)
+      </li>
+      <li>
+        <a href="/monsters/169">Blizzard Bird</a>
+      </li>
+      <li>
+        <a href="/monsters/259">Green Gator</a>
+      </li>
+      <li>
+        <a href="/monsters/260">Bitey Shark</a>
+      </li>
+  </ul>
+  <h3>Pick-up items</h3>
+  <table class="table table-hover">
+    <tbody><tr>
+    </tr></tbody><thead>
+      <tr><th>Item</th>
+      <th>Place</th>
+    </tr></thead>
+    
+      <tbody><tr>
+        <td><a href="/items/331">Little Shell</a></td>
+        <td>
+          Seashell
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/332">Durable Shell</a></td>
+        <td>
+          Seashell
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/30">Healweed</a></td>
+        <td>
+          Weed
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/390">Port Town Orange</a></td>
+        <td>
+          Fruit Tree
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/40">Life Cure</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/237">Coral Necklace</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/469">Bluebell</a></td>
+        <td>
+          Blue Flower
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/1018">Blizzard Egg</a></td>
+        <td>
+          Egg
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/34">SP Potion</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/401">Campfire Fish</a></td>
+        <td>
+          Campfire Roast
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/309">Silver Claymore</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/491">Sack of Silver</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/306">Silver Dagger</a></td>
+        <td>
+          Chest
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/items/277">Cureweed</a></td>
+        <td>
+          Weed
+        </td>
+      </tr>
+  </tbody></table>
+<h3>Gatherable items</h3>
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Fish</th>
+    <th>Ores</th>
+    <th>Trees</th>
+  </tr>
+  </thead>
+  <tbody><tr>
+    <td>
+        <ul>
+            <li>
+              <a href="/items/359">Sardine</a>
+            </li>
+            <li>
+              <a href="/items/671">Flying Fish</a>
+            </li>
+            <li>
+              <a href="/items/372">Puerto Bream</a>
+            </li>
+            <li>
+              <a href="/items/363">Pufferfish</a>
+            </li>
+            <li>
+              <a href="/items/374">Swordfish</a>
+            </li>
+            <li>
+              <a href="/items/1020">Golden Swordfish</a>
+            </li>
+            <li>
+              <a href="/items/360">Tuna</a>
+            </li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>
+              <a href="/ores/28">Silver Ore Deposit</a>
+            </li>
+            <li>
+              <a href="/ores/29">Great Silver Ore Deposit</a>
+            </li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>
+              <a href="/trees/13">Palm Tree</a>
+            </li>
+            <li>
+              <a href="/trees/14">Sacred Water Tree</a>
+            </li>
+            <li>
+              <a href="/trees/15">Great Palm Tree</a>
+            </li>
+        </ul>
+    </td>
+  </tr>
+</tbody></table>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,1630 @@
+<div style="position:relative;">
+
+
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="gOSSQmgO8syYNTU0zx+M9HBpdsWEAsnCuEyC9jXeTeU=" name="csrf-token">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56715774-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/items/category/Armour">Armour</a></li><li><a href="/items/category/Consumable">Consumables</a></li><li><a href="/items/category/Decor">Decor</a></li><li><a href="/items/category/Material">Materials</a></li><li><a href="/items/category/Tool">Tools</a></li><li><a href="/items/category/Weapon">Weapons</a></li></ul></li><li class="dropdown">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<h2>Alchemist Recipes</h2>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#AlchemistMedicine" role="tab" data-toggle="tab">
+        Medicines
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#AlchemistExplosive" role="tab" data-toggle="tab">
+        Explosives
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#AlchemistTool" role="tab" data-toggle="tab">
+        Tools
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#AlchemistAccessory" role="tab" data-toggle="tab">
+        Accessories
+      </a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="AlchemistMedicine">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/31">HP Potion</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/30">Healweed</a></li>
+        <li>1 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/34">SP Potion</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/33">Vitalweed</a></li>
+        <li>1 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/36">Poison Antidote</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/277">Cureweed</a></li>
+        <li>1 ×
+          <a href="/items/282">Antidote Berries</a></li>
+        <li>1 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/37">Stun Antidote</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/277">Cureweed</a></li>
+        <li>1 ×
+          <a href="/items/283">Antistun Berries</a></li>
+        <li>1 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/38">Sleep Antidote</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/277">Cureweed</a></li>
+        <li>1 ×
+          <a href="/items/284">Wakeup Berries</a></li>
+        <li>1 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/40">Life Cure</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/278">Lifeweed</a></li>
+        <li>2 ×
+          <a href="/items/287">Little Tail</a></li>
+        <li>1 ×
+          <a href="/items/345">Mountain Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1046">Angelic Remedy</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1022">Gigaga Water</a></li>
+        <li>1 ×
+          <a href="/items/1044">Hermit Carrot</a></li>
+        <li>1 ×
+          <a href="/items/330">Rejuvenating Berries</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/32">Hi-HP Potion</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/30">Healweed</a></li>
+        <li>1 ×
+          <a href="/items/345">Mountain Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/35">Hi-SP Potion</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/33">Vitalweed</a></li>
+        <li>1 ×
+          <a href="/items/345">Mountain Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/194">Healing Powder</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/30">Healweed</a></li>
+        <li>2 ×
+          <a href="/items/436">Magic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/195">Energy Powder</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/33">Vitalweed</a></li>
+        <li>2 ×
+          <a href="/items/436">Magic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/500">Power Aid</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/326">Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/439">Hard Claws</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/553">Resistance Aid</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/326">Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/334">Thick Shell</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/808">Magic Aid</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/326">Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/887">Mysterious Object</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/39">Panacea</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/277">Cureweed</a></li>
+        <li>1 ×
+          <a href="/items/330">Rejuvenating Berries</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1057">Maxheal Dust</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/30">Healweed</a></li>
+        <li>2 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>1 ×
+          <a href="/items/692">Giant Tree Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1058">Hi-Energy Powder</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/33">Vitalweed</a></li>
+        <li>2 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>1 ×
+          <a href="/items/692">Giant Tree Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/915">Power Spray</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/327">Arch Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/440">Sharp Claws</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/939">Resistance Spray</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/327">Arch Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/444">Timeworn Shell</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/809">Magic Spray</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/327">Arch Alcheweed</a></li>
+        <li>1 ×
+          <a href="/items/888">Curious Object</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/552">Mega Aid</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/351">Soulweed</a></li>
+        <li>1 ×
+          <a href="/items/463">Running Flower</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/250">Charge Up Aid</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/351">Soulweed</a></li>
+        <li>1 ×
+          <a href="/items/465">Energising Flower</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/976">Crit Aid</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/351">Soulweed</a></li>
+        <li>1 ×
+          <a href="/items/464">Lucky Flower</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/952">Daredevil Aid</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/351">Soulweed</a></li>
+        <li>1 ×
+          <a href="/items/692">Giant Tree Nuts</a></li>
+        <li>1 ×
+          <a href="/items/328">Saltless Seawater</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/861">Elixir</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/350">Legendweed</a></li>
+        <li>2 ×
+          <a href="/items/434">Big Tail</a></li>
+        <li>1 ×
+          <a href="/items/345">Mountain Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1224">Spraylixir</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/862">Ultima Alcheweed</a></li>
+        <li>2 ×
+          <a href="/items/953">Beast Tail</a></li>
+        <li>1 ×
+          <a href="/items/345">Mountain Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1128">Godly Spray</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1041">Hot Spring Water</a></li>
+        <li>2 ×
+          <a href="/items/1143">Divine Pods</a></li>
+        <li>1 ×
+          <a href="/items/862">Ultima Alcheweed</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1047">Miracle</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1041">Hot Spring Water</a></li>
+        <li>1 ×
+          <a href="/items/1181">Goldweed</a></li>
+        <li>1 ×
+          <a href="/items/351">Soulweed</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1086">Luck Potion</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1022">Gigaga Water</a></li>
+        <li>1 ×
+          <a href="/items/1183">Centurial Nuts</a></li>
+        <li>3 ×
+          <a href="/items/1174">Cherry Nectar</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1087">Berserk Potion</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1022">Gigaga Water</a></li>
+        <li>1 ×
+          <a href="/items/1159">Berserk Stone</a></li>
+        <li>3 ×
+          <a href="/items/1184">Ancient Nectar</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1225">Intelligence Candy</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1131">Galaxy Apple</a></li>
+        <li>3 ×
+          <a href="/items/1143">Divine Pods</a></li>
+        <li>1 ×
+          <a href="/items/1182">Marshmallow Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1226">Focus Candy</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1130">Golden Apple</a></li>
+        <li>3 ×
+          <a href="/items/1143">Divine Pods</a></li>
+        <li>1 ×
+          <a href="/items/1183">Centurial Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1227">Luck Candy</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1131">Galaxy Apple</a></li>
+        <li>3 ×
+          <a href="/items/1143">Divine Pods</a></li>
+        <li>1 ×
+          <a href="/items/1188">Golden Droppings</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="AlchemistExplosive">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/41">Mini Bomb</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/268">Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/290">Green Gel</a></li>
+        <li>1 ×
+          <a href="/items/292">Animal Droppings</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/42">Sleep Bomb</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/268">Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/450">Blue Gel</a></li>
+        <li>1 ×
+          <a href="/items/449">Sleep Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/395">Poison Bomb</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/452">Purple Gel</a></li>
+        <li>1 ×
+          <a href="/items/447">Poison Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/554">Stun Bomb</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/451">Yellow Gel</a></li>
+        <li>1 ×
+          <a href="/items/448">Stun Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/196">Medium Bomb</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>1 ×
+          <a href="/items/286">Combustible Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1228">Love Bomb</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/1100">Pink Gel</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/863">Great Bomb</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+        <li>1 ×
+          <a href="/items/461">Monster Dung</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1088">Divine Bomb</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>5 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>3 ×
+          <a href="/items/438">Spiritual Powder</a></li>
+        <li>1 ×
+          <a href="/items/1188">Golden Droppings</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1089">Demonic Bomb</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>5 ×
+          <a href="/items/269">Quality Minty Ore</a></li>
+        <li>1 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+        <li>1 ×
+          <a href="/items/1188">Golden Droppings</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="AlchemistTool">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/57">Science Flask</a></td>
+  <td>Fledgling</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/285">Castele Bloom</a></li>
+        <li>2 ×
+          <a href="/items/279">Spring Water</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/58">Inventor's Flask</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/330">Rejuvenating Berries</a></li>
+        <li>2 ×
+          <a href="/items/290">Green Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/204">Bubbling Flask</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/338">Port Puerto Bloom</a></li>
+        <li>2 ×
+          <a href="/items/450">Blue Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/562">Wisdom Flask</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/462">Al Maajik Bloom</a></li>
+        <li>2 ×
+          <a href="/items/452">Purple Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/889">Sol Flask</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/408">Ruby</a></li>
+        <li>1 ×
+          <a href="/items/927">Sun Cluster</a></li>
+        <li>2 ×
+          <a href="/items/706">Red Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/890">Icicle Flask</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/409">Sapphire</a></li>
+        <li>1 ×
+          <a href="/items/459">Moon Cluster</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/842">Bolt Flask</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+        <li>2 ×
+          <a href="/items/451">Yellow Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/787">Forbidden Flask</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+        <li>1 ×
+          <a href="/items/432">Evil Wings</a></li>
+        <li>2 ×
+          <a href="/items/1100">Pink Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1033">Flask of Dawn</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1199">Ancient Coral</a></li>
+        <li>2 ×
+          <a href="/items/1103">White Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1229">Big Bang Flask</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1151">Ancient Orb</a></li>
+        <li>2 ×
+          <a href="/items/1102">Rainbow Mana +</a></li>
+        <li>2 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1171">Yggdrasil Flask</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+        <li>2 ×
+          <a href="/items/1111">Lifeforce Cluster</a></li>
+        <li>2 ×
+          <a href="/items/1212">Goddess's Bead</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1230">Miracle Flask</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/459">Moon Cluster</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+        <li>1 ×
+          <a href="/items/1113">Queen Gel</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="AlchemistAccessory">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/29">Charm</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/291">Suspicious Object</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/885">Durable Charm</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/887">Mysterious Object</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/886">Reinforced Charm</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/888">Curious Object</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1231">Destiny Charm</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1212">Goddess's Bead</a></li>
+        <li>1 ×
+          <a href="/items/1111">Lifeforce Cluster</a></li>
+        <li>1 ×
+          <a href="/items/1113">Queen Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/598">Claw Necklace</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/288">Animal Claws</a></li>
+        <li>1 ×
+          <a href="/items/289">Animal Fang</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/599">Savage Necklace</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/439">Hard Claws</a></li>
+        <li>1 ×
+          <a href="/items/442">Thick Fang</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/535">Beastly Necklace</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/440">Sharp Claws</a></li>
+        <li>1 ×
+          <a href="/items/443">Strong Fang</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1232">Demonic Necklace</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1158">Evil Claws</a></li>
+        <li>1 ×
+          <a href="/items/1168">Mad Beast's Fang</a></li>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/237">Coral Necklace</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/335">Pretty Coral</a></li>
+        <li>2 ×
+          <a href="/items/331">Little Shell</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/238">Marine Necklace</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/336">Stunning Coral</a></li>
+        <li>2 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/906">Sea Necklace</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/344">Glittering Coral</a></li>
+        <li>2 ×
+          <a href="/items/1198">Rainbow Shell</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1233">Tidal Necklace</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1199">Ancient Coral</a></li>
+        <li>2 ×
+          <a href="/items/1197">Ancient Seashell</a></li>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1034">Fluffkin Fuzzband</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/1198">Rainbow Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/28">Round Specs</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/272">Yellow Stone</a></li>
+        <li>1 ×
+          <a href="/items/266">Castele Copper</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/236">Stylish Specs</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/450">Blue Gel</a></li>
+        <li>1 ×
+          <a href="/items/404">Port Puerto Silver</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/208">Classy Monocle</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/451">Yellow Gel</a></li>
+        <li>1 ×
+          <a href="/items/405">Al Maajik Gold</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1095">Black-Rimmed Glasses</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+        <li>1 ×
+          <a href="/items/513">Platinum Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1096">Red-Rimmed Glasses</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>1 ×
+          <a href="/items/406">Magma Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1097">Wild Side Shades</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/1100">Pink Gel</a></li>
+        <li>1 ×
+          <a href="/items/839">Magic Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/664">Mini Specs</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+        <li>1 ×
+          <a href="/items/679">Marine Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/226">Diving Mask</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/344">Glittering Coral</a></li>
+        <li>2 ×
+          <a href="/items/670">Purple Stone</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/225">Flower Hairclip</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1198">Rainbow Shell</a></li>
+        <li>2 ×
+          <a href="/items/338">Port Puerto Bloom</a></li>
+        <li>1 ×
+          <a href="/items/173">Fancy Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/665">Topaz Ring</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/274">Topaz</a></li>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/205">Aquamarine Ring</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/407">Aquamarine</a></li>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/206">Amethyst Ring</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/650">Amethyst</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/782">Water Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/666">Ruby Ring</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/408">Ruby</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/781">Fire Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/667">Sapphire Ring</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/409">Sapphire</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/479">Wind Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/207">Emerald Ring</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/651">Emerald</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/783">Earth Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/668">Black Onyx Ring</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+        <li>1 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1080">Shadow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1235">Diamond Ring</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+        <li>1 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1236">Celestial Ring</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1105">Star Diamond</a></li>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1102">Rainbow Mana +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1237">Philosopher's Stone</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1146">Unknown Life Form</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+        <li>1 ×
+          <a href="/items/1101">Antenna Lantern</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1238">Double-Edged Stone</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+        <li>1 ×
+          <a href="/items/1239">Spell Stone +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1240">Monarch's Stone</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1107">Element Zero</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+        <li>1 ×
+          <a href="/items/1122">Soul Stone +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1241">Djinn Talisman</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>5 ×
+          <a href="/items/1242">Sorcery Powder</a></li>
+        <li>1 ×
+          <a href="/items/1243">Sorcery Orb</a></li>
+        <li>2 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1244">Tsunami Talisman</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1245">Wicked Bird Feather</a></li>
+        <li>1 ×
+          <a href="/items/1246">Fortified Shell</a></li>
+        <li>2 ×
+          <a href="/items/1247">Horror String</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+</div>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

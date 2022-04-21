@@ -1,0 +1,2353 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="false" href="/assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="./Armour">Armour</a></li>
+            <li><a href="./Consumable">Consumables</a></li>
+            <li><a href="./Decor">Decor</a></li>
+			<li><a href="./Material">Materials</a></li>
+			<li><a href="./Tool">Tools</a></li>
+			<li><a href="./Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="../30">Healweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Can be used in alchemy. Has a light, fresh scent.</td>
+      </tr>
+      <tr>
+        <td><a href="../31">HP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores HP a little.</td>
+      </tr>
+      <tr>
+        <td><a href="../32">Hi-HP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a generous amount of HP.</td>
+      </tr>
+      <tr>
+        <td><a href="../33">Vitalweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Alchemy material. Has a refreshing scent.</td>
+      </tr>
+      <tr>
+        <td><a href="../34">SP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores HP a little.</td>
+      </tr>
+      <tr>
+        <td><a href="../35">Hi-SP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a generous amount of HP.</td>
+      </tr>
+      <tr>
+        <td><a href="../36">Poison Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An antidote for poison.</td>
+      </tr>
+      <tr>
+        <td><a href="../37">Stun Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cure for being stunned.</td>
+      </tr>
+      <tr>
+        <td><a href="../38">Sleep Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Wakes you up.</td>
+      </tr>
+      <tr>
+        <td><a href="../39">Panacea</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Cures all abnormal statuses.</td>
+      </tr>
+      <tr>
+        <td><a href="../40">Life Cure</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Can revive you if you're defeated.</td>
+      </tr>
+      <tr>
+        <td><a href="../41">Mini Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that inflicts a bit of damage on enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="../42">Sleep Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that puts enemies to sleep.</td>
+      </tr>
+      <tr>
+        <td><a href="../123">Castele Crucian</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A small river fish. Eating it wouldn't hurt.</td>
+      </tr>
+      <tr>
+        <td><a href="../124">Plains Sweetfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Delicious and easy to catch river fish.</td>
+      </tr>
+      <tr>
+        <td><a href="../125">Elderwood Trout</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A river fish without that fishy smell. Makes a satisfying meal.</td>
+      </tr>
+      <tr>
+        <td><a href="../126">Castele Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A big river fish. It's rather smelly</td>
+      </tr>
+      <tr>
+        <td><a href="../127">Applefish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish resembling an apple. A conversation piece at any dinner.</td>
+      </tr>
+      <tr>
+        <td><a href="../128">Mutton</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Some people complain it's smelly, but others like it exactly for that reason.</td>
+      </tr>
+      <tr>
+        <td><a href="../129">Bird Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Bird meat with the skin on.</td>
+      </tr>
+      <tr>
+        <td><a href="../130">Beef</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Well-marbled beef.</td>
+      </tr>
+      <tr>
+        <td><a href="../131">Eggs</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Regular eggs.</td>
+      </tr>
+      <tr>
+        <td><a href="../132">Big Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>That's one huge egg. Breakfast for the whole family.</td>
+      </tr>
+      <tr>
+        <td><a href="../133">Cows' Milk</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Whole, unpasteurised cows' milk.</td>
+      </tr>
+      <tr>
+        <td><a href="../134">Extra Creamy Milk</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Extra creamy, delicious cows' milk.</td>
+      </tr>
+      <tr>
+        <td><a href="../135">Carrot</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fully grown orange carrot.</td>
+      </tr>
+      <tr>
+        <td><a href="../136">Daikon Radish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>White and juicy daikon radish</td>
+      </tr>
+      <tr>
+        <td><a href="../137">Potato</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bulbous potato</td>
+      </tr>
+      <tr>
+        <td><a href="../138">Onion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cruel vegetable that makes people cry.</td>
+      </tr>
+      <tr>
+        <td><a href="../139">Castele Apple</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Castele's finest produce</td>
+      </tr>
+      <tr>
+        <td><a href="../140">Grassy Plains Barley</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Freshly harvested Grassy Plains barley</td>
+      </tr>
+      <tr>
+        <td><a href="../141">Port Rice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Short-grain white rice</td>
+      </tr>
+      <tr>
+        <td><a href="../142">Maajik Beans</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A pod full of juicy-looking beans</td>
+      </tr>
+      <tr>
+        <td><a href="../143">Barley Juice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bitter drink, made from barley. Restores SP, raises Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../144">Roast Mutton</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A carefully roasted mutton chop. Restores HP, raises Strength and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../145">Juicy Mutton</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Juicy grilled mutton. Restores HP, raises Strength and Focus</td>
+      </tr>
+      <tr>
+        <td><a href="../146">Tasty Kebab</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Bird meat in a special spice blend. Restores HP, raises Strength and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../147">Bandit Steak</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Uniquely prepared steak. Restores HP, raises Strength and Vitality</td>
+      </tr>
+      <tr>
+        <td><a href="../148">Boiled Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fresh boiled egg. Restores HP, raises Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../149">Carrot Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Carrot soup. Restores HP, raises Dexterity and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../150">Boiled Veg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A simple dish of boiled vegetables. Restores HP, raises Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../151">Fluffy Omelette</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fluffy omelette made with fresh eggs. Restores HP, raises Vitality and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../152">Giant Fried Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A huge egg served sunny side up. Restores HP, raises Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../153">Well-Done Burger</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A burger made from minced mutton. Restores HP, raises Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../154">Juicy Burger</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A juicy burger made from minced beef. Restores HP, raises Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../155">Steak</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A thick cut of grilled meat. Restores HP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../156">Dreamy Steak</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A dreamily delicious steak. Restores HP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../157">Winter Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A creamy stew of meat, veg and milk. Restores HP, raises Strength and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../158">Grilled Crucian</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A grilled Crucian. Good with a little salt. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../159">Rustic Trout</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Trout dusted in flour and fried. Restores HP, raises Focus and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../160">Salt</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A basic cooking ingredient.</td>
+      </tr>
+      <tr>
+        <td><a href="../161">Sugar</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Unrefined cane sugar</td>
+      </tr>
+      <tr>
+        <td><a href="../162">Butter</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Creamy, unsalted butter made from fresh cows' milk</td>
+      </tr>
+      <tr>
+        <td><a href="../176">Tomato Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Tomato Soup. Restores HP, raises Dexterity and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../177">Fish Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Soup made from fresh fish. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../178">Southern Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh ingredients in a demi-glace sauce. Restores HP, raises Strength and Focus</td>
+      </tr>
+      <tr>
+        <td><a href="../179">Prawn Gratin</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Gratin with juicy prawns. Restores HP, raises Focus and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../180">Port Town Gratin</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A Port Puerto speciality gratin. Restores HP, raises Focus and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../181">Tuna Sashimi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ruby red tuna sashimi. Restores HP, raises Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../182">Bream Sashimi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Thinily sliced Bram Sashimi. Restores HP, raises Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../183">Flying Fish Sushi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh flying fish sushi. Restores HP, raises Intelligence and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../184">Sardine Pâté</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A pâté of minced sardines for a tasty snack. Restores HP, raises Intelligence and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../185">Rice-Stuffed Squid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A whole squid cooked with rice inside. Restores HP, raises Focus and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../186">Pufferfish Sashimi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Thinly sliced Pufferfish sashimi. Restores HP, raises Intelligence and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../187">Seafood Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A Puerto Bream stew. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../188">Sashimi Set</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fancy arrangement of the freshest sashimi. Restores HP, raises Intelligence and Vitality</td>
+      </tr>
+      <tr>
+        <td><a href="../189">Eggy Fried Rice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A rice dish topped with Bird Meat and egg. Restores HP, raises Vitality and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../190">Vinegar</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cooking ingredient. Very sour, with a pungent smell.</td>
+      </tr>
+      <tr>
+        <td><a href="../191">Ginger</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Warming, flavoursome spice.</td>
+      </tr>
+      <tr>
+        <td><a href="../192">Mustard</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hot, grainy mustard.</td>
+      </tr>
+      <tr>
+        <td><a href="../194">Healing Powder</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores some HP of the whole party</td>
+      </tr>
+      <tr>
+        <td><a href="../195">Energy Powder</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores some SP of the whole party.</td>
+      </tr>
+      <tr>
+        <td><a href="../196">Medium Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that inflicts a pretty good amount of damage on enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="../249">Sweet Fish Pastry</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet fish-shaped pastry filled with red bean paste.</td>
+      </tr>
+      <tr>
+        <td><a href="../250">Charge Up Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily makes your Special Skill charge faster.</td>
+      </tr>
+      <tr>
+        <td><a href="../277">Cureweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A material for alchemy. It's a little bitter to the taste.</td>
+      </tr>
+      <tr>
+        <td><a href="../278">Lifeweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An alchemy material. Has a distinctive scent.</td>
+      </tr>
+      <tr>
+        <td><a href="../279">Spring Water</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh spring water from the Castele suburbs. A gift to the Castelians.</td>
+      </tr>
+      <tr>
+        <td><a href="../280">Forest Mushroom</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A mushroom that grows on trees and fallen leaves. A staple kitchen ingredient.</td>
+      </tr>
+      <tr>
+        <td><a href="../281">Grassland Honey</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Made from the pollen of various flowers growing on the plains. Quite cheap.</td>
+      </tr>
+      <tr>
+        <td><a href="../294">Apple Juice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sweet juice made from apples. Restores SP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../295">Mushroom Quiche</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A quiche made with eggs and mushrooms. Restores HP, raises Vitality and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../296">Honey Pudding</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A soft and fluffy pudding. Restores HP, raises Vitality and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../297">Sweet Potato Dessert</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A dessert made from sweet potatoes. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../305">Royal Eggs</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Incredibly heavy eggs. Are they made of gold?</td>
+      </tr>
+      <tr>
+        <td><a href="../388">Rainbow Apple</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>It looks hand-painted, but it's naturally colourful like that.</td>
+      </tr>
+      <tr>
+        <td><a href="../326">Alcheweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A natural material for alchemy. Has an unpleasant smell.</td>
+      </tr>
+      <tr>
+        <td><a href="../327">Arch Alcheweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Alchemy material. Has a strongly unpleasant smell.</td>
+      </tr>
+      <tr>
+        <td><a href="../328">Saltless Seawater</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Water from Tortuga Archipelago. It's sea water, but it's not salty. Huh.</td>
+      </tr>
+      <tr>
+        <td><a href="../329">Plateau Honey</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Flavoursome honey made from the pollen of highland flowers.</td>
+      </tr>
+      <tr>
+        <td><a href="../340">Pirate Gumbo</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A hearty stew, key to a pirate's diet. Restores HP, raises Dexterity and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../341">Grilled Tuna Head</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A well-grilled whole tuna head. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../342">Swordfish Head</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A whole grilled swordfish head. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../343">Summer Nectar</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A juice made from blended tropical fruits. Restores SP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../344">Glittering Coral</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Beautiful coral glinting with the light of the sun.</td>
+      </tr>
+      <tr>
+        <td><a href="../345">Mountain Spring Water</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh spring water from Mt Snowpeak. Quality assured.</td>
+      </tr>
+      <tr>
+        <td><a href="../346">Mountain Mushroom</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A mushroom that grows deep in the mountains. Known for its deliciousness.</td>
+      </tr>
+      <tr>
+        <td><a href="../347">Cave Mushroom</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A mushroom that grows in dark places like caves. A yummy find.</td>
+      </tr>
+      <tr>
+        <td><a href="../348">Truffle</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A rare mushroom known for its distinctive taste. Can be used in cooking.</td>
+      </tr>
+      <tr>
+        <td><a href="../349">Duffle</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A rare mushroom known for its distinctive taste. Wait...no, this is a fake!</td>
+      </tr>
+      <tr>
+        <td><a href="../350">Legendweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An alchemy material. Has a sweet scent.</td>
+      </tr>
+      <tr>
+        <td><a href="../351">Soulweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A material for use in alchemy. Has a fresh, vibrant scent.</td>
+      </tr>
+      <tr>
+        <td><a href="../352">Dino Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Dino meat. It's a mouthful.</td>
+      </tr>
+      <tr>
+        <td><a href="../353">Plains Eel</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Snake-like, slippery fish. Grilling brings out its flavour.</td>
+      </tr>
+      <tr>
+        <td><a href="../354">Rainbow Trout</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A river fish prized for its delicate taste.</td>
+      </tr>
+      <tr>
+        <td><a href="../355">Black Bass</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An easy catch, popular with Anglers. Few peopel know that it's edible.</td>
+      </tr>
+      <tr>
+        <td><a href="../356">Catfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Easily recognisable by its cat-like whiskers. Has a muddy taste.</td>
+      </tr>
+      <tr>
+        <td><a href="../357">Forest Lordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The biggest fish in the forest. It must be tens of years old.</td>
+      </tr>
+      <tr>
+        <td><a href="../358">Cave Catfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Its eyesight is poor, as it lives in darkness. Slightly smells of mud.</td>
+      </tr>
+      <tr>
+        <td><a href="../359">Sardine</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Said to be the weakest sea fish. Full of bones, but they're edible, too.</td>
+      </tr>
+      <tr>
+        <td><a href="../360">Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Large migratory sea fish. The fatter it gets, the tastier it becomes.</td>
+      </tr>
+      <tr>
+        <td><a href="../361">Squid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ten-legged, ink-spitting cephalopod. Sleek and chewy.</td>
+      </tr>
+      <tr>
+        <td><a href="../362">Prawn</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>These many-legged, whiskered crustaceans turn pink when boiled.</td>
+      </tr>
+      <tr>
+        <td><a href="../363">Pufferfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Poisonous, but edible and delicious when prepared by skilful Cooks.</td>
+      </tr>
+      <tr>
+        <td><a href="../364">Bluescale Lordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Large fish nesting deep underground. Very smelly but oh, so good.</td>
+      </tr>
+      <tr>
+        <td><a href="../365">Redgill</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Magma-dwelling, red-scaled fish. No need to spice it up, it's naturally hot.</td>
+      </tr>
+      <tr>
+        <td><a href="../366">Magmafish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>It's actually a male Redgill. Very hot, handle it with care.</td>
+      </tr>
+      <tr>
+        <td><a href="../367">Lava Prawn</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Magma-dwelling prawn. Not much is known about it, but it sure tastes great.</td>
+      </tr>
+      <tr>
+        <td><a href="../368">Deep Sea Lordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This unappealing fish uses a luminescent lure to attract prey.</td>
+      </tr>
+      <tr>
+        <td><a href="../369">Bass of Darkness</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Quicksand is its habitat. It tastes of wilderness.</td>
+      </tr>
+      <tr>
+        <td><a href="../370">Sky Sardine</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Schools of this white-blue fish are easily mistaken for clouds.</td>
+      </tr>
+      <tr>
+        <td><a href="../371">High-Flying Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Floats in the sky like a fluffy cloud. Scholars call it the Cloudus Fishus.</td>
+      </tr>
+      <tr>
+        <td><a href="../372">Puerto Bream</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The most popular fish in Port Puerto. Its flesh is white and odourless.</td>
+      </tr>
+      <tr>
+        <td><a href="../373">Ornamental Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A strikingly-coloured carp usually kept in garden ponds.</td>
+      </tr>
+      <tr>
+        <td><a href="../374">Swordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Called the King of the Seas. Has a long bill that looks like a sword.</td>
+      </tr>
+      <tr>
+        <td><a href="../375">Coldwater Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>It's frozen all over, but not dead. The ice would keep it fresh anyway.</td>
+      </tr>
+      <tr>
+        <td><a href="../376">Pirate Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Has a pirate mark on one side. Pirates consider it a lucky charm.</td>
+      </tr>
+      <tr>
+        <td><a href="../377">Evil Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This fish emanates a dark, occult aura. Prized in Al Maajik.</td>
+      </tr>
+      <tr>
+        <td><a href="../378">Giant Castele Crucian</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A small river fish. Eating it wouldn't hurt. This one's bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../379">Giant Castele Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A big river fish. It's rather smelly. This one's bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../380">Giant Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Large migratory sea fish. This one's especially big.</td>
+      </tr>
+      <tr>
+        <td><a href="../381">Giant Pufferfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Delicious when prepared by skilful Cooks. This one's pretty big.</td>
+      </tr>
+      <tr>
+        <td><a href="../382">Giant Puerto Bream</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The most popular fish in Port Puerto. This one is unusally big.</td>
+      </tr>
+      <tr>
+        <td><a href="../383">Magic Eggs</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>There's something magical about these eggs.</td>
+      </tr>
+      <tr>
+        <td><a href="../384">Bigbeak Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An egg from a Bigbeak. It's quite big, as expected.</td>
+      </tr>
+      <tr>
+        <td><a href="../385">Thunder Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A Thunderbird's egg</td>
+      </tr>
+      <tr>
+        <td><a href="../386">Cabbage</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fine cabbage head with dense leaves.</td>
+      </tr>
+      <tr>
+        <td><a href="../387">Sweet Potato</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Despite its name, it's not even related to potatoes.</td>
+      </tr>
+      <tr>
+        <td><a href="../389">Jungle Banana</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet-smelling, ripe bananas.</td>
+      </tr>
+      <tr>
+        <td><a href="../390">Port Town Orange</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sun-kissed orange that smells of summer.</td>
+      </tr>
+      <tr>
+        <td><a href="../391">Heavenly Peach</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet-smelling, soft peach.</td>
+      </tr>
+      <tr>
+        <td><a href="../392">Black Pepper</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cooking ingredient valued for its fragrance and spiciness.</td>
+      </tr>
+      <tr>
+        <td><a href="../393">Pam's Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Candy from Pam</td>
+      </tr>
+      <tr>
+        <td><a href="../394">Super Mini Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that inflicts a bit of damage on enemies. Improved recipe for extra power.</td>
+      </tr>
+      <tr>
+        <td><a href="../395">Poison Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that poisons enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="../396">Super Poison Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that poisons enemies. Improved recipe for extra power.</td>
+      </tr>
+      <tr>
+        <td><a href="../397">Super Sleep Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that puts enemies to sleep. Improved recipe for extra power.</td>
+      </tr>
+      <tr>
+        <td><a href="../398">Campfire Roast</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Wild meat roasted over a campfire. Restores HP, raises Strength and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../399">Super Campfire Roast</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A skilfully cooked Campfire Roast. Restores HP, raises Strength and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../400">Grilled Eel</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Grilled eel with a sweet and spicy glaze. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../401">Campfire Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish grilled al fresco. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../402">Super Campfire Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Skilfully grilled fish. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../403">Super Apple Juice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Luxury apple juice. Restores SP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../500">Power Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases attack power.</td>
+      </tr>
+      <tr>
+        <td><a href="../510">Smelt</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This fish feels best in ice-covered lakes. So small you can eat it whole.</td>
+      </tr>
+      <tr>
+        <td><a href="../511">Icy Squid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This squid is so cool that the ink it spits out is frozen.</td>
+      </tr>
+      <tr>
+        <td><a href="../512">Frosty Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ice-covered fish well adapted to extremely cold conditions.</td>
+      </tr>
+      <tr>
+        <td><a href="../552">Mega Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a large amount of HP.</td>
+      </tr>
+      <tr>
+        <td><a href="../553">Resistance Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases defence.</td>
+      </tr>
+      <tr>
+        <td><a href="../554">Stun Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that stuns enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="../671">Flying Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Long pectoral fins let it leap out of water. Has firm, yummy flesh.</td>
+      </tr>
+      <tr>
+        <td><a href="../672">Parasol Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Other fish use it as sun protection. Not suitable for use as food.</td>
+      </tr>
+      <tr>
+        <td><a href="../673">Bell Pepper</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A glossy green bell pepper.</td>
+      </tr>
+      <tr>
+        <td><a href="../674">Aubergine</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fleshy aubergine.</td>
+      </tr>
+      <tr>
+        <td><a href="../675">Tomato</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A succulent tomato.</td>
+      </tr>
+      <tr>
+        <td><a href="../676">Broccoli</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fresh broccoli head. Looks like a mini tree.</td>
+      </tr>
+      <tr>
+        <td><a href="../677">Southern Papaya</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Delicious tropical fruit.</td>
+      </tr>
+      <tr>
+        <td><a href="../678">Beach Watermelon</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Refreshing, succulent watermelon.</td>
+      </tr>
+      <tr>
+        <td><a href="../700">Grassland Grapes</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh, delightfully juicy grapes.</td>
+      </tr>
+      <tr>
+        <td><a href="../701">Cave Strawberries</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ripe and full of flavour. Perfect for desserts.</td>
+      </tr>
+      <tr>
+        <td><a href="../808">Magic Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases magic power.</td>
+      </tr>
+      <tr>
+        <td><a href="../809">Magic Spray</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily improves magic power. Restores some SP.</td>
+      </tr>
+      <tr>
+        <td><a href="../821">Pumpkin Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sweet and savoury pumpkin soup. Restores HP, raises Dexterity and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../822">Sultan's Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This stew is the Dark Sultan's favourite dish. Restores HP, ups Dexterity and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../823">Monstrous Saute</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A gently simmered Monster Meat dish. Restores HP, ups Strength and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../824">Desert Fish Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A stew made with fish caught in the desert. Restores HP, raises Focus and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../825">Magical Pie</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An enchanted pie. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../826">Magical Omelette</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A magical omelette made with magic eggs. Restores HP, raises Vitality and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../827">Pumpkin Quiche</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Quiche made with eggs and sweet pumpkin. Restores HP, raises Vitality and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../828">Magical Pudding</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sweet dessert made from magical eggs. Restores HP, raises Vitality and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../829">Red Peppercorns</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Very spicy, use sparingly.</td>
+      </tr>
+      <tr>
+        <td><a href="../830">Sandfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish living in desert sands. Not sure what it eats, but it can certainly be eaten.</td>
+      </tr>
+      <tr>
+        <td><a href="../831">Electric Eel</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>This eel stores electricity in its cheeks. Packs 100,000 volts.</td>
+      </tr>
+      <tr>
+        <td><a href="../832">Desert Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Dry, sand-like to touch and yet perfectly edible.</td>
+      </tr>
+      <tr>
+        <td><a href="../833">Cactus Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Prickly green fish resembling a cactus. Does it taste like one too?</td>
+      </tr>
+      <tr>
+        <td><a href="../834">Sweetcorn</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet and juicy sweetcorn.</td>
+      </tr>
+      <tr>
+        <td><a href="../835">Pumpkin</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A firm and heavy green pumpkin.</td>
+      </tr>
+      <tr>
+        <td><a href="../836">Desert Pear</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>It may look like a brown apple, but it is a juicy desert pear.</td>
+      </tr>
+      <tr>
+        <td><a href="../837">Maajik Melon</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Popular in Al Maajik, crisp and sweet.</td>
+      </tr>
+      <tr>
+        <td><a href="../838">Magical Milkshake</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A strange milkshake that gives you magical powers... Restores SP, raises Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../860">Wasabi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>It feels more spicy in the nose than on the tongue.</td>
+      </tr>
+      <tr>
+        <td><a href="../861">Elixir</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fully restores HP and SP.</td>
+      </tr>
+      <tr>
+        <td><a href="../862">Ultima Alcheweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Alchemy material. Has a violently unpleasant smell.</td>
+      </tr>
+      <tr>
+        <td><a href="../863">Great Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that inflicts serious damage on enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="../898">Wild Kiwi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Its fiercely green flesh is amazingly sweet.</td>
+      </tr>
+      <tr>
+        <td><a href="../1045">Wild Beast Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Soft and great-tasting, finest meat.</td>
+      </tr>
+      <tr>
+        <td><a href="../915">Power Spray</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases attack power. Restores some HP.</td>
+      </tr>
+      <tr>
+        <td><a href="../939">Resistance Spray</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases defence. Restores some HP.</td>
+      </tr>
+      <tr>
+        <td><a href="../951">Monster Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Filling beast meat.</td>
+      </tr>
+      <tr>
+        <td><a href="../952">Daredevil Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily prevents knockback.</td>
+      </tr>
+      <tr>
+        <td><a href="../975">Island Honey</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Thick and full-bodied island honey. A real gourmet treat.</td>
+      </tr>
+      <tr>
+        <td><a href="../976">Crit Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily increases critical hit rate.</td>
+      </tr>
+      <tr>
+        <td><a href="../1018">Blizzard Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Blizzard Bird's egg. It feels chilly to touch.</td>
+      </tr>
+      <tr>
+        <td><a href="../1019">Dragon Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fresh dragon meat.</td>
+      </tr>
+      <tr>
+        <td><a href="../1020">Golden Swordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An enormous swordfish. Far more valuable than the regular swordfish.</td>
+      </tr>
+      <tr>
+        <td><a href="../1021">Sea Bream of Love</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A variety of Puerto Bream. Always on the lookout for potential mates.</td>
+      </tr>
+      <tr>
+        <td><a href="../1022">Gigaga Water</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Water rich in ancient minerals. Said to promote longevity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1023">Gigaga Catfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A larger variety of catfish. Its whiskers are very sensitive.</td>
+      </tr>
+      <tr>
+        <td><a href="../1024">Gigaga Truffle</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fantastic flavour and scent. The finest truffle in the world.</td>
+      </tr>
+      <tr>
+        <td><a href="../1039">Hot Spring Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A softly poached egg. Restores HP, raises Vitality and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1040">Hot Spring Bream</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish commonly found in hot springs. Faintly smells of sulphur.</td>
+      </tr>
+      <tr>
+        <td><a href="../1041">Hot Spring Water</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A miraculous cure, apparently. Bathe in it or drink it.</td>
+      </tr>
+      <tr>
+        <td><a href="../1042">Boiled Bamboo Shoot</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Grown in mineral-rich hot spring water. It helps with many ailments.</td>
+      </tr>
+      <tr>
+        <td><a href="../1043">Fossilfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A living fossil, literally. Its scales are as hard as rock.</td>
+      </tr>
+      <tr>
+        <td><a href="../1044">Hermit Carrot</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Used in alchemy. Bursting with rich flavour.</td>
+      </tr>
+      <tr>
+        <td><a href="../1046">Angelic Remedy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores HP and raises Vitality. Comes in handy when you're in a pinch.</td>
+      </tr>
+      <tr>
+        <td><a href="../1047">Miracle</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily boosts all basic stats.</td>
+      </tr>
+      <tr>
+        <td><a href="../1057">Maxheal Dust</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores plenty of HP of the whole party.</td>
+      </tr>
+      <tr>
+        <td><a href="../1058">Hi-Energy Powder</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores plenty of SP of the whole party.</td>
+      </tr>
+      <tr>
+        <td><a href="../1086">Luck Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Temporarily boosts Luck but lowers all other basic stats.</td>
+      </tr>
+      <tr>
+        <td><a href="../1087">Berserk Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Boosts your Attack at the expense of Defence.</td>
+      </tr>
+      <tr>
+        <td><a href="../1088">Divine Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A jaw-droppingly powerful bomb.</td>
+      </tr>
+      <tr>
+        <td><a href="../1089">Demonic Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A powerful bomb that poisons and stuns, too.</td>
+      </tr>
+      <tr>
+        <td><a href="../1112">Super Spraylixir</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fully restores HP and SP of the whole party. This improved recipe can fetch more Dosh!</td>
+      </tr>
+      <tr>
+        <td><a href="../1123">Golden Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A giant egg of a Heaven Bird. It looks shiny.</td>
+      </tr>
+      <tr>
+        <td><a href="../1127">Super Elixir</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fully restores HP and SP. This improved recipe can fetch more Dosh!</td>
+      </tr>
+      <tr>
+        <td><a href="../1128">Godly Spray</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Boosts the basic stats of everyone in your party.</td>
+      </tr>
+      <tr>
+        <td><a href="../1130">Golden Apple</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An apple that glitters like pure gold. Its taste is simply divine.</td>
+      </tr>
+      <tr>
+        <td><a href="../1131">Galaxy Apple</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Quite possibly the tastiest apple in the galaxy.</td>
+      </tr>
+      <tr>
+        <td><a href="../1133">Love Orb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An orb of Bliss. Something special will happen if you use it. Also used in crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="../1137">Wisdom Orb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An orb of Dosh. Something special will happen if you use it. Also used in crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="../1152">Bravery Orb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An orb of Stars. Something special will happen if you use it. Also used in crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="../1163">Heavenly Asparagus</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Nutritious and delicious. Crunchy, without any tough strings.</td>
+      </tr>
+      <tr>
+        <td><a href="../1174">Cherry Nectar</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet, transparent nectar that's a bit hard to come by.</td>
+      </tr>
+      <tr>
+        <td><a href="../1184">Ancient Nectar</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Thick and slightly bitter nectar of ancient flowers.</td>
+      </tr>
+      <tr>
+        <td><a href="../1187">Remote Island Honey</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Honey from eternally blooming flowers. It takes millennia to develop its rich flavour.</td>
+      </tr>
+      <tr>
+        <td><a href="../1194">Fossil Mushroom</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Featured in ancient murals. Seems to be thousands of years old.</td>
+      </tr>
+      <tr>
+        <td><a href="../1196">Penguin Eggs</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Warm to touch, small, spotted eggs from penguins.</td>
+      </tr>
+      <tr>
+        <td><a href="../1202">Giant Hot Spring Bream</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish commonly found in hot springs. This one's bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../1203">Godfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Divine protector of lakes and ponds on Origin Island. Tastes godly, too.</td>
+      </tr>
+      <tr>
+        <td><a href="../1205">Kissylips Angelfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Look at these dreamy lips! The most kissable fish in the sea.</td>
+      </tr>
+      <tr>
+        <td><a href="../1206">Demonic Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A mischievous giant tuna not picky about what it eats.</td>
+      </tr>
+      <tr>
+        <td><a href="../1208">Giant Kissylips Angelfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The most kissable fish in the sea. This is quite a big one.</td>
+      </tr>
+      <tr>
+        <td><a href="../1209">Giant Fossilfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A living fossil, literally. Has rock-like scales. Bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../1210">Rainbow Sunfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Not the prettiest fish, but at least it's colourful. And tasty.</td>
+      </tr>
+      <tr>
+        <td><a href="../1211">Giant Rainbow Sunfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Not the prettiest fish, but colourful and tasty. Bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../1213">Goddess's Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A carp of legend that is thousands of years old. Divinely graceful.</td>
+      </tr>
+      <tr>
+        <td><a href="../1214">Giant Goddess's Carp</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A carp of legend that is thousands of years old. Divinely graceful. Unusually large.</td>
+      </tr>
+      <tr>
+        <td><a href="../1215">T-Rex Leg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Juicy T-Rex grilled on the bone. Restores HP, raises Strength and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1216">Corn on the Cob</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Roasted golden sweetcorn. Restores HP, raises Dexterity and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1217">Monster Roast</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Roasted Monster Meat. Restores HP, and raises Strength and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../1224">Spraylixir</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fully restores HP and SP of the whole party.</td>
+      </tr>
+      <tr>
+        <td><a href="../1225">Intelligence Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Intelligence. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1226">Focus Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Focus. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1227">Luck Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Luck. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1228">Love Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An amazing bomb that restores some HP for everyone.</td>
+      </tr>
+      <tr>
+        <td><a href="../1253">Vegetable Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A healthy stew made with just vegetables. Restores HP, raises Dexterity and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1254">Cabbage Rolls</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Cabbage leaves wrapped around a tasty filling. Restores HP, raises Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1255">Pumpkin Pie</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet Pumpkin Pie. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1256">Magical Honey Dessert</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A dessert with sweet potatoes and honey. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1257">Legendary Corn</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Roasted sweetcorn dish. Restores HP, raises Dexterity and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1258">Goddess's Frappe</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sweet, ice-cold drink. Restores SP, raises Intelligence and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1259">Hermit's Drink</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A strange drink that can make fairies appear. Restores SP, ups Intelligence and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1260">Rainbow Gelato</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ice cream made with quality milk. Restores SP, raises Intelligence and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1261">Lunares Pie</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Yuella's favourite pie. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1262">Mushroom Medley</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An arrangement of rare mushrooms. Restores HP, raises Dexterity and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1263">Glorious Dinner</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A dish served at the table of the gods. Restores HP, raises Dexterity and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1264">Strength Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Strength. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1265">Vitality Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Vitality. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1266">Dexterity Candy</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Hard candy that raises Dexterity. You can only eat so many.</td>
+      </tr>
+      <tr>
+        <td><a href="../1267">Egg Roll</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A rolled, fried egg pancake. Restores HP, raises Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1268">Forest Quiche</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A quiche made with select ingredients. Restores HP, raises Vitality and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1269">Royal Omelette</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A luxury omelette fit for a king. Restores HP, raises Vitality and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1270">Fried Blizzard Egg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fried Blizzard Bird's egg. Restores HP, raises Vitality and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1271">Electro Egg Rice</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A rice dish topped with a Thunderbird's egg. Restores HP, raises Vitality and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1272">Occult Roll</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An egg roll made with strange things. Restores HP, raises Vitality and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1273">Golden Omelette</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A glittery gold, fluffy omelette. Restores HP, raises Vitality and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1274">Shish Kebab</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Bird Meat roasted on a skewer. Restores HP, raises Strength and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1275">Saurus Leg</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A roast Saurus Leg. Restores HP, raises Strength and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1276">Royal Hamburger</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A burger fit for the royal table. Restores HP, raises Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1277">Juicy Monster Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A beast of a meat dish. Restores HP, and raises Strength and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../1278">Sauteed Dragon</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A sauteed dragon dish. Restores HP, greatly raises Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1279">Dragon Steak</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Dragon meat roasted over a huge flame. Restores HP, greatly raises Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1280">Roast of Legend</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A legendary dish prepared legendarily! Restores HP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1281">Fluffy Roast</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The finest tender-cooked meat. Restores HP, raises Strength and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1283">Valorous Kebab</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Finest-quality meats on a skewer. Restores HP, raises Strength and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1285">Heavenly Burger</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A godlike burger. Restores HP, raises Strength and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1286">Giant Beast Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A big chunk of nutritious meat.</td>
+      </tr>
+      <tr>
+        <td><a href="../1287">Heavenly Feast</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Made with the finest ingredients, a sure hit! Restores HP, raises Strength and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1288">Mythical Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Its strange consistency can be quite addictive.</td>
+      </tr>
+      <tr>
+        <td><a href="../1289">Grilled Sweetfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Grilled Sweetfish. Good with a little salt. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1290">Hot Prawn Bisque</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A spicy soup made with Lava Prawn paste. Restores HP, ups Dexterity and Intelligence.</td>
+      </tr>
+      <tr>
+        <td><a href="../1291">Rustic Rainbow Trout</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Rainbow trout dusted with flour and fried. Restores HP, raises Focus and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1292">Dried Sandfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sandfish dried under the sun. Restores HP, and raises Intelligence and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1293">Red Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Soup made with redgills and seasonal veg. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1294">Rustic Swordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A whole grilled swordfish head. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1295">Fish Soup of Love</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sea Bream of Love soup. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1296">Tuna Sushi</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Freshly prepared tuna sushi. Restores HP, and raises Intelligence and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1297">Smelt Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Soup made with smelt and seasonal veg. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1298">Frosty Fish Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cooling fish stew. Restores HP, raises Focus and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1299">Fiery Fish Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A piping hot stew like molten magma. Restores HP, raises Focus and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1300">Sky Sashimi Set</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An artful arrangement of sky sashimi. Restores HP, ups Intelligence and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1301">Floaty Pufferfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fish that puffs up with air and floats in the sky. Has edible flesh, but poisonous organs.</td>
+      </tr>
+      <tr>
+        <td><a href="../1302">Golden Fish Head</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A whole grilled Golden Swordfish Head. Restores HP, raises Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../1303">Fancy Sashimi Set</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sashimi set based around Golden Swordfish. Restores HP, raises Intelligence and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1304">Rainbow Paella</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Paella made with rare seafood. Restores HP, raises Focus and Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../1305">Fossil Sashimi Set</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An arrangement of fresh fossil fish. Restores HP, raises Focus and Strength.</td>
+      </tr>
+      <tr>
+        <td><a href="../1306">Dark Giant Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A stew made with strange fish. Restores HP, raises Focus and Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../1307">Godly Soup</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Godlike soup. Restores HP, raises Focus and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../1308">Ghastly Stew</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A stew with horrifying ingredients. Makes your tongue go numb.</td>
+      </tr>
+      <tr>
+        <td><a href="../1310">Ghost Meat</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ghostly meat. ...Did it just move?</td>
+      </tr>
+      <tr>
+        <td><a href="../1311">Sea Lord Set</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An array of the freshest sashimi, including Demon Shark Fin. Fit for Poseidon himself.</td>
+      </tr>
+      <tr>
+        <td><a href="../1312">Poseidon Swordfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>The ruler of the seas, powerful, fierce and fearless.</td>
+      </tr>
+      <tr>
+        <td><a href="../1313">Demon Shark Fin</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A demon shark fin. Shark-tastic.</td>
+      </tr>
+      <tr>
+        <td><a href="../1557">Giant Frosty Fish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Larger ice-covered fish well adapted to extremely cold conditions.</td>
+      </tr>
+      <tr>
+        <td><a href="../1558">Super Mega Aid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a large amount of HP. Improved recipe restores that bit extra.</td>
+      </tr>
+      <tr>
+        <td><a href="../1562">Giant Sweet Fish Pastry</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Sweet fish-shaped pastry filled with red bean paste. Unusually big.</td>
+      </tr>
+      <tr>
+        <td><a href="../1565">Giant Applefish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish resembling an apple. Unusually large.</td>
+      </tr>
+      <tr>
+        <td><a href="../1566">Giant Plains Sweetfish</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Delicious and easy to catch river fish. This one's bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../1567">Giant Plains Eel</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Unusually big, snake-like, slippery fish. Grilling brings out its flavour.</td>
+      </tr>
+      <tr>
+        <td><a href="../1568">Giant Squid</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Ten-legged, ink-spitting cephalopod. Sleek and chewy. Bigger than usual.</td>
+      </tr>
+      <tr>
+        <td><a href="../1571">Giant Sardine</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Said to be the weakest sea fish. Bigger than they usually get.</td>
+      </tr>
+      <tr>
+        <td><a href="../1573">Volcanic Tuna</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Magma-dwelling tuna. Thrives in areas with high volcanic activity.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

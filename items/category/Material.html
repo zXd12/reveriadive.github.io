@@ -1,0 +1,2752 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="false" href="/assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="./Armour">Armour</a></li>
+            <li><a href="./Consumable">Consumables</a></li>
+            <li><a href="./Decor">Decor</a></li>
+			<li><a href="./Material">Materials</a></li>
+			<li><a href="./Tool">Tools</a></li>
+			<li><a href="./Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/164">Dandelion Puff</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A natural cotton harvested from dandelions. Used to make Dandelion Cotton.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/165">Straw Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Natural fibres obtained from grasses. Used to make Woven Straw Fabric.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/166">Sheep Fleece</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Fluffy fleece shorn from a sheep. Used to make Wool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/167">Dandelion Cotton</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Snow-white material with a fresh scent.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/168">Woven Straw Fabric</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Slightly stiff material made from grass</td>
+      </tr>
+      <tr>
+        <td><a href="/items/169">Wool</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A soft and fluffy material made from sheep fleece</td>
+      </tr>
+      <tr>
+        <td><a href="/items/170">Wooden Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Simple wooden buttons.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/171">Metal Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Fancy metal buttons.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/172">Cute Ribbon</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Very cute ribbon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/173">Fancy Ribbon</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Ribbon of the fancy variety.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/174">String</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Thread used in tailoring.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/239">Oak Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Soft timber that's easy to work with. Found around Castele.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/240">Pine Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Timber of just the right hardness, useful in carpentry.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/241">Elder Oak Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Oak log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/242">Pine Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Hot spice that adds a pleasant fragrance to meat. Used in a variety of dishes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/243">Oak Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from an Oak Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/244">Pine Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Pine Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/245">Leather String</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Leather string. Used in tailoring.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/246">Animal Hide</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Thin, elastic animal hide.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/251">Fish Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Slightly transparent fish scales.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/252">Subterranean Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Giant scales of a Bluescale Lordfish</td>
+      </tr>
+      <tr>
+        <td><a href="/items/253">Icy Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The frozen scales of a Coldwater Tuna</td>
+      </tr>
+      <tr>
+        <td><a href="/items/254">Celestial Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Giant scales of a High-Flying Fish.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/255">Volcanic Fin</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The fiery dorsal fin of a Volcanic Tuna</td>
+      </tr>
+      <tr>
+        <td><a href="/items/256">Forest Lordfish Moss</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A clump of moss from a Forest Lordfish's head.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/266">Castele Copper</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Common Castele copper ore</td>
+      </tr>
+      <tr>
+        <td><a href="/items/267">Plains Iron</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Used to make many weapons and armour</td>
+      </tr>
+      <tr>
+        <td><a href="/items/268">Minty Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A white stone with a minty scent. Used in alchemy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/269">Quality Minty Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A high-quality Minty Ore. Used in Alchemy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/270">Bronze Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A bronze ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/271">Iron Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An iron ingot used for forging weapons, tools and armour</td>
+      </tr>
+      <tr>
+        <td><a href="/items/272">Yellow Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Yellow crystal that looks particularly beautiful with light shining through it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/273">Blue Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Blue crystal of a pleasant, light blue colour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/274">Topaz</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Translucent, yellow gemstone.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/282">Antidote Berries</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Red berries that are said to cure poisoning. A bit tart, so they're no good for cooking.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/283">Antistun Berries</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Orange berries said to cure being stunned. A little bitter, so no good for cooking.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/284">Wakeup Berries</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Blue berries that will banish sleepiness. So sour and bitter, they'll make your eyes water.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/285">Castele Bloom</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that grows in the Castele suburbs. Symbolises valour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/286">Combustible Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Powder containing the power of fire. Burns explosively when ignited.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/287">Little Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Gives a little wriggle now and then.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/288">Animal Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Just regular animal claws.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/289">Animal Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Just a regular fang.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/290">Green Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A green, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/291">Suspicious Object</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strange object. Who knows what it's for...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/292">Animal Droppings</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Poop from a herbivorous animal. It's got grass and stuff in it. Eww.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/298">Palm Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Very pliable, soft but firm wood. Port Puerto is famous for it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/299">Mangrove Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Very hard timber of an irregular shape. It takes a skilled Carpenter to work it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/300">Palm Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Palm Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/301">Mangrove Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Mangrove Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/302">Palm Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>So spicy they'll make your tongue go numb. Used in exotic dishes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/303">Beast Hide</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Robust, durable hide.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/304">Snake Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Thick, tough snake scales.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/330">Rejuvenating Berries</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Berries that cure all ailments. Bad aftertaste makes them unsuitable for cooking.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/331">Little Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shell that can often be found on the seashore.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/332">Durable Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A seashell, common find on beaches. It's pretty hard and durable.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/333">Turtle Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Strong turtle shell.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/334">Thick Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Thick and durable turtle shell.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/335">Pretty Coral</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Lightly-coloured coral</td>
+      </tr>
+      <tr>
+        <td><a href="/items/336">Stunning Coral</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Coral so beautiful it'll take your breath away.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/337">Scrap of Cloth</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Just a piece of cloth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/338">Port Puerto Bloom</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that grows in Port Puerto suburbs. Symbolises travel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/404">Port Puerto Silver</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Port Puerto abounds with this ore.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/405">Al Maajik Gold</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Precious ore mined in the Al Maajik area.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/406">Magma Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Hard ore formed within hot magma. Used to make Magma Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/407">Aquamarine</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Semi-transparent, blue gemstone.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/408">Ruby</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Blood-red gemstone that fetches a very high price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/409">Sapphire</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Expensive gemstone of a deep blue colour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/410">Dragon Leg Bone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dragon fossil. It's easy to tell it's a leg because of the giant claws.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/412">Sandstone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Formed from compressed sand. Crumbles easily.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/413">Sugar Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Wood with very fine texture, easy to work with. Found around Al Maajik.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/414">Elder Pine Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Pine log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/415">Elder Palm Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Palm log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/416">Sugar Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Not just for desserts. Sugar can bring out the flavour of savoury dishes, too.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/417">Sunny Puff</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A soft natural cotton harvested from dandelions. Used to make Sunny Cotton.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/418">Silk Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Silk thread obtained from silkworms. Used to make Silk.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/419">Marine Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Durable thread enriched with sea minerals. Used to make Marine Silk.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/420">Pink Silk Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Finest thread spun in the darkness by spiders. Used to make Pink Silk.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/421">Goat Fleece</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Soft fleece shorn from a goat. Used to make Cashmere.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/422">Golden Sheep Fleece</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Golden fleece shorn from a sheep. Used to make Flare Wool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/423">Black Goat Fleece</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Durable and warm black goat fleece. Used to make Black Cashmere.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/424">Silk</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Luxurious material made from silk thread.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/425">Sunny Cotton</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Soft material that smells like sunshine.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/426">Cashmere</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Light, cosy material made from Goat Fleece.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/427">Marine Silk</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Material so durable, it can even be used as a ship's sail.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/428">Linen</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Lightweight material that keeps you cool under the hot sun.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/429">Glossy Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A bright blue feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/430">Coal-Black Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Jet-black feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/431">Snow-White Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pure white feather. Lovely.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/432">Evil Wings</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pair of leathery, thin wings that look like they belonged to some demonic creature.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/433">Apple Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An applique that looks like a delicious apple.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/434">Big Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A tail as long as your arm. Gives a little twitch now and then.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/435">Monster Hide</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Iron-hard, durable hide.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/436">Magic Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Light powder with a magical feel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/437">Demonic Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Powder with a strange aura.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/438">Spiritual Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Faintly sparkling powder bursting with life energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/439">Hard Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Tough claws.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/440">Sharp Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Sharp, pointy claws.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/441">Deadly Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Sharp claws of a vicious creature.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/442">Thick Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The thick fang of a predator.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/443">Strong Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The strong fang of a strong beast.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/444">Timeworn Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strong, burnished shell of a turtle that lived to a ripe age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/445">Ancient Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Incredibly durable shell that served a turtle well for centuries.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/446">Vivid Coral</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Beautiful, iridescent coral.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/447">Poison Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Poisonous powder. So potent, just looking at it feels dangerous.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/448">Stun Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Powder that stuns. So potent, just looking at it makes you feel frozen.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/449">Sleep Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Powder that induces deep sleep. So potent, just looking at it makes you feel drowsy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/450">Blue Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A blue, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/451">Yellow Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A yellow, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/452">Purple Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A purple, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/453">King Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sparkling jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/454">Green Cactus</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A green cactus. Kind of slimy inside.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/455">Yellow Cactus</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A yellow cactus. Spiky outside, slimy inside.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/456">Giant Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A giant fang. It looks terrifying.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/457">Giant Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A really big tail.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/458">Giant Horn</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An impressively big horn.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/459">Moon Cluster</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A glimmering cluster.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/460">Star Cluster</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A cluster that sparkles like stardust.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/461">Monster Dung</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Monster poop with an acrid smell. Looks like it's still warm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/462">Al Maajik Bloom</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that grows in the Al Maajik suburbs. Symbolises wealth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/463">Running Flower</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A bright flower that brings energy. Symbolises vigour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/464">Lucky Flower</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that is said to bring good luck. Symbolises prosperity.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/465">Energizing Flower</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that motivates with its fresh scent. Symbolises energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/466">Happy Daisy</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower that makes you smile. Symbolises cheerfulness.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/467">Yellowbell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A yellow flower used to make dye. Symbolises joy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/468">Greenbell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A green flower used to make dye. Symbolises health.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/469">Bluebell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A blue flower used to make dye. Symbolises peace and calm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/470">Blackbell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A black flower used to make dye. Symbolises elegance.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/471">Redbell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A red flower used to make dye. Symbolises passion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/472">Whitebell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A white flower used to make dye. Symbolises purity.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/473">Common Grasshopper</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A common grasshopper. It can be sold, but not for much.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/474">White Butterfly</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A common butterfly. It can be sold, but it isn't worth much.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/475">Yellow Butterfly</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A butterfly with vividly yellow wings. Can be sold for a bit of Dosh.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/476">Scarab Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A roundish, clumsy scarab beetle. Fetches a nice price for a bug.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/477">Iron Stag Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stag beetle with wings like polished iron. Can be sold for a nice aount of Dosh.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/478">Champion Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>This rhino beetle is like a king of all insects. It fetches a handsome price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/479">Wind Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised wind energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/480">Criticaline</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A special crystal formed in sand. Used to forge sharper weapons.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/481">Tool Upgrade Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone said to enhance tools. Might be a good idea to use it in tool smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/482">Attack Upgrade Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone said to enhance weapons. Might be a good idea to use it in weapon smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/483">Qualitine</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that raises the quality of items. Can be used for making weapons and tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/484">Def. Upgrade Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that increases defence. Might be good to use it in armour smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/485">Energizing Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone said to energise whoever holds it. It might be worth using it in crafting...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/486">Wind Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shard infused with wind energy, used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/487">Fossil Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A fragment of a giant ancient dragon fossil.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/488">Dark Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Giant scales of a Bass of Darkness.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/489">Wonderful String</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Awesome string. Used in tailoring.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/490">Sack of Copper</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sack full of copper coins. It looks worth selling.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/491">Sack of Silver</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sack full of silver coins. It looks worth selling.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/492">Sack of Gold</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sack full of gold coins. It might sell for a lot of Dosh.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/493">Sack of Treasure</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sack full of glittering treasures. It probably fetches a jaw-dropping price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/513">Platinum Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Rare metal found on the top of Mt Snowpeak.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/514">Fir Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dense, hard timber sourced from Mt Snowpeak.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/564">Flax Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Very handy and durable natural thread. Used to make Linen.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/565">Flare Wool</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Toasty warm woollen material.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/566">Black Cashmere</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Cashmere made from black goat fleece. Darkly luxurious.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/567">Gemstone Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Luxury buttons inload with gemstones.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/568">Wonderful Ribbon</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Splendid Ribbon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/641">Fine Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Feather from a brilliantly-coloured bird.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/642">Seashell Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Lovely buttons made from shells.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/643">Wonderful Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Splendid buttons made with rare materials.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/644">Fairy Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Totally adorable fairy applique.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/645">Shield Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A cool applique of a shield.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/646">Pirate Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An applique with a pirate motif.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/650">Amethyst</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Translucent, purple gemstone.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/651">Emerald</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Deep-green, beautiful gemstone.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/652">Black Onyx</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Black, opaque mineral.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/653">Diamond</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dazzling, translucent gemstone. It's highly valued.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/669">Silver Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A silver ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/670">Purple Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Purple crystal. Its unusual colour makes it very attractive.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/679">Marine Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised deep-sea minerals. Used to make Marine Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/680">Elder Mangrove Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Mangrove log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/688">Earth Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Timber infused with the earth element.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/689">Water Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Timber infused with the water element.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/690">Wind Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Timber infused with the wind element.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/691">Fire Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Timber infused with the fire element.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/692">Giant Tree Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Unique spice that's very bitter and pungent</td>
+      </tr>
+      <tr>
+        <td><a href="/items/702">Elder Sugar Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Sugar log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/703">Elder Desert Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Desert log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/704">Angelic Puff</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Soft and absorbent, natural cotton fibres. Used to make Angelic Cotton.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/705">Angelic Cotton</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A heavenly material said to be favoured by angels.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/706">Red Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A red, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/775">Desert Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Hard wood with a firm texture.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/776">Sugar Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Sugar Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/777">Desert Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Desert Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/778">Gold Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A gold ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/779">Magic Upgrade Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A crystallisation of mysterious power. Might be good to use it in staff smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/780">M. Def. Upgrade Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that increases magic defence. Might be good to use it in armour smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/781">Fire Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised fire energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/782">Water Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised water energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/783">Earth Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised earth energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/784">Black Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pitch-black, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/839">Magic Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Ore formed by absorption of magic. Used to make Magic Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/864">Celestial Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Rumoured to be crystallised sunlight. Used to make Celestial Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/865">Starry Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Fine thread glittering like stardust. Used to make Stardust Linen.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/866">Skytree Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>One of the finest types of timber, hard but pliable. Very rare.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/887">Mysterious Object</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A mysterious object. Who knows what it's for...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/888">Curious Object</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A mysterious object with a strange feel to it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/891">Hero Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An applique fashioned after a legendary hero.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/892">Princess Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pretty princess applique.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/893">Dragon Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An applique depicting a dragon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/894">Royal Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An applique of a crown. Erik's favourite.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/895">Pink Silk</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Material made from pink silk thread. A must for the fashion-conscious.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/899">Starry Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Multipurpose timber from a tree said to have grown out of a fallen star.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/900">Pink Cactus</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An unusual pink cactus. Spiky with a slimy interior.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/927">Sun Cluster</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A cluster that is pleasantly warm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/940">Platinum Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A platinum ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/941">Magma Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A magma ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/942">Marine Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A marine ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/943">Magic Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An enchanted ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/953">Beast Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A monster tail that looks like it's alive. Difficult to stash it in a bag.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/960">Fir Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Fir Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/962">Starry Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Starry Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/963">Earth Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from an Earth Log. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/964">Water Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Water Log. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/965">Wind Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Wind Log. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/966">Fire Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Fire Log. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1025">Giga String</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Pretty string that's also strong.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1048">Divine Puff</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A natural material from a Divine Dandelion. Soft and fluffy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1049">Rainbow Thread</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Many-coloured thread. Used to make rainbow linen.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1050">Sparkling-Sheep Fleece</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Goat fleece that shines dimly even in total darkness. Used to make Divine Cashmere.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1051">Gigaga Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Wood said to be used in the furniture of the gods. Also used in the Goddess's Ship.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1052">Divine Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Wondrous wood from a tree said to hold all worldly knowledge. Seems to be conscious.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1053">Rainbow Linen</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>High-quality material that sparkles like a rainbow.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1054">Divine Cashmere</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Warm, yet breathable material made from Sparkling Goat Fleece.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1055">Gigaga Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Gigaga Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1056">Divine Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Divine Tree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1060">Chalk Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strange ore that's very light and hard. Used to make Ancient Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1061">Dark Ore</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An ore used to make Demonic Ingots.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1062">Ancient Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A metal bar that changes colour depending on the light. Made from Chalk Ore.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1063">Demonic Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strange metal. Freezes you with fear. Made from Dark Ore.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1079">Light Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised light energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1080">Shadow Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised shadow energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1081">Evil Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A rock with sinister vibes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1082">Fire Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shard infused with fire energy, used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1083">Water Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shard infused with water energy, used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1084">Lightning Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The electrifying Thunderbird's flight feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1085">Rainbow Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Flight feather from a very big bird.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1090">Divine Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Majestic buttons fit for a god.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1091">Divine Ribbon</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Beautiful ribbon fit for a goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1092">Creator Applique</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An official-looking applique of Divinus.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1093">Ancient Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that raises the quality of items. Use it while crafting tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1094">Guardine</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A special crystal formed inside a rock. Used to forge stronger shields.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1100">Pink Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pink, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1101">Antenna Lantern</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The Deep Sea Lordfish uses this as a lure.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1102">Rainbow Mana +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A well-cut rainbow crystal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1103">White Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A white, jiggly gel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1104">Prism Jewel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A jewel used to decorate the finest outfits. Can be obtained from Divine Stones.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1105">Star Diamond</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A crystal containing the essence of a Crystal Dragon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1106">Soul Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can improve the properties of tools. Use it when making a tool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1107">Element Zero</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An orb with a rainbow trapped inside.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1108">Mystical Sapphire</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A beautiful Sapphire that has formed over many years.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1109">Ancient Emerald</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A beautiful Emerald formed over many years.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1111">Life-Force Cluster</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An ore cluster humming with life energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1113">Queen Gel</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pink, jiggly gel. It has a sweet and heady aroma.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1114">Sack of Secret Treasure</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A bag full of treasures. Who knows what this could fetch at a shop?</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1115">Divine Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Godly powder. Has the power to change your life.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1116">Crab Claw</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A sturdy, sharp crab claw.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1117">Crab Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A hard and durable crab shell.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1118">Wind Mana +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A high-quality wind crystal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1119">Water Mana +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A high-quality water crystal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1120">Fire Mana +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A high-quality fire crystal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1121">Rainbow Mana</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A crystal with rainbow energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1122">Soul Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can greatly improve the properties of tools. Use it for crafting tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1124">Divine Bird's Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Glinting golden feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1125">Protection Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can improve the properties of shields. Use it when crafting a shield.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1126">Protection Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can greatly improve the properties of shields. Use it for crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1129">Mythical Beast's Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Scales from a mythical beast. Change colour in the light.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1136">Crystal Scale</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A beautiful, transparent scale.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1142">Vile Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Claws from an evil being.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1143">Divine Berries</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Divine seed pods said to grant eternal life to whoever eats them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1145">Focus Gem</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone said to improve concentration. Can be used in making axes and pickaxes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1146">Unknown Life-Form</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A mysterious object with a strong presence.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1147">Giant Beast's Horn</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A great horn from a giant being. It's incredibly sharp.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1149">Cursed Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A tail with an ominous air about it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1150">Spell Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can improve the properties of magical staffs. Use it when crafting a staff.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1151">Ancient Orb</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An orb used to make weapons and tools. Can be obtained from Dark Stones.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1157">Mysterious Artifact</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strange object of indeterminate form. Feels both hot and cold at the same time.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1158">Evil Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Claws from an evil being. They look as if they could still slash at you.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1159">Berserk Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can improve the properties of weapons. Use it when crafting a weapon.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1160">Ancient Tail</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An ancient dinosaur tail.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1161">Berserk Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can greatly improve the properties of weapons. Use it when crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1162">Exquisite Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A beautifully colourful bird feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1164">Ancient Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An ancient dinosaur fang.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1168">Mad Beast's Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A fang from an evil beast. It's bloody.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1172">Angelic Butterfly</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A soothingly beautiful butterfly. Will reach a good price if sold.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1173">Cherrybell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A pink flower that only blooms for a short while. Symbolises undying friendship.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1175">Ancient Dragon's Scale</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A giant scale from a giant beast. Extremely hard.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1176">Cruel Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A fang from a wild beast.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1177">Giant Divine Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Shiny trunk of an Ancient Divine Tree. Put your ear to it and you hear strange whispers.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1242">Sorcery Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Powder with a Magician's power. Sends a shiver down your spine.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1178">Otherworldly Powder</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Mysterious powder that makes you shudder. Feels like something from another realm.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1179">Demonic Grasshopper</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A fearsome grasshopper whose cry sounds like a demon. Fetches a good price if sold.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1180">Ancient Flower</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower often found around an ancient isle. Symbolises chance meetings.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1181">Goldweed</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Used in alchemy. Has a refreshing, sweet taste.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1182">Marshmallow Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Delicately sweet, soft nuts. Yummy when roasted over a campfire.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1183">Ancient Nuts</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Sweet, bitter, salty and sour nuts. Few Cooks know how to use them well.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1186">Criticaline +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Criticaline. Improves sharpness of forged weapons.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1188">Golden Dung</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Shining golden droppings. They smell bad, but oddly make you want some more...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1189">Giga Gigaga Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Tip of a Giga Gigaga Tree. Harder than iron, lighter than cotton.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1190">Rare Metal</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Used to make various weapons and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1191">Divine Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised essence of light. Gives off a faint glow.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1192">Yggdrasil Branch</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An Yggdrasil Branch. Overflowing with life energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1195">Dark Stone</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Crystallised essence of darkness. Its dark surface plays tricks with your eyes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1197">Ancient Seashell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shell from a creature who lived millennia ago.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1198">Rainbow Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A seashell glittering colourfully in the light.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1199">Ancient Coral</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A coral formed over many years.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1200">Black Crab Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shiny black shell. Sounds like metal when you strike it.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1204">Divine Fish Moss</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A clump of moss from a Godfish's head.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1207">Otherworldly Fin</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A giant Demonic Tuna fin.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1212">Goddess Bead</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An orb said to be found only in the vicinity of the Goddess's Carp.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1218">Giant Scale</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Giant scale from an unusually large creature.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1219">M. Def. Upgrade Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade M. Def. Upgrade Stone. Might be good to use it in armour smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1221">Earth Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shard infused with earth energy, used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1222">Dragon Skull</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dragon fossil. The jaws are full of giant, sharp teeth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1223">Dragon Vertebrae</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dragon fossil. It's a small chunk of its spinal column.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1234">Celestial Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A celestial ingot used for forging weapons, tools and armour.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1239">Spell Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that can greatly improve the properties of staffs. Use it when crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1243">Sorcery Orb</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strange orb with a golem's face floating within.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1245">Wicked Bird Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Feather from a Typhoon Bird.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1246">Fortified Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A shell as impenetrable as a fort.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1247">Horror String</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Deadly string. Sheer yet strong.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1248">Stained Glass Butterfly</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Its wings beautifully reflect light. Fetches a handsome price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1249">Magic Upgrade Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Magic Upgrade Stone. Might be good to use it in staff smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1250">Energizing Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Energising Stone. Might be good to use it in item crafting.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1252">Swordfish Fin</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The stiff dorsal fin of a Swordfish.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1309">Ghost Shell</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A ghostly shell.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1314">Dragon Spice</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Pepper so spicy you'll breathe fire.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1315">Bismuth Ingot</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Bismuth ingot used to forge weapons and tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1316">Dream Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An Ore cluster that is vague, like a half-remembered dream.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1318">Dragon Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A strong piece of rock that seems to have come from a dragon's body.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1319">Dragon Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Dragon scales. They're hard as steel.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1322">Celestial Leaf</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Leaves grown in pure sunshine high in the skies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1331">Ancient Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A stone that greatly raises the quality of items. Use it while crafting tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1333">Cherry Blossom Orb</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An orb the colour of sakura petals. Secretly held by a bandit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1335">Bone Dragon Horn</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A cursed horn.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1337">Gold Shard</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Part of a legendary weapon said to have been used by a hero.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1340">Sturdy Fang</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The very strong fang of a fearsome beast.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1343">Golden Fin</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>The very tough dorsal fin of a Golden Swordfish.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1353">Stardust Linen</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Strangely bright and supple material.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1354">Divine Beast Skin</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Strange hide. It's tough yet flexible.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1366">Earth Mana +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A high-quality earth crystal.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1383">Otherworldly Leaf</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A leaf grown under the sun of the spirit world.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1404">Golem Fragment</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A part of a golem containing a little of its essence.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1405">Crimson Scales</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Hard scales from the Ancient Napdragon. They're battle-scarred.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1406">Skytree Beam</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A wooden beam cut from a Skytree. Used in weapon, tool and decor making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1407">Giant Claws</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Giant claws from an unusually large creature.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1408">Sinister Branch</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A branch cut from a Sinister Tree. Used in weapon and furniture making.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1412">Elder Skytree Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Skytree log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1417">Millennial Branch</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Obtained from the Sacred Millennial Tree, it can be used to make weapons and furniture.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1419">Magic-Power Orb</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>An orb used for weapons and tools. Rumoured to be used by the Pumpking.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1427">Wild Horn</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A bony antler that looks like it's been through the wars.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1431">Elder Fir Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Fir log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1434">Elder Starry Log</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Starry log with many tree rings, indicating its respectable age.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1445">Happiness Ribbon</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Happy ribbon for brining people together.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1474">Pastel Cotton</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Fluffy cotton that gives you the warm and fuzzies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1477">Flower Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Unusual buttons made from flowers. Make you feel happy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1479">Cloud Cashmere</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Cashmere as fluffy as a cloud floating across the blue sky.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1484">Frosty Feather</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Blizzard Bird's flight feather. It feels cold to touch.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1552">Pumpkin Buttons</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Funky buttons made from pumpkins.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1553">Attack Upgrade Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Attack Upgrade Stone. Might be good to use it in weapon smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1555">Guardine +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Guardine. Strengthens forged shields.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1560">Dragonfly</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A dragonfly that resembles a real dragon. Can be sold at a shop for a reasonable price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1561">Marriage Rose</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A flower often used as a token of love. Symbolises togetherness.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1563">Def. Upgrade Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Def. Upgrade Stone. Might be good to use it in armour smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1564">Royal Grasshopper</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Wears a mini crown and acts like it owns the place. Can be sold for a bit of Dosh.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1569">Steel Stag Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>This tough beetle glistens like polished steel. Fetches a handsome price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1570">Rhino Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>A beetle with only one horn. Can be sold at a shop for a reasonable price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1572">Second-Best Beetle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>In the world of beetles, this guy's a capable weight lifter. Fetches a good price.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1689">Dragon Horse Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Dragon Horse at the Castele stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1690">Unicorn Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Unicorn at the Castele stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1691">Deer Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Deer at the Castele stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1692">Marine Horse Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Marine Horse at the Port Puerto stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1693">Sky Turtle Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Sky Turtle at the Port Puerto stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1694">Crab Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Crab at the Port Puerto stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1695">Sultan's Horse Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Sultan's Horse at the Al Maajik stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1696">Ghost Horse Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Ghost Horse at the Al Maajik stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1697">Alpaca Saddle</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Allows you to rent the Alpaca at the Al Maajik stables.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1712">Tool Upgrade Stone +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Tool Upgrade Stone. Might be good to use it in tool smithing.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1714">Focus Gem +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Focus Gem. Can be used in making axes and pickaxes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1715">Qualitine +</a></td>
+        <td><a href="/items/category/Material">Material</a></td>
+        <td>
+        </td>
+        <td>Higher grade Qualitine. Used in weapon and tool making.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

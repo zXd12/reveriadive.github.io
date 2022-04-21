@@ -1,0 +1,529 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="false" href="./assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		<ul class="nav navbar-nav navbar-left" role="menu">
+        <li><a class="navbar-brand" href="/">ReveriaDive</a></li>
+        <li><a class="navbar-brand" href="/online">Online</a></li>
+		</ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/items/category/Armour">Armour</a></li><li><a href="/items/category/Consumable">Consumables</a></li><li><a href="/items/category/Decor">Decor</a></li><li><a href="/items/category/Material">Materials</a></li><li><a href="/items/category/Tool">Tools</a></li><li><a href="/items/category/Weapon">Weapons</a></li></ul></li><li class="dropdown">
+          <a href="/shops" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/recipes" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="/item/1">«</a>
+      </li>
+        <li class="active">
+        <a href="/item/1">1</a>
+        </li>
+        <li class="">
+        <a href="/item/2">2</a>
+        </li>
+        <li class="">
+        <a href="/item/3">3</a>
+        </li>
+        <li class="">
+        <a href="/item/4">4</a>
+        </li>
+        <li class="">
+        <a href="/item/5">5</a>
+        </li>
+      <li class="disabled">
+      <a href="/item/8">»</a>
+      </li>
+    </ul><p></p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/Castele%20Blouse">Castele Blouse</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>Traditional garb from Castele's history. Very popular among Castelian women.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/2">Castele Shirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>Traditional garb from Castele's history. Very popular among Castelian men.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/3">Highland Top</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>A plain jacket traditionally worn with tartan. Now often worn by waiters at fancy cafes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/4">Artisan's Apron</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>A simple but effective apron. Designed to be used in any walk of life.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/5">Dueling Outfit</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>Clothing worn for dueling. For those who value pride and honour above all else.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/6">Quilted Coat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Top">Top</a>
+        </td>
+        <td>A warm and durable coat. Stay warm, look cool. What more could you want?</td>
+      </tr>
+      <tr>
+        <td><a href="/items/7">Castele Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A traditional woven skirt from Castele. The short skirt with a long history.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/8">Striped Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A stripy skirt popular in Castele. Comfortable and colourful - a winning combination!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/9">Sunshine Skirt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>A pretty skirt with a flowery design. It is very popular with the girls of Port Puerto</td>
+      </tr>
+      <tr>
+        <td><a href="/items/10">Castele Slacks</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional woven slacks from Castele. Well loved by Castelians, even to this day.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/11">Highland Kilt</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Traditional menswear from Castele. Lately, it is popular among both men and women.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/12">Artisan's Puffy Shorts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Specially-made legwear for all walks of Life. Affectionately referred to as "puffers".</td>
+      </tr>
+      <tr>
+        <td><a href="/items/13">Dueling Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Light trousers worn to take part in a duel. Be challenged by your foe, not your clothes!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/14">Quilted Bottoms</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Toasty legwear padded around the thighs. Fashionable if worn with a Quilted Coat.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/15">Formal Trousers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Bottom">Bottom</a>
+        </td>
+        <td>Trousers made for more formal situations. Tapered in the middle for extra flair.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/16">Highland Beret</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A simple beret with a tartan pattern. Complete the look with matching bottoms!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/17">Artisan's Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat designed for artisans of all crafts. Not very suitable for battle...</td>
+      </tr>
+      <tr>
+        <td><a href="/items/18">Quilted Hat</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Headgear">Headgear</a>
+        </td>
+        <td>A hat made of a thick, quilted material. Protects against attacks and the cold.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/19">Artisan's Mitts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Crafter's gloves to protect fingers from harm. Light and flexible for creating fancy designs.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/20">Quilted Mittens</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Quilted gloves lined with soft cotton. LIke wrapping your hands in a snuggly cloud!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/21">Lowtop Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Simple shoes fashioned from leather. Perfect with almost any outfit.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/22">Highland Loafers</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Old-fashioned, rounded loafers. Worn for generations alongside a tradtional kilt.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/23">Artisan's Shoes</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Versatile shoes worn by artisans. Equally suited to use indoors and out.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/24">Dueling Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Boots made specially for duellists. Soft and flexible to allow for quick movements.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/25">Quilted Boots</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Shoes suited to the cold of Mt Snowpeak. Soft, fluffy lining keeps feet nice and snug.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/26">Castele Heels</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Footwear">Footwear</a>
+        </td>
+        <td>Glamorous shoes for a formal occasion. The highest of heels at the height of fashion.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/27">Cape</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Accessory">Accessory</a>
+        </td>
+        <td>A cape to protect against both attacks and the cold. They seem to be in fashion lately.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/28">Round Specs</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Accessory">Accessory</a>
+        </td>
+        <td>A pair of glasses suitable for long hours at the library. Now you're reading with power!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/29">Charm</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Accessory">Accessory</a>
+        </td>
+        <td>A charm that slightly improves your Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/30">Healweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Can be used in alchemy. Has a light, fresh scent.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/31">HP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores HP a little.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/32">Hi-HP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a generous amount of HP.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/33">Vitalweed</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Alchemy material. Has a refreshing scent.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/34">SP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores HP a little.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/35">Hi-SP Potion</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Restores a generous amount of HP.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/36">Poison Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>An antidote for poison.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/37">Stun Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cure for being stunned.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/38">Sleep Antidote</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Wakes you up.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/39">Panacea</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Cures all abnormal statuses.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/40">Life Cure</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Can revive you if you're defeated.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/41">Mini Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that inflicts a bit of damage on enemies.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/42">Sleep Bomb</a></td>
+        <td><a href="/items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bomb that puts enemies to sleep.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/43">Bronze Pickaxe</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Pickaxe">Pickaxe</a>
+        </td>
+        <td>Pickaxe made of bronze. Good for the more brittle rocks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/44">Oak Axe</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Axe">Axe</a>
+        </td>
+        <td>Axe with a handle made of oak. Somewhat decent.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/45">Pine Axe</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Axe">Axe</a>
+        </td>
+        <td>Axe with a handle made of pine. Be careful! It's sharp!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/46">Guppy Rod</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Rod">Rod</a>
+        </td>
+        <td>Fishing rod made for practising. For those still fishing in the kiddy pool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/47">Oak Rod</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Rod">Rod</a>
+        </td>
+        <td>Crude fishing rod made of oak. An entry-level rod, at best.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/48">Pine Rod</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Rod">Rod</a>
+        </td>
+        <td>Tough fishing rod made of pine. Fort hose who want to fish but lack technique.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/49">Bronze Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer made of bronze. It's okay for most forging.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/50">Iron Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Solid hammer made of iron. Great for those aspiring Blacksmiths.</td>
+      </tr>
+  </tbody></table>
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="/item/1">«</a>
+      </li>
+        <li class="active">
+        <a href="/item/1">1</a>
+        </li>
+        <li class="">
+        <a href="/item/2">2</a>
+        </li>
+        <li class="">
+        <a href="/item/3">3</a>
+        </li>
+        <li class="">
+        <a href="/item/4">4</a>
+        </li>
+        <li class="">
+        <a href="/item/5">5</a>
+        </li>
+      <li class="disabled">
+      <a href="/item/8">»</a>
+      </li>
+    </ul><p></p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

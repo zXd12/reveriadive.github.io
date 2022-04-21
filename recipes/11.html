@@ -1,0 +1,4237 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="3BU4pM333H9ITY6GBLgJacBNkJRVUup160eAw6IOwLs=" name="csrf-token">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56715774-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/items/category/Armour">Armour</a></li><li><a href="/items/category/Consumable">Consumables</a></li><li><a href="/items/category/Decor">Decor</a></li><li><a href="/items/category/Material">Materials</a></li><li><a href="/items/category/Tool">Tools</a></li><li><a href="/items/category/Weapon">Weapons</a></li></ul></li><li class="dropdown">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<h2>Tailor Recipes</h2>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#TailorMaterial" role="tab" data-toggle="tab">
+        Materials
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#TailorTops" &amp;="" bottoms="" role="tab" data-toggle="tab">
+        Tops &amp; Bottoms
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#TailorOther" role="tab" data-toggle="tab">
+        Others
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#TailorDecor" role="tab" data-toggle="tab">
+        Decors
+      </a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="TailorMaterial">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/167">Dandelion Cotton</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/164">Dandelion Puff</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/168">Woven Straw Fabric</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/165">Straw Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/424">Silk</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/418">Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/169">Wool</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/425">Sunny Cotton</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/417">Sunny Puff</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/427">Marine Silk</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/419">Marine Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/428">Linen</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/564">Flax Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/426">Cashmere</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/421">Goat Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/565">Flare Wool</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/566">Black Cashmere</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/423">Black Goat Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/705">Angelic Cotton</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/704">Angelic Puff</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/895">Pink Silk</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/420">Pink Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1353">Stardust Linen</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1053">Rainbow Linen</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1054">Divine Cashmere</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1050">Sparkling Goat Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="TailorTops" &amp;="" bottoms="">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/1">Castele Blouse</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/2">Castele Shirt</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/7">Castele Skirt</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/10">Castele Slacks</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/4">Artisan's Apron</a></td>
+  <td>Fledgling</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/170">Wooden Buttons</a></li>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/12">Artisan's Puffy Shorts</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/170">Wooden Buttons</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/3">Highland Top</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/172">Cute Ribbon</a></li>
+        <li>1 ×
+          <a href="/items/285">Castele Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/11">Highland Kilt</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/172">Cute Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/9">Sunshine Skirt</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/285">Castele Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/5">Duelling Outfit</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/641">Fine Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/13">Duelling Bottoms</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/210">Harbour Hunny Suit</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/642">Seashell Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/214">Harbour Hunny Skirt</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/211">Harbour Hunk Suit</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/642">Seashell Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/217">Harbour Hunk Slacks</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/6">Quilted Coat</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/170">Wooden Buttons</a></li>
+        <li>3 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/14">Quilted Bottoms</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/170">Wooden Buttons</a></li>
+        <li>2 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/8">Striped Skirt</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/472">Whitebell</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/212">Seafarer's Outfit</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/335">Pretty Coral</a></li>
+        <li>2 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/218">Seafarer's Capris</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/331">Little Shell</a></li>
+        <li>1 ×
+          <a href="/items/174">String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/215">Lined Skirt</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/469">Bluebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/213">Twin Tail Jacket</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/568">Wonderful Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/219">Watermeloons</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/678">Beach Watermelon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/221">Holiday Top</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/567">Gemstone Buttons</a></li>
+        <li>1 ×
+          <a href="/items/338">Port Puerto Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/223">Sea Sarong</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/568">Wonderful Ribbon</a></li>
+        <li>1 ×
+          <a href="/items/338">Port Puerto Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/222">Holiday Shirt</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/224">Sea Trunks</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+        <li>1 ×
+          <a href="/items/469">Bluebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/571">Chic Maajik Loose Top</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/273">Blue Stone</a></li>
+        <li>1 ×
+          <a href="/items/670">Purple Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/577">Chic Maajik Skirt</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/572">Chic Maajik Top</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/582">Chic Maajik Capris</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/462">Al Maajik Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/574">Puffy-Sleeved Top</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/584">Loose Stripies</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/216">Frilly Skirt</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/338">Port Puerto Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/569">Twilight Top</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/829">Red Peppercorns</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/576">Desert Diva Skirt</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/829">Red Peppercorns</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/570">Desert Top</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/392">Black Pepper</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/581">Loose Trousers</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/392">Black Pepper</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/573">Linen Tunic</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/583">Linen Bottoms</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/428">Linen</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/682">Coastal Armour</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/683">Coastal Bottoms</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/516">Frigid Armour</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/429">Glossy Feather</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/517">Frigid Bottoms</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/429">Glossy Feather</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/234">Pretty Princess Outfit</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>2 ×
+          <a href="/items/568">Wonderful Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/232">Tuxedo</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>2 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/15">Formal Trousers</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>2 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/580">Chequered Skirt</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/467">Yellowbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/575">Maharaja Robe</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/651">Emerald</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/585">Maharaja Bottoms</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/567">Gemstone Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/578">Banded Skirt</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/579">Denim Long Skirt</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/417">Sunny Puff</a></li>
+        <li>3 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>3 ×
+          <a href="/items/469">Bluebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/844">Sandy Armour</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/412">Sandstone</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/845">Sandy Bottoms</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/412">Sandstone</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/524">Grotto Armour</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/430">Coal-Black Feather</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/525">Grotto Bottoms</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/430">Coal-Black Feather</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/521">Flame Robe</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/781">Fire Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/687">Aqua Robe</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/782">Water Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/876">Sky-High Armour</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/877">Sky-High Bottoms</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/529">Earth Robe</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/895">Pink Silk</a></li>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/783">Earth Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/818">Wind Robe</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/895">Pink Silk</a></li>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/479">Wind Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1454">Umbral Robe</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/437">Demonic Powder</a></li>
+        <li>1 ×
+          <a href="/items/1080">Shadow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1455">Light Robe</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/438">Spiritual Powder</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1456">Polka Dot Skirt</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/466">Happy Daisy</a></li>
+        <li>1 ×
+          <a href="/items/895">Pink Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1070">Origin Island Armour</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1048">Divine Puff</a></li>
+        <li>3 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1071">Origin Island Bottoms</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>3 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+        <li>2 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1457">Rainbow Robe</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>3 ×
+          <a href="/items/438">Spiritual Powder</a></li>
+        <li>3 ×
+          <a href="/items/1121">Rainbow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1458">Philosopher's Robe</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1459">Sacred Robe</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>3 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>3 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1460">Sacred Trousers</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>2 ×
+          <a href="/items/1111">Lifeforce Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1461">Freya's Mail</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1106">Soul Stone</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1462">Freya's Skirt</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1103">White Gel</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1463">Minerva's Mail</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1239">Spell Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1464">Minerva's Skirt</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+        <li>1 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1465">Valkyrie Mail</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1126">Protection Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1466">Valkyrie Skirt</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1113">Queen Gel</a></li>
+        <li>1 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1467">Heatwave Apron</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/444">Timeworn Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1468">Woodland Jacket</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/1120">Fire Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1192">Yggdrasil Branch</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1469">Woodland Trousers</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>1 ×
+          <a href="/items/1120">Fire Mana +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1470">Grand Miner's Bottoms</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/1221">Earth Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1471">Chief's Apron</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>2 ×
+          <a href="/items/1055">Gigaga Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1472">Chief's Breeches</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/432">Evil Wings</a></li>
+        <li>1 ×
+          <a href="/items/452">Purple Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1473">Famous Fisher's Smock</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/254">Celestial Scales</a></li>
+        <li>1 ×
+          <a href="/items/1445">Happiness Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1475">Doctor's Garb</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1242">Sorcery Powder</a></li>
+        <li>1 ×
+          <a href="/items/290">Green Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1476">Fashionista Dress</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>2 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+        <li>1 ×
+          <a href="/items/1477">Flower Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1478">Five Star Outfit</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+        <li>5 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1480">Buccaneer's Coat</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>22 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>2 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>2 ×
+          <a href="/items/1477">Flower Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1481">Buccaneer's Bottoms</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+        <li>2 ×
+          <a href="/items/1247">Horror String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1482">Sniper Tunic</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1085">Rainbow Feather</a></li>
+        <li>1 ×
+          <a href="/items/468">Greenbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1483">Sniper's Culottes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1484">Frosty Feather</a></li>
+        <li>1 ×
+          <a href="/items/468">Greenbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1485">Grand Magician's Robe</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1486">Monarch Outfit</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1405">Crimson Scales</a></li>
+        <li>2 ×
+          <a href="/items/453">King Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1487">Monarch Tights</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="TailorOther">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/21">Lowtop Shoes</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/17">Artisan's Hat</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/19">Artisan's Mitts</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/23">Artisan's Shoes</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/16">Highland Beret</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+        <li>1 ×
+          <a href="/items/468">Greenbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/22">Highland Loafers</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/27">Cape</a></td>
+  <td>Fledgling</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/165">Straw Thread</a></li>
+        <li>2 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/24">Duelling Boots</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/18">Quilted Hat</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+        <li>2 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/20">Quilted Mittens</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/25">Quilted Boots</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>2 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/220">Netted Hat</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/227">Harbour Sandals</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>1 ×
+          <a href="/items/642">Seashell Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/228">Warrior's Sandals</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/298">Palm Log</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/231">Mules</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>2 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/230">Beach Sandals</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>2 ×
+          <a href="/items/642">Seashell Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/229">Ribbon-Laced Shoes</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>2 ×
+          <a href="/items/172">Cute Ribbon</a></li>
+        <li>3 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/586">Cup Cap</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/426">Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/592">Comfy Slippers</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/417">Sunny Puff</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/588">Jade Turban</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/430">Coal-Black Feather</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/590">Gold Bangles</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>2 ×
+          <a href="/items/451">Yellow Gel</a></li>
+        <li>1 ×
+          <a href="/items/492">Sack of Gold</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/594">High-Toe Boots</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/467">Yellowbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/587">Desert Headdress</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/428">Linen</a></li>
+        <li>1 ×
+          <a href="/items/462">Al Maajik Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/591">Pair of Babouches</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/593">Moccasins</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/235">Long Cape</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/424">Silk</a></li>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/799">Bat Cape</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/428">Linen</a></li>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/377">Evil Carp</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/681">Coastal Headwear</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>2 ×
+          <a href="/items/642">Seashell Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/684">Coastal Gloves</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/419">Marine Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/685">Coastal Boots</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/515">Frigid Headwear</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+        <li>2 ×
+          <a href="/items/170">Wooden Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/518">Frigid Gloves</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+        <li>1 ×
+          <a href="/items/418">Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/519">Frigid Boots</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/26">Castele Heels</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1198">Rainbow Shell</a></li>
+        <li>2 ×
+          <a href="/items/568">Wonderful Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/233">Formal Dress Shoes</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/596">Short Cape</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/459">Moon Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/589">Maharaja Turban</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>1 ×
+          <a href="/items/567">Gemstone Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/595">Maharaja Shoes</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/479">Wind Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/816">Grinning Hat</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/819">Magic Mittens</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>2 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/820">Magic Shoes</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>2 ×
+          <a href="/items/567">Gemstone Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/843">Sandy Headwear</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/412">Sandstone</a></li>
+        <li>2 ×
+          <a href="/items/171">Metal Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/846">Sandy Gloves</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/564">Flax Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/847">Sandy Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/245">Leather String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/523">Grotto Headwear</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/526">Grotto Gloves</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/347">Cave Mushroom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/527">Grotto Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/347">Cave Mushroom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/520">Flame Hood</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>1 ×
+          <a href="/items/781">Fire Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/686">Aqua Hood</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>1 ×
+          <a href="/items/782">Water Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/875">Sky-High Headwear</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/643">Wonderful Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/878">Sky-High Gloves</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/865">Starry Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/879">Sky-High Boots</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/528">Earth Hood</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>3 ×
+          <a href="/items/783">Earth Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/817">Wind Hood</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/436">Magic Powder</a></li>
+        <li>3 ×
+          <a href="/items/479">Wind Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1490">Umbral Hood</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+        <li>1 ×
+          <a href="/items/1080">Shadow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1491">Light Hood</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/438">Spiritual Powder</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/264">Shark Hat</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>1 ×
+          <a href="/items/1252">Swordfish Fin</a></li>
+        <li>2 ×
+          <a href="/items/443">Strong Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1069">Origin Island Cap</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1048">Divine Puff</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1072">Origin Island Gloves</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+        <li>2 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1073">Origin Island Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1048">Divine Puff</a></li>
+        <li>2 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1492">Tiger Carp Helm</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/1204">Godfish Moss</a></li>
+        <li>1 ×
+          <a href="/items/1043">Fossilfish</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1493">Rainbow Hood</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>2 ×
+          <a href="/items/1025">Gigaga String</a></li>
+        <li>2 ×
+          <a href="/items/1121">Rainbow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1494">Philosopher's Hat</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+        <li>1 ×
+          <a href="/items/1108">Mystical Sapphire</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1495">Philosopher's Mitts</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+        <li>2 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1496">Philosopher's Shoes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+        <li>2 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1497">Sacred Hood</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>1 ×
+          <a href="/items/927">Sun Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1498">Sacred Hand Guards</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1499">Sacred Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>1 ×
+          <a href="/items/459">Moon Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1500">Sacred Cape</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1125">Protection Stone</a></li>
+        <li>1 ×
+          <a href="/items/927">Sun Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1501">Freya's Helm</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+        <li>1 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1170">Freya's Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1108">Mystical Sapphire</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1169">Freya's Sandals</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1331">Ancient Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1167">Freya's Wings</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1502">Minerva's Helm</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1162">Exquisite Feather</a></li>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1503">Minerva's Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+        <li>1 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1140">Minerva's Sandals</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1161">Berserk Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1504">Minerva's Wings</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1162">Exquisite Feather</a></li>
+        <li>1 ×
+          <a href="/items/1383">Other-Worldly Leaf</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1505">Valkyrie Helm</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+        <li>1 ×
+          <a href="/items/1129">Mythical Beast's Scales</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1506">Valkyrie Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+        <li>1 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1507">Valkyrie Sandals</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1107">Element Zero</a></li>
+        <li>1 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1508">Valkyrie Wings</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1509">Hammer Head</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/445">Ancient Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1510">Hammer Gloves</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/333">Turtle Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1511">Hammer Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/334">Thick Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1512">Woodland Beret</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/1120">Fire Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1513">Woodland Bangles</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+        <li>2 ×
+          <a href="/items/692">Giant Tree Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1514">Woodland Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>1 ×
+          <a href="/items/471">Redbell</a></li>
+        <li>1 ×
+          <a href="/items/1119">Water Mana +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1516">Grand Miner's Mitts</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>2 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+        <li>1 ×
+          <a href="/items/1083">Water Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1517">Grand Miner's Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/486">Wind Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1518">Chief's Bandana</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>3 ×
+          <a href="/items/927">Sun Cluster</a></li>
+        <li>1 ×
+          <a href="/items/1055">Gigaga Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1519">Chief's Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/1247">Horror String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1520">Chief's Safety Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/1247">Horror String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1521">Whale Hood</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/488">Dark Scales</a></li>
+        <li>1 ×
+          <a href="/items/1091">Divine Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1522">Famous Fisher's Gloves</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/253">Icy Scales</a></li>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1523">Famous Fisher's Sandals</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/252">Subterranean Scales</a></li>
+        <li>1 ×
+          <a href="/items/1025">Gigaga String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1524">Creativity Cap</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1243">Sorcery Orb</a></li>
+        <li>1 ×
+          <a href="/items/290">Green Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1525">Doctor's Shoes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/888">Curious Object</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1526">Doctor's Cape</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1146">Unknown Life Form</a></li>
+        <li>1 ×
+          <a href="/items/290">Green Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1527">Silk Pincushion</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+        <li>1 ×
+          <a href="/items/256">Forest Lordfish Moss</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1528">Fashionista Shoes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+        <li>1 ×
+          <a href="/items/1316">Dream Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1529">Five Star Hat</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1103">White Gel</a></li>
+        <li>5 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1530">Five Star Shoes</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/457">Giant Tail</a></li>
+        <li>5 ×
+          <a href="/items/460">Star Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1531">Crusader's Cape</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/1049">Rainbow Thread</a></li>
+        <li>2 ×
+          <a href="/items/1316">Dream Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1532">Buccaneer's Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+        <li>1 ×
+          <a href="/items/1247">Horror String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1533">Buccaneer's Hat</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>1 ×
+          <a href="/items/706">Red Gel</a></li>
+        <li>1 ×
+          <a href="/items/1245">Wicked Bird Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1534">Sniper's Hat</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1084">Lightning Feather</a></li>
+        <li>1 ×
+          <a href="/items/468">Greenbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1535">Sniper's Gloves</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1536">Sniper's Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/489">Wonderful String</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1537">Grand Magician's Hood</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/1107">Element Zero</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1538">Grand Magician's Shoes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/1121">Rainbow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1539">Monarch Crown</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1405">Crimson Scales</a></li>
+        <li>2 ×
+          <a href="/items/1445">Happiness Ribbon</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1540">Monarch Gloves</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1541">Monarch Loafers</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+        <li>1 ×
+          <a href="/items/1316">Dream Shard</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="TailorDecor">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/102">Simple Curtains</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/106">Simple Mat</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/104">Simple Carpet</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>6 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/103">Castele Curtains</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/165">Straw Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/107">Woven Castele Mat</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/285">Castele Bloom</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/105">Woven Castele Rug</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>2 ×
+          <a href="/items/468">Greenbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1542">Veggie Plot Rug</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+        <li>3 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>3 ×
+          <a href="/items/137">Potato</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1543">Rush Rug</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>3 ×
+          <a href="/items/165">Straw Thread</a></li>
+        <li>2 ×
+          <a href="/items/242">Pine Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1544">Wooden Log Rug</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/300">Palm Beam</a></li>
+        <li>3 ×
+          <a href="/items/245">Leather String</a></li>
+        <li>2 ×
+          <a href="/items/302">Palm Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/544">Forest Curtains</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>2 ×
+          <a href="/items/30">Healweed</a></li>
+        <li>1 ×
+          <a href="/items/783">Earth Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/546">Leaf Mat</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>2 ×
+          <a href="/items/468">Greenbell</a></li>
+        <li>1 ×
+          <a href="/items/783">Earth Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/622">Lace Curtains</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>2 ×
+          <a href="/items/418">Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/626">Port Town Mat</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/469">Bluebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/624">Port Town Rug</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/427">Marine Silk</a></li>
+        <li>3 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/469">Bluebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/623">Pirate Ship Window</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/301">Mangrove Beam</a></li>
+        <li>2 ×
+          <a href="/items/777">Desert Beam</a></li>
+        <li>2 ×
+          <a href="/items/337">Scrap of Cloth</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/627">Pirate Mat</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/337">Scrap of Cloth</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/625">Ship Deck Rug</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/301">Mangrove Beam</a></li>
+        <li>2 ×
+          <a href="/items/777">Desert Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1545">Pirate Flag</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/488">Dark Scales</a></li>
+        <li>1 ×
+          <a href="/items/1252">Swordfish Fin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/733">Starry Night Curtains</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/737">Starry Night Mat</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>2 ×
+          <a href="/items/467">Yellowbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/735">Starry Night Rug</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>2 ×
+          <a href="/items/467">Yellowbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/545">Clover Rug</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+        <li>1 ×
+          <a href="/items/783">Earth Mana</a></li>
+        <li>1 ×
+          <a href="/items/782">Water Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1547">Netherworldly Curtains</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/738">Mat of Darkness</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/784">Black Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/736">Underworld Rug</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>3 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>3 ×
+          <a href="/items/470">Blackbell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1012">Royal Curtains</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>2 ×
+          <a href="/items/420">Pink Silk Thread</a></li>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1006">Royal Mat</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1005">Royal Rug</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+        <li>3 ×
+          <a href="/items/565">Flare Wool</a></li>
+        <li>3 ×
+          <a href="/items/472">Whitebell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/59">Teddy Bear</a></td>
+  <td>Fledgling</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+        <li>3 ×
+          <a href="/items/166">Sheep Fleece</a></li>
+        <li>2 ×
+          <a href="/items/165">Straw Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/209">Cuddly Sea Turtle</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+        <li>3 ×
+          <a href="/items/417">Sunny Puff</a></li>
+        <li>2 ×
+          <a href="/items/419">Marine Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/563">Toy Camel</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+        <li>3 ×
+          <a href="/items/422">Golden Sheep Fleece</a></li>
+        <li>2 ×
+          <a href="/items/564">Flax Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1098">Big Bunny Plushie</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/895">Pink Silk</a></li>
+        <li>3 ×
+          <a href="/items/704">Angelic Puff</a></li>
+        <li>2 ×
+          <a href="/items/420">Pink Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1548">Cloud Curtains</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>3 ×
+          <a href="/items/1048">Divine Puff</a></li>
+        <li>3 ×
+          <a href="/items/1182">Marshmallow Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1035">Fluffkin-Shaped Rug</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>3 ×
+          <a href="/items/1025">Gigaga String</a></li>
+        <li>3 ×
+          <a href="/items/1182">Marshmallow Nuts</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1549">Fish-for-Life Flag</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>2 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>2 ×
+          <a href="/items/1197">Ancient Seashell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1550">Plushy Cottage</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1477">Flower Buttons</a></li>
+        <li>1 ×
+          <a href="/items/1474">Pastel Cotton</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1551">Plushling Plushie</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1419">Magic Power Orb</a></li>
+        <li>2 ×
+          <a href="/items/1479">Cloud Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1552">Pumpkin Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+</div>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

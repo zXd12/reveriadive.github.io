@@ -1,0 +1,202 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/49">Bronze Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer made of bronze. It's okay for most forging.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/50">Iron Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Solid hammer made of iron. Great for those aspiring Blacksmiths.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/201">Silver Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Sleek hammer made of silver. For intermediate users and up.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/276">Fledgling's Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>A basic hammer for practising. Puts the "ease" in "easy"!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/558">Gold Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Glittering hammer made of gold. Often more status symbol than tool.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/785">Rockcrusher Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer with spikes on both ends. Sure to get its point across.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/870">Spark Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with lightning. One electrifying experience!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/944">Super Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer finely tuned for balance. It's almost like it adjusts to the user's hand.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/945">Flame Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with fire. Lets you strike while the iron's hot!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1029">Gigaga Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Said to have forged many a famed weapon. Infused with Fluffkin power. Quite the rarity.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1156">Star Smasher</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Toughest hammer around. Its durability is out of this world!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1341">Clockwork Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer that can smash through time itself. Said to be THE cure for insomnia.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1346">Spirit Hammer</a></td>
+        <td><a href="/items/category/Tool">Tool</a></td>
+        <td>
+            <a href="/items/category/Hammer">Hammer</a>
+        </td>
+        <td>Hammer infused with spiritual energy. Said to strengthen the user's swings.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>

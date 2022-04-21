@@ -1,0 +1,3790 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="3BU4pM333H9ITY6GBLgJacBNkJRVUup160eAw6IOwLs=" name="csrf-token">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56715774-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/items/category/Armour">Armour</a></li><li><a href="/items/category/Consumable">Consumables</a></li><li><a href="/items/category/Decor">Decor</a></li><li><a href="/items/category/Material">Materials</a></li><li><a href="/items/category/Tool">Tools</a></li><li><a href="/items/category/Weapon">Weapons</a></li></ul></li><li class="dropdown">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<h2>Blacksmith Recipes</h2>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#BlacksmithMaterial" role="tab" data-toggle="tab">
+        Materials
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#BlacksmithWeapon" role="tab" data-toggle="tab">
+        Weapons
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#BlacksmithTool" role="tab" data-toggle="tab">
+        Tools
+      </a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#BlacksmithArmour" role="tab" data-toggle="tab">
+        Armours
+      </a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="BlacksmithMaterial">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/270">Bronze Ingot</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/266">Castele Copper</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/271">Iron Ingot</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/267">Plains Iron</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/669">Silver Ingot</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/404">Port Puerto Silver</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/778">Gold Ingot</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/405">Al Maajik Gold</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/940">Platinum Ingot</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/513">Platinum Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/941">Magma Ingot</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/406">Magma Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/942">Marine Ingot</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/679">Marine Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/943">Magic Ingot</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/839">Magic Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1234">Celestial Ingot</a></td>
+  <td>Hero</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/864">Celestial Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1062">Ancient Ingot</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1060">Chalk Ore</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1063">Demonic Ingot</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1061">Dark Ore</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="BlacksmithWeapon">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/61">Bronze Dagger</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/64">Bronze Sword</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/67">Bronze Claymore</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/243">Oak Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/62">Iron Dagger</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/65">Iron Sword</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/68">Iron Claymore</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/244">Pine Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/306">Silver Dagger</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/307">Silver Sword</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/309">Silver Claymore</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/300">Palm Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/750">Gold Dagger</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/751">Gold Sword</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/753">Gold Claymore</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/776">Sugar Beam</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1317">Rogue's Dagger</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1085">Rainbow Feather</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1001">Captain's Sword</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1221">Earth Shard</a></li>
+        <li>1 ×
+          <a href="/items/651">Emerald</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/308">Azure Rose</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/459">Moon Cluster</a></li>
+        <li>1 ×
+          <a href="/items/407">Aquamarine</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/752">Maajik Blade</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+        <li>1 ×
+          <a href="/items/650">Amethyst</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/788">Bone Sword</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/487">Fossil Shard</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/954">Flamberge</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1082">Fire Shard</a></li>
+        <li>1 ×
+          <a href="/items/408">Ruby</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/754">Arcana Blade</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1083">Water Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/658">Crystal Sword</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/486">Wind Shard</a></li>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/522">Key Cutter</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/927">Sun Cluster</a></li>
+        <li>1 ×
+          <a href="/items/493">Sack of Treasure</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/872">Adventurer's Sword</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1221">Earth Shard</a></li>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1002">Paladin's Sword</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1318">Dragon Shard</a></li>
+        <li>1 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/789">Demonic Void</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/456">Giant Fang</a></li>
+        <li>1 ×
+          <a href="/items/1081">Evil Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1320">Crescent Blade</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>2 ×
+          <a href="/items/459">Moon Cluster</a></li>
+        <li>2 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1321">Joyeuse</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1322">Celestial Leaf</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1066">Ancient Dagger</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1188">Golden Droppings</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1064">Relic Sword</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1318">Dragon Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1065">Champion's Blade</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1081">Evil Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1323">Dungeon Truncheon</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>3 ×
+          <a href="/items/1190">Rare Metal</a></li>
+        <li>1 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1324">Demonic Dagger</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1142">Vile Claws</a></li>
+        <li>1 ×
+          <a href="/items/1158">Evil Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1325">Blossom Blade</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1113">Queen Gel</a></li>
+        <li>5 ×
+          <a href="/items/1173">Cherrybell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1153">Rune Sword</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1239">Spell Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1326">Crabtastrophe</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>8 ×
+          <a href="/items/1117">Crab Shell</a></li>
+        <li>8 ×
+          <a href="/items/1116">Crab Claw</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1327">Berserker's Rage</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1161">Berserk Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1168">Mad Beast's Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1328">Divine Dagger</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1126">Protection Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1111">Lifeforce Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1329">Divine Blade</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1191">Divine Stone</a></li>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1330">Lunares Blade</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1331">Ancient Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1151">Ancient Orb</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1332">Gallant Blade</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1333">Cherry Blossom Orb</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1334">Giga Buster</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1335">Bone Dragon Horn</a></li>
+        <li>1 ×
+          <a href="/items/1151">Ancient Orb</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1336">Sword of Heroes</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1315">Bismuth Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1337">Gold Shard</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="BlacksmithTool">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/49">Bronze Hammer</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/243">Oak Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/43">Bronze Pickaxe</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>2 ×
+          <a href="/items/243">Oak Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/53">Bronze Needle</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/165">Straw Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/55">Bronze Frying Pan</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/50">Iron Hammer</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/244">Pine Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/197">Iron Pickaxe</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>2 ×
+          <a href="/items/244">Pine Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/54">Iron Needle</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/165">Straw Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/56">Iron Frying Pan</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/201">Silver Hammer</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/300">Palm Beam</a></li>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/198">Silver Pickaxe</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>2 ×
+          <a href="/items/300">Palm Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/203">Silver Needle</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/418">Silk Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/193">Silver Frying Pan</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/558">Gold Hammer</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/776">Sugar Beam</a></li>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/555">Gold Pickaxe</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>2 ×
+          <a href="/items/776">Sugar Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/560">Gold Needle</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/564">Flax Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/561">Gold Frying Pan</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/944">Super Hammer</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/960">Fir Beam</a></li>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/896">Fashionista's Needle</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>2 ×
+          <a href="/items/419">Marine Thread</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1338">Hornet Needle</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>2 ×
+          <a href="/items/564">Flax Thread</a></li>
+        <li>1 ×
+          <a href="/items/455">Yellow Cactus</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/656">New Wave Needle</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/446">Vivid Coral</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/786">Gothic Needle</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/784">Black Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/977">Clam Frying Pan</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1198">Rainbow Shell</a></li>
+        <li>1 ×
+          <a href="/items/409">Sapphire</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/841">Enchanted Frying Pan</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+        <li>2 ×
+          <a href="/items/436">Magic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/945">Flame Hammer</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>2 ×
+          <a href="/items/781">Fire Mana</a></li>
+        <li>1 ×
+          <a href="/items/1082">Fire Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/785">Rockcrusher Hammer</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1340">Sturdy Fang</a></li>
+        <li>1 ×
+          <a href="/items/444">Timeworn Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/916">Lava Pickaxe</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>2 ×
+          <a href="/items/777">Desert Beam</a></li>
+        <li>1 ×
+          <a href="/items/1082">Fire Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/654">Deep Sea Pickaxe</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>2 ×
+          <a href="/items/301">Mangrove Beam</a></li>
+        <li>1 ×
+          <a href="/items/1083">Water Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/867">Ancient Pickaxe</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>2 ×
+          <a href="/items/963">Earth Beam</a></li>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/917">Mole Pickaxe</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/962">Starry Beam</a></li>
+        <li>1 ×
+          <a href="/items/1221">Earth Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/897">Industry Needle</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/865">Starry Thread</a></li>
+        <li>1 ×
+          <a href="/items/445">Ancient Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/978">Foreign Frying Pan</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/445">Ancient Shell</a></li>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/870">Spark Hammer</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1084">Lightning Feather</a></li>
+        <li>1 ×
+          <a href="/items/486">Wind Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1032">Ancient Frying Pan</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1197">Ancient Seashell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1026">Gigaga Pickaxe</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1176">Cruel Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1030">Vintage Needle</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1090">Divine Buttons</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1029">Gigaga Hammer</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+        <li>1 ×
+          <a href="/items/1164">Ancient Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1341">Clockwork Hammer</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/445">Ancient Shell</a></li>
+        <li>1 ×
+          <a href="/items/487">Fossil Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1156">Star Smasher</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1122">Soul Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1105">Star Diamond</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1342">Phoenix Frying Pan</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1343">Golden Fin</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1138">Pan de Cuisine</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1107">Element Zero</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1344">Demonic Pickaxe</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1195">Dark Stone</a></li>
+        <li>1 ×
+          <a href="/items/1158">Evil Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1139">Spirit Pickaxe</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1191">Divine Stone</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1345">Vogue Needle</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1142">Vile Claws</a></li>
+        <li>1 ×
+          <a href="/items/1149">Cursed Tail</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1135">Athena's Needle</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1126">Protection Stone +</a></li>
+        <li>3 ×
+          <a href="/items/1115">Divine Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1346">Spirit Hammer</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1315">Bismuth Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/962">Starry Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1347">Solar Pickaxe</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1315">Bismuth Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1191">Divine Stone</a></li>
+        <li>1 ×
+          <a href="/items/927">Sun Cluster</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1348">Haute Needle</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1315">Bismuth Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1103">White Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1349">Frymaster 2000</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1315">Bismuth Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+    <div role="tabpanel" class="tab-pane" id="BlacksmithArmour">
+      <p>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ranking</th>
+          <th>High level</th>
+          <th>Ingredients</th>
+        </tr>
+        </thead>
+          <tbody><tr>
+  <td><a href="/items/76">Bronze Shield</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/243">Oak Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/82">Leather Cap</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/288">Animal Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/78">Leather Armour</a></td>
+  <td>Fledgling</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/288">Animal Claws</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/80">Leather Leggings</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>2 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/84">Leather Gauntlets</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/86">Leather Boots</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/167">Dandelion Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/77">Iron Shield</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/244">Pine Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/83">Iron Helm</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/79">Iron Armour</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/270">Bronze Ingot</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/81">Iron Leg Guards</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>2 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/85">Iron Gauntlets</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/87">Iron Boots</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/169">Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/848">Snakeskin Helm</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/304">Snake Scales</a></li>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/849">Snakeskin Mail</a></td>
+  <td>Apprentice</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>5 ×
+          <a href="/items/304">Snake Scales</a></li>
+        <li>1 ×
+          <a href="/items/271">Iron Ingot</a></li>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/850">Snakeskin Leggings</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/304">Snake Scales</a></li>
+        <li>2 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/851">Snakeskin Gloves</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/304">Snake Scales</a></li>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/852">Snakeskin Boots</a></td>
+  <td>Apprentice</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/304">Snake Scales</a></li>
+        <li>1 ×
+          <a href="/items/168">Woven Straw Fabric</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/314">Silver Shield</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/300">Palm Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/771">Savage Cap</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/439">Hard Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/772">Savage Armour</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>2 ×
+          <a href="/items/246">Animal Hide</a></li>
+        <li>1 ×
+          <a href="/items/426">Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/773">Savage Leggings</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>2 ×
+          <a href="/items/426">Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/774">Savage Gauntlets</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1350">Savage Boots</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/246">Animal Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/320">Mermaid Helm</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/316">Mermaid Mail</a></td>
+  <td>Adept</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>5 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/318">Mermaid Leggings</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>2 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/322">Mermaid Gloves</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/324">Mermaid Boots</a></td>
+  <td>Adept</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/251">Fish Scales</a></li>
+        <li>1 ×
+          <a href="/items/424">Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/321">Shellmet</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>2 ×
+          <a href="/items/331">Little Shell</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/317">Shell Armour</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>4 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/427">Marine Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/319">Shell Bottoms</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>2 ×
+          <a href="/items/427">Marine Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/323">Shell Gauntlets</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>1 ×
+          <a href="/items/331">Little Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/325">Shell Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/332">Durable Shell</a></li>
+        <li>1 ×
+          <a href="/items/331">Little Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1351">Gold Helm</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/761">Gold Armour</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/763">Gold Leg Guards</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>2 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/767">Gold Gauntlets</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/769">Gold Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/425">Sunny Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/759">Gold Shield</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/776">Sugar Beam</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1003">Captain's Shield</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/960">Fir Beam</a></li>
+        <li>1 ×
+          <a href="/items/669">Silver Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/315">Rose Shield</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/301">Mangrove Beam</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/955">Gladiator's Helm</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/430">Coal-Black Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/956">Gladiator's Armour</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/443">Strong Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/957">Gladiator's Leg Guards</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/958">Gladiator's Wristbands</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/959">Gladiator's Metal Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/530">Beastly Cap</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/440">Sharp Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/531">Beastly Armour</a></td>
+  <td>Expert</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/303">Beast Hide</a></li>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/532">Beastly Leggings</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/533">Beastly Gauntlets</a></td>
+  <td>Fledgling</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/534">Beastly Boots</a></td>
+  <td>Expert</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>1 ×
+          <a href="/items/566">Black Cashmere</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/760">Magicbane Shield</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/962">Starry Beam</a></li>
+        <li>1 ×
+          <a href="/items/778">Gold Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1004">Knightly Shield</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1318">Dragon Shard</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/946">Inferno Helm</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/947">Inferno Armour</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/408">Ruby</a></li>
+        <li>1 ×
+          <a href="/items/895">Pink Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/948">Inferno Leggings</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>2 ×
+          <a href="/items/895">Pink Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/949">Inferno Gauntlets</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/895">Pink Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/950">Inferno Boots</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/941">Magma Ingot</a></li>
+        <li>1 ×
+          <a href="/items/895">Pink Silk</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/766">Magic Helm</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/762">Magic Armour</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/652">Black Onyx</a></li>
+        <li>1 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/764">Magic Leg Guards</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/768">Magic Gauntlets</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/770">Magic Boots</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/428">Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/901">Tidal Helm</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>1 ×
+          <a href="/items/940">Platinum Ingot</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/902">Tidal Armour</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>1 ×
+          <a href="/items/409">Sapphire</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/903">Tidal Leggings</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>2 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/904">Tidal Gauntlets</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/905">Tidal Boots</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/942">Marine Ingot</a></li>
+        <li>1 ×
+          <a href="/items/705">Angelic Cotton</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/880">Dragon Helm</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+        <li>1 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/438">Spiritual Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/881">Dragon Mail</a></td>
+  <td>Master</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+        <li>1 ×
+          <a href="/items/1318">Dragon Shard</a></li>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/882">Dragon Leggings</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+        <li>2 ×
+          <a href="/items/565">Flare Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/883">Dragon Gloves</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/884">Dragon Boots</a></td>
+  <td>Master</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+        <li>1 ×
+          <a href="/items/565">Flare Wool</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/928">Holy Helm</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/943">Magic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/929">Holy Armour</a></td>
+  <td>Hero</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/653">Diamond</a></li>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/930">Holy Leggings</a></td>
+  <td>Hero</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/931">Holy Gauntlets</a></td>
+  <td>Hero</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/932">Holy Boots</a></td>
+  <td>Hero</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1185">Fafnir's Helm</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>1 ×
+          <a href="/items/1190">Rare Metal</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1355">Fafnir's Mail</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>1 ×
+          <a href="/items/1190">Rare Metal</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1357">Fafnir's Gloves</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>1 ×
+          <a href="/items/1106">Soul Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1358">Fafnir's Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>1 ×
+          <a href="/items/1106">Soul Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1359">Fafnir's Leggings</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1175">Ancient Dragon's Scale</a></li>
+        <li>1 ×
+          <a href="/items/1354">Divine Beast Skin</a></li>
+        <li>1 ×
+          <a href="/items/1125">Protection Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1360">Godly Helm</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1079">Light Mana</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1361">Godly Armour</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1191">Divine Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1362">Godly Leggings</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/451">Yellow Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1363">Godly Gauntlets</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1199">Ancient Coral</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1364">Godly Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/272">Yellow Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1074">Rune Helm</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1120">Fire Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1075">Rune Armour</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1102">Rainbow Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1076">Rune Leg Guards</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1119">Water Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1180">Ancient Flower</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1077">Rune Gauntlets</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1118">Wind Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1180">Ancient Flower</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1078">Rune Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1366">Earth Mana +</a></li>
+        <li>1 ×
+          <a href="/items/1160">Ancient Tail</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1193">Shadow Cap</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1200">Black Crab Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1367">Shadow Armour</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1195">Dark Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1368">Shadow Leg Guards</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1369">Shadow Gauntlets</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1080">Shadow Mana</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1370">Shadow Boots</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/437">Demonic Powder</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1371">Officer's Helm</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1164">Ancient Fang</a></li>
+        <li>1 ×
+          <a href="/items/1093">Ancient Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1372">Officer's Armour</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1117">Crab Shell</a></li>
+        <li>1 ×
+          <a href="/items/1147">Giant Beast's Horn</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1373">Officer's Hand Guards</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/460">Star Cluster</a></li>
+        <li>1 ×
+          <a href="/items/1252">Swordfish Fin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1374">Officer's Tabi</a></td>
+  <td>God-in-Training</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+        <li>1 ×
+          <a href="/items/1160">Ancient Tail</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1375">Lord's Helm</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1176">Cruel Fang</a></li>
+        <li>1 ×
+          <a href="/items/1159">Berserk Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1376">Lord's Armour</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1116">Crab Claw</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1148">Lord's Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1111">Lifeforce Cluster</a></li>
+        <li>1 ×
+          <a href="/items/255">Volcanic Fin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1377">Lord's Tabi</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+        <li>1 ×
+          <a href="/items/457">Giant Tail</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1378">Shogun Helm</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1168">Mad Beast's Fang</a></li>
+        <li>1 ×
+          <a href="/items/1150">Spell Stone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1379">Shogun Armour</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1200">Black Crab Shell</a></li>
+        <li>1 ×
+          <a href="/items/1158">Evil Claws</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1380">Shogun Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1157">Mysterious Artefact</a></li>
+        <li>1 ×
+          <a href="/items/1207">Other-Worldly Fin</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1381">Shogun Tabi</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1178">Other-Worldly Powder</a></li>
+        <li>1 ×
+          <a href="/items/1149">Cursed Tail</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1165">Ancient Shield</a></td>
+  <td>God-in-Training</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1109">Ancient Emerald</a></li>
+        <li>1 ×
+          <a href="/items/1331">Ancient Stone +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1110">Aegis Shield</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1126">Protection Stone +</a></li>
+        <li>1 ×
+          <a href="/items/1161">Berserk Stone +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1382">Ares Circlet</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1322">Celestial Leaf</a></li>
+        <li>1 ×
+          <a href="/items/1383">Other-Worldly Leaf</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1384">Ares Armour</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1385">Ares Guard</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1129">Mythical Beast's Scales</a></li>
+        <li>1 ×
+          <a href="/items/254">Celestial Scales</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1386">Ares Hand Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/1129">Mythical Beast's Scales</a></li>
+        <li>2 ×
+          <a href="/items/1319">Dragon Scales</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1387">Ares Sandals</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1136">Crystal Scale</a></li>
+        <li>1 ×
+          <a href="/items/410">Dragon Leg Bone</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1388">Ares Cape</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1054">Divine Cashmere</a></li>
+        <li>1 ×
+          <a href="/items/1129">Mythical Beast's Scales</a></li>
+        <li>2 ×
+          <a href="/items/1113">Queen Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1389">Crusader's Circlet</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1105">Star Diamond</a></li>
+        <li>1 ×
+          <a href="/items/453">King Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1390">Crusader's Tiara</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1105">Star Diamond</a></li>
+        <li>1 ×
+          <a href="/items/1113">Queen Gel</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1391">Crusader's Leg Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1108">Mystical Sapphire</a></li>
+        <li>2 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1392">Crusader's Gauntlets</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/1124">Divine Bird's Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1393">Crusader's Boots</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1053">Rainbow Linen</a></li>
+        <li>1 ×
+          <a href="/items/431">Snow-White Feather</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1394">Crusader's Plating</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1104">Prism Jewel</a></li>
+        <li>2 ×
+          <a href="/items/1126">Protection Stone +</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1395">Avalanche Helmet</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1081">Evil Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1396">Grand Miner's Cuirass</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>2 ×
+          <a href="/items/1234">Celestial Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1081">Evil Shard</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1397">Steel Helm</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1246">Fortified Shell</a></li>
+        <li>1 ×
+          <a href="/items/1176">Cruel Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1398">Berserker's Armour</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>3 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1246">Fortified Shell</a></li>
+        <li>1 ×
+          <a href="/items/1168">Mad Beast's Fang</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1399">Tough Leg Guards</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>2 ×
+          <a href="/items/566">Black Cashmere</a></li>
+        <li>2 ×
+          <a href="/items/435">Monster Hide</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1400">Metal Gauntlets</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/1200">Black Crab Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1401">Steel-Toe Shoes</a></td>
+  <td>God</td>
+  <td>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1063">Demonic Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1353">Stardust Linen</a></li>
+        <li>1 ×
+          <a href="/items/1200">Black Crab Shell</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1402">Gallant Shield</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>2 ×
+          <a href="/items/1062">Ancient Ingot</a></li>
+        <li>1 ×
+          <a href="/items/1055">Gigaga Beam</a></li>
+        <li>1 ×
+          <a href="/items/1108">Mystical Sapphire</a></li>
+    </ul>
+  </td>
+</tr>
+          <tr>
+  <td><a href="/items/1403">Cursed Dragon Helm</a></td>
+  <td>God</td>
+  <td>
+      <span class="glyphicon glyphicon-star-empty"></span>
+  </td>
+  <td>
+    <ul>
+        <li>1 ×
+          <a href="/items/1404">Golem Fragment</a></li>
+        <li>1 ×
+          <a href="/items/1405">Crimson Scales</a></li>
+        <li>1 ×
+          <a href="/items/1335">Bone Dragon Horn</a></li>
+    </ul>
+  </td>
+</tr>
+      </tbody></table>
+    </p></div>
+</div>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>

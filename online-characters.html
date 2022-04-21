@@ -1,0 +1,1142 @@
+<html><head></head><body style="background:#212529;">
+    <title>ReveriaDive</title>
+    <meta charset="utf-8">
+	<script src="/assets/applicationbs5.js"></script>
+    <link href="/assets/applicationbs5.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+    <nav class="navbar navbar-dark bg-dark" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/online.html">
+                <img src="/assets/index.png" alt="Reveria Dive" style="width:30px;">
+            </a>
+            <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
+                <a class="nav-link dropdown-toggle" href="#" id="GroupDrop1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="GroupDrop1">
+                    <li><a class="dropdown-item" href="/online-characters.html">Characters</a></li>
+                    <li><a class="dropdown-item" href="#">Missions</a></li>
+                    <li><a class="dropdown-item" href="#">Quests</a></li>
+                    <li><a class="dropdown-item" href="#">Rankings</a></li>
+                    <li><a class="dropdown-item" href="#">Skills</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
+                <a class="nav-link dropdown-toggle" href="#" id="GroupDrop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Items
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="GroupDrop2">
+                    <li><a class="dropdown-item" href="#">Armour</a></li>
+                    <li><a class="dropdown-item" href="#">Consumables</a></li>
+                    <li><a class="dropdown-item" href="#">Decor</a></li>
+                    <li><a class="dropdown-item" href="#">Materials</a></li>
+                    <li><a class="dropdown-item" href="#">Tools</a></li>
+                    <li><a class="dropdown-item" href="/online-weapons.html">Weapons</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
+                <a class="nav-link" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+                    Locations
+                </a>
+            </li>
+            <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
+                <a class="nav-link" href="/online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
+                    Monsters
+                </a>
+            </li>
+
+            <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
+                <a class="nav-link dropdown-toggle" href="#" id="GroupDrop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shops
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="GroupDrop2">
+                    <li><a class="dropdown-item" href="#">All Shops</a></li>
+                    <li><a class="dropdown-item" href="#">Crusade Points</a></li>
+                    <li><a class="dropdown-item" href="#">Reward Shop</a></li>
+                    <li><a class="dropdown-item" href="#">Goddess Exchange</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="navbar-toggler d-sm-none d-md-none d-lg-none" type="button" aria-expanded="true" aria-controls="toggleCollapse" data-bs-toggle="collapse" data-bs-target="#toggleCollapse" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </li>
+        </div>
+    </nav>
+    <div class="collapse show" id="toggleCollapse" style="">
+        <div class="accordion d-sm-none d-md-none d-lg-none" id="accordions">
+            <div class="accordion-item">
+                <h1 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne" style="border: none;">
+                        Menu
+                    </button>
+                </h1>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labeledby="flush-headingOne" data-bs-parent="#accordions" style="">
+                    <div class="btn-group d-grid" role="group" aria-label="Items">
+
+                        <a class="d-grid btn btn-secondary" role="button" href="/online-characters.html">
+                            Characters
+                        </a>
+                        <button type="button" disabled="" class="btn btn-secondary">Missions</button>
+                        <button type="button" class="btn btn-secondary" disabled="">Quests</button>
+                        <button type="button" class="btn btn-secondary" disabled="">Rankings</button>
+                        <button type="button" class="btn btn-secondary" disabled="">Skills</button>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h1 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="border: none;">
+                            Items
+                        </button>
+                    </h1>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labeledby="flush-headingTwo" data-bs-parent="#accordions" style="">
+                        <div class="btn-group d-grid" role="group" aria-label="Items">
+                            <button type="button" class="btn btn-secondary" disabled="">Armour</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Consumables</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Decor</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Materials</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Tools</button>
+                            <a class="d-grid btn btn-secondary" role="button" href="/online-weapons.html">Weapons</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-dark d-grid" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+                    Locations
+                </a>
+                <a class="btn btn-dark d-grid" href="/online-monsters.html" id="GroupDrop3" role="button" aria-expanded="false">
+                    Monsters
+                </a>
+                <div class="accordion-item">
+                    <h1 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="border: none;">
+                            Shops
+                        </button>
+                    </h1>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labeledby="flush-headingThree" data-bs-parent="#accordions" style="">
+                        <div class="btn-group d-grid" role="group" aria-label="Items">
+                            <button type="button" disabled="" class="btn btn-secondary">All Shops</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Crusade Points</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Reward Shop</button>
+                            <button type="button" class="btn btn-secondary" disabled="">Goddess Exchange</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark" style="flex-direction: column;">
+		
+        <div class="card-body" align="center">
+		<ul class="nav nav-tabs" id="Sorting" role="tablist">
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="AttributeTab" data-bs-toggle="tab" data-bs-target="#AttributePane" type="button" role="tab" aria-controls="AttributePane" aria-selected="false">Attribute</button>
+		</li>
+		<li class="nav-item" role="presentation">
+		<button class="nav-link active" id="LifeTab" data-bs-toggle="tab" data-bs-target="#LifePane" type="button" role="tab" aria-controls="LifePane" aria-selected="true">Life</button>
+		</li>
+		</ul>
+		
+		
+		<div class="tab-content" id="Content">
+		<div class="tab-pane fade" id="AttributePane" role="tabpanel" aria-labelledby="AttributeTab">
+        <h3 style="text-align:center; text-color: #e5e3e2; padding-top:5px;">Characters (By Attribute)</h3>
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+		<thead align="center" style="border-top-width: 0px;"><tr>
+                    <th><img src="/assets/elements/Shadow.png" alt="Reveria Dive" style="width:35px;">Shadow</th>
+                </tr>
+            </thead>
+			<tbody>
+                <tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Theia.html">Theia</a></td>
+                </tr>
+                
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Shadow-Light.png" alt="Reveria Dive" style="width:65px;">Umbral</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Zeo.html">Zeo</a></td>
+                </tr>
+            </tbody>
+                			
+		</table>
+        <img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Shadow.png" alt="Reveria Dive" style="width:35px;">Shadow</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Camilla.html">Camilla</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Daemon.html">Daemon</a></td>
+                </tr>
+                <!--<tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Zeo.html">Zeo</a></td>
+                </tr>
+            </tbody>-->
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Earth.png" alt="Reveria Dive" style="width:35px;">Earth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Crow.html">Crow</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Frey.html">Frey</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Grantz.html">Grantz</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Carpenter.png" style="width:35px;"><a href="/character/Kennedy.html">Kennedy</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Kiba.html">Kiba</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Sloane.html">Sloane</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Tsukiha.html">Tsukiha</a></td>
+                </tr>
+			</tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Fire.png" alt="Reveria Dive" style="width:35px;">Fire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Belhart.html">Belhart</a>
+                    </td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/life/Alchemist.png" style="width:35px;"><a href="/character/Demiel.html">Demiel</a>
+                    </td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Luby.html">Luby</a>
+                    </td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Lucio.html">Lucio</a>
+                    </td>
+                </tr>
+            <tr>
+                    <td>
+                        <img src="/assets/life/Angler.png" style="width:35px;"><a href="/character/Teruha.html">Teruha</a>
+                    </td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Zebongrett.html">Zebongrett</a>
+                    </td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Light.png" alt="Reveria Dive" style="width:35px;">Light</th>
+                </tr>
+            </thead>
+            <tbody>
+				<tr>
+					<td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Allielle.html">Allielle</a></td> 
+				</tr>
+                <tr>
+                    <td><img src="/assets/life/Fortune-teller.png" style="width:35px;"><a href="/character/Colin.html">Colin</a></td>
+                </tr>                
+				<tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Glenn.html">Glenn</a></td>
+                </tr>
+            <tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Laura.html">Laura</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Leilah.html">Leilah</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Water.png" alt="Reveria Dive" style="width:35px;">Water</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Aqua.html">Aqua</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Cliff.html">Cliff</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Jake.html">Jake</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Carpenter.png" style="width:35px;"><a href="/character/Kirkner.html">Kirkner</a></td>
+                </tr>
+            <tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Sylvia.html">Sylvia</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Snow.html">Snow</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Wind.png" alt="Reveria Dive" style="width:35px;">Wind</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Angler.png" style="width:35px;"><a href="/character/Amane.html">Amane</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Haku.html">Haku</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Hawke.html">Hawke</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Hayate.html">Hayate</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Olliana.html">Olliana</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Olivia.html">Olivia</a></td>
+                </tr>				
+			</tbody>
+			<thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th>No Attribute</th>
+                </tr>
+            </thead>
+			<tbody>
+                <tr>
+                    <td><img src="/assets/life/Blacksmith.png" style="width:35px;"><a href="/character/Bray.html">Bray</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Chakpo.html">Chakpo</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Josette.html">Josette</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Klaus.html">Klaus</a></td>
+                </tr>
+			</tbody>
+        </table>
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Earth.png" alt="Reveria Dive" style="width:35px;">Earth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Hilda.html">Hilda</a></td>
+                </tr>
+            <tr>
+                    <td><img src="/assets/life/Carpenter.png" style="width:35px;"><a href="/character/Kanna.html">Kanna</a></td>
+                </tr>
+			</tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Fire.png" alt="Reveria Dive" style="width:35px;">Fire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Allan.html">Allan</a></td>
+                </tr>
+            <tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Lusica.html">Lusica</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Angler.png" style="width:35px;"><a href="/character/Viola.html">Viola</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Light.png" alt="Reveria Dive" style="width:35px;">Light</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Yuelia.html">Yuelia</a></td>
+                </tr>
+            </tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Water.png" alt="Reveria Dive" style="width:35px;">Water</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Alchemist.png" style="width:35px;"><a href="/character/Arte.html">Arte</a></td>
+                </tr>
+            <tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Vidal.html">Vidal</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Rotana.html">Rotana</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Wind.png" alt="Reveria Dive" style="width:35px;">Wind</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Angler.png" style="width:35px;"><a href="/character/Bezel.html">Bezel</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Ian.html">Ian</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Lily.html">Lily</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Mayna.html">Mayna</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Orlando.html">Orlando</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Sara.html">Sara</a></td>
+                </tr>
+			</tbody>
+<thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th>No Attribute</th>
+                </tr>
+            </thead>
+<tbody>
+                
+				
+				<tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Mitchel.html">Mitchel</a></td>
+                </tr>
+				
+			</tbody>
+			</table>
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+		<table class="table table-dark table-hover">
+            
+            <tbody>
+                
+			</tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Earth.png" alt="Reveria Dive" style="width:35px;">Earth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Carpenter.png" style="width:35px;"><a href="/character/Bobo.html">Bobo</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Cheppo.html">Cheppo</a></td>
+                </tr>
+			<tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Jerry.html">Jerry</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Angler.png" style="width:35px;"><a href="/character/Mead.html">Mead</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Raim.html">Raim</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Fire.png" alt="Reveria Dive" style="width:35px;">Fire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Karl.html">Karl</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Alchemist.png" style="width:35px;"><a href="/character/Litona.html">Litona</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Mogor.html">Mogor</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Blacksmith.png" style="width:35px;"><a href="/character/Nick.html">Nick</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Blacksmith.png" style="width:35px;"><a href="/character/Payne.html">Payne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Pippin.html">Pippin</a></td>
+                </tr>
+				<tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Sizzle.html">Sizzle</a></td>
+                </tr>
+			</tbody>
+            
+            <tbody>
+                
+			</tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Water.png" alt="Reveria Dive" style="width:35px;">Water</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Wizard.png" style="width:35px;"><a href="/character/Fabbie.html">Fabbie</a></td>
+                </tr>
+			<tr>
+                    <td><img src="/assets/life/Woodcutter.png" style="width:35px;"><a href="/character/Kolding.html">Kolding</a></td>
+                </tr><tr>
+                    <td><img style="width:35px;" src="/assets/life/Alchemist.png"><a href="/character/Peco.html">Peco</a></td>
+                </tr></tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Wind.png" alt="Reveria Dive" style="width:35px;">Wind</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Hawley.html">Hawley</a></td>
+                </tr>
+			<tr>
+                    <td><img src="/assets/life/Hunter.png" style="width:35px;"><a href="/character/Ralph.html">Ralph</a></td>
+                </tr></tbody>
+		<thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th>No Attribute</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Glutton.html">Glutton</a></td>
+                </tr>
+			<tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Shea.html">Shea</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Spoolie.html">Spoolie</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Alchemist.png" style="width:35px;"><a href="/character/Supra.html">Supra</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Carpenter.png" style="width:35px;"><a href="/character/Yasli.html">Yasli</a></td>
+                </tr></tbody></table>
+    <img src="/assets/EmeraldStar.png" style="width:35px;"><img src="/assets/EmeraldStar.png" style="width:35px;"><table class="table table-dark table-hover"><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Earth.png" alt="Reveria Dive" style="width:35px;">Earth</th>
+                </tr>
+            </thead><tbody>
+                
+			<tr>
+                    <td><img src="/assets/life/Blacksmith.png" style="width:35px;"><a href="/character/Monika.html">Monika</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Miner.png" style="width:35px;"><a href="/character/Monika.html">Rocque</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/elements/Wind.png" alt="Reveria Dive" style="width:35px;">Wind</th>
+                </tr>
+            </thead><tbody>
+                
+			<tr>
+                    <td><img src="/assets/life/Blacksmith.png" style="width:35px;"><a href="/character/Ralph.html">Magmia</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Roslyn.html">Roslyn</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th>No Attribute</th>
+                </tr>
+            </thead><tbody>
+                
+			<tr>
+                    <td><img src="/assets/life/Alchemist.png" style="width:35px;"><a href="/character/Fizz.html">Fizz</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Tailor.png" style="width:35px;"><a href="/character/Taylor.html">Taylor</a></td>
+                </tr><tr>
+                    <td><img src="/assets/life/Cook.png" style="width:35px;"><a href="/character/Teakle.html">Teakle</a></td>
+                </tr></tbody></table></div><div class="tab-pane fade active show" id="LifePane" role="tabpanel" aria-labelledby="LifeTab">
+        <h3 style="text-align:center; text-color: #e5e3e2; padding-top:5px;">Characters (By Life)</h3>
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <img src="/assets/RainbowStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+		<thead align="center" style="border-top-width: 0px;"><tr>
+                    <th><img src="/assets/life/Mercenary.png" alt="Reveria Dive" style="width:35px;">Mercenary</th>
+                </tr>
+            </thead>
+			<tbody>
+                <tr>
+                    <td><img src="/assets/elements/Shadow-Light.png" style="width:65px;"><a href="/character/Zeo.html">Zeo</a></td>
+                </tr>
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Wizard.png" alt="Reveria Dive" style="width:35px;">Wizard</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td><img src="/assets/elements/Shadow.png" style="width:35px;"><a href="/character/Theia.html">Theia</a></td>
+                </tr>
+                
+            </tbody>
+                			
+		</table>
+        <img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+		<img src="/assets/PlatinumStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Alchemist.png" alt="Reveria Dive" style="width:35px;">Alchemist</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Demiel.html">Demiel</a>
+                    </td>
+                </tr>
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Angler.png" alt="Reveria Dive" style="width:35px;">Angler</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Amane.html">Amane</a></td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Teruha.html">Teruha</a>
+                    </td>
+                </tr>
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Blacksmith.png" alt="Reveria Dive" style="width:35px;">Blacksmith</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><a href="/character/Bray.html">Bray</a></td>
+                </tr>
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Carpenter.png" alt="Reveria Dive" style="width:35px;">Carpenter</th>
+                </tr>
+            </thead><tbody>
+                
+                <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Kirkner.html">Kirkner</a></td>
+                </tr>
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Cook.png" alt="Reveria Dive" style="width:35px;">Cook</th>
+                </tr>
+            </thead><tbody>
+                
+                <tr>
+                    <td><a href="/character/Chakpo.html">Chakpo</a></td>
+                </tr><tr>
+                    <td><a href="/character/Josette.html">Josette</a></td>
+                </tr>
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Fortune-teller.png" alt="Reveria Dive" style="width:35px;">Fortune Teller</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td><img src="/assets/elements/Light.png" style="width:35px;"><a href="/character/Colin.html">Colin</a></td>
+                </tr>                
+				
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Hunter.png" alt="Reveria Dive" style="width:35px;">Hunter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Aqua.html">Aqua</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Shadow.png" style="width:35px;"><a href="/character/Camilla.html">Camilla</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Crow.html">Crow</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Hawke.html">Hawke</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Light.png" style="width:35px;"><a href="/character/Leilah.html">Leilah</a></td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Luby.html">Luby</a>
+                    </td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Kennedy.html">Kennedy</a></td>
+                </tr>
+				
+				
+				
+			</tbody>
+            <thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Mercenary.png" alt="Reveria Dive" style="width:35px;">Mercenary</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Light.png" style="width:35px;"><a href="/character/Glenn.html">Glenn</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Hayate.html">Hayate</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Kiba.html">Kiba</a></td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Lucio.html">Lucio</a>
+                    </td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Snow.html">Snow</a></td>
+                </tr>
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Miner.png" alt="Reveria Dive" style="width:35px;">Miner</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Grantz.html">Grantz</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Sylvia.html">Sylvia</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Paladin.png" alt="Reveria Dive" style="width:35px;">Paladin</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+				<tr>
+					<td><img src="/assets/life/Paladin.png" style="width:35px;"><a href="/character/Allielle.html">Allielle</a></td> 
+				</tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Frey.html">Frey</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Jake.html">Jake</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Light.png" style="width:35px;"><a href="/character/Laura.html">Laura</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Olivia.html">Olivia</a></td>
+                </tr><tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Zebongrett.html">Zebongrett</a>
+                    </td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Tailor.png" alt="Reveria Dive" style="width:35px;">Tailor</th>
+                </tr>
+            </thead><tbody>
+                
+                
+				
+				<tr>
+                    <td><a href="/character/Klaus.html">Klaus</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Olliana.html">Olliana</a></td>
+                </tr>				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Wizard.png" alt="Reveria Dive" style="width:35px;">Wizard</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Cliff.html">Cliff</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Shadow.png" style="width:35px;"><a href="/character/Daemon.html">Daemon</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Haku.html">Haku</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Sloane.html">Sloane</a></td>
+                </tr><!--<tr>
+                    <td><img src="/assets/life/Mercenary.png" style="width:35px;"><a href="/character/Zeo.html">Zeo</a></td>
+                </tr>
+            </tbody>-->
+            </tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Woodcutter.png" alt="Reveria Dive" style="width:35px;">Woodcutter</th>
+                </tr>
+            </thead><tbody><tr>
+                    <td>
+                        <img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Belhart.html">Belhart</a>
+                    </td>
+                </tr>
+<tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Tsukiha.html">Tsukiha</a></td>
+                </tr></tbody>
+            
+            
+            
+            
+            
+            
+            
+			
+			<tbody>
+                
+                
+                
+			</tbody>
+        </table>
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <img src="/assets/GoldStar.png" style="width:35px;">
+        <table class="table table-dark table-hover">
+<thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Alchemist.png" alt="Reveria Dive" style="width:35px;">Alchemist</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Arte.html">Arte</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Angler.png" alt="Reveria Dive" style="width:35px;">Angler</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Viola.html">Viola</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Carpenter.png" alt="Reveria Dive" style="width:35px;">Carpenter</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Kanna.html">Kanna</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Cook.png" alt="Reveria Dive" style="width:35px;">Cook</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Allan.html">Allan</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Hunter.png" alt="Reveria Dive" style="width:35px;">Hunter</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Lusica.html">Lusica</a></td>
+                </tr>
+
+				
+				
+			<tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Ian.html">Ian</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Mercenary.png" alt="Reveria Dive" style="width:35px;">Mercenary</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Sara.html">Sara</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Miner.png" alt="Reveria Dive" style="width:35px;">Miner</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Rotana.html">Rotana</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Paladin.png" alt="Reveria Dive" style="width:35px;">Paladin</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Hilda.html">Hilda</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Tailor.png" alt="Reveria Dive" style="width:35px;">Tailor</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><a href="/character/Mitchel.html">Mitchel</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Water.png" alt="Reveria Dive" style="width:35px;"><a href="/character/Vidal.html">Vidal</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Wizard.png" alt="Reveria Dive" style="width:35px;">Wizard</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Lily.html">Lily</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Light.png" style="width:35px;"><a href="/character/Yuelia.html">Yuelia</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Woodcutter.png" alt="Reveria Dive" style="width:35px;">Woodcutter</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Mayna.html">Mayna</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Orlando.html">Orlando</a></td>
+                </tr></tbody></table>
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+        <img src="/assets/EmeraldStar.png" style="width:35px;">
+<table class="table table-dark table-hover">
+<thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Alchemist.png" alt="Reveria Dive" style="width:35px;">Alchemist</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Arte.html">Arte</a></td>
+                </tr>
+
+				
+				
+			<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Litona.html">Litona</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Peco.html">Peco</a></td>
+                </tr><tr>
+                    <td><a href="/character/Supra.html">Supra</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Angler.png" alt="Reveria Dive" style="width:35px;">Angler</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Mead.html">Mead</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Blacksmith.png" alt="Reveria Dive" style="width:35px;">Blacksmith</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Nick.html">Nick</a></td>
+                </tr>
+
+				
+				
+			<tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Payne.html">Payne</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Carpenter.png" alt="Reveria Dive" style="width:35px;">Carpenter</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Bobo.html">Bobo</a></td>
+                </tr>
+
+				
+				
+			<tr>
+                    <td><a href="/character/Yasli.html">Yasli</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Cook.png" alt="Reveria Dive" style="width:35px;">Cook</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><a href="/character/Glutten.html">Glutton</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Sizzle.html">Sizzle</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Hunter.png" alt="Reveria Dive" style="width:35px;">Hunter</th>
+                </tr>
+            </thead><tbody>
+                
+				<tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Jerry.html">Jerry</a></td>
+                </tr>
+
+				
+				
+			</tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Mercenary.png" alt="Reveria Dive" style="width:35px;">Mercenary</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Raim.html">Raim</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Miner.png" alt="Reveria Dive" style="width:35px;">Miner</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Mogor.html">Mogor</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Paladin.png" alt="Reveria Dive" style="width:35px;">Paladin</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Karl.html">Karl</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Fire.png" style="width:35px;"><a href="/character/Pippin.html">Pippin</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Tailor.png" alt="Reveria Dive" style="width:35px;">Tailor</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><a href="/character/Shea.html">Shea</a></td>
+                </tr><tr>
+                    <td><a href="/character/Spoolie.html">Spoolie</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Wizard.png" alt="Reveria Dive" style="width:35px;">Wizard</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Fabbie.html">Fabbie</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Woodcutter.png" alt="Reveria Dive" style="width:35px;">Woodcutter</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Water.png" style="width:35px;"><a href="/character/Kolding.html">Kolding</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <!--<tr>
+                    <th><img src="/assets/life/Tailor.png" alt="Reveria Dive" style="width:35px;">Tailor</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Water.png" alt="Reveria Dive" style="width:35px;"><a href="/character/Vidal.html">DTXT</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Wizard.png" alt="Reveria Dive" style="width:35px;">Wizard</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Lily.html">DTXT</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Woodcutter.png" alt="Reveria Dive" style="width:35px;">Woodcutter</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Cheppo.html">DTXT</a></td>
+                </tr></tbody>--></thead></table>
+    <img src="/assets/EmeraldStar.png" style="width:35px;"><img src="/assets/EmeraldStar.png" style="width:35px;"><table class="table table-dark table-hover"><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Alchemist.png" alt="Reveria Dive" style="width:35px;">Alchemist</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><a href="/character/Fizz.html">Fizz</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Blacksmith.png" alt="Reveria Dive" style="width:35px;">Blacksmith</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Monika.html">Monika</a></td>
+                </tr><tr>
+                    <td><img src="/assets/elements/Wind.png" style="width:35px;"><a href="/character/Magmia.html">Magmia</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Cook.png" alt="Reveria Dive" style="width:35px;">Cook</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><a href="/character/Teakle.html">Teakle</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Miner.png" alt="Reveria Dive" style="width:35px;">Miner</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><img src="/assets/elements/Earth.png" style="width:35px;"><a href="/character/Rocque.html">Rocque</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Paladin.png" alt="Reveria Dive" style="width:35px;">Paladin</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td>
+<img src="/assets/elements/Wind.png" alt="Reveria Dive" style="width:35px;"><a href="/character/Roslyn.html">Roslyn</a></td>
+                </tr></tbody><thead align="center" style="border-top-width: 0px;">
+                <tr>
+                    <th><img src="/assets/life/Tailor.png" alt="Reveria Dive" style="width:35px;">Tailor</th>
+                </tr>
+            </thead><tbody>
+                
+            <tr>
+                    <td><a href="/character/Taylor.html">Taylor</a></td>
+                </tr></tbody></table></div>
+		</div>
+		</div>
+		</div>
+
+
+
+</body></html>

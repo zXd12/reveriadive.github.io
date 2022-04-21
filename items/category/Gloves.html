@@ -1,0 +1,602 @@
+<div style="position:relative;">
+
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');<span class="glyphicon glyphicon-star-empty"></span>
+  </script>
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops">All Shops</a></li>
+            <li><a href="/shops/77">Coin Shop</a></li>
+            <li><a href="/statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/recipes/8">Cook</a></li>
+              <li><a href="/recipes/9">Blacksmith</a></li>
+              <li><a href="/recipes/10">Carpenter</a></li>
+              <li><a href="/recipes/11">Tailor</a></li>
+              <li><a href="/recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="/items/19">Artisan's Mitts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Crafter's gloves to protect fingers from harm. Light and flexible for creating fancy designs.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/20">Quilted Mittens</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Quilted gloves lined with soft cotton. LIke wrapping your hands in a snuggly cloud!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/84">Leather Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made of leather. The most basic armour for novice adventurers.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/85">Iron Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets wrought of iron. Provide solid protection against blows to the hands.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/322">Mermaid Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made using fish scales. Provide decent protection against various attacks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/323">Shell Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Stylish gauntlets made from various shells. Effective, but they can get a bit clammy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/498">Paladin's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Tough gauntlets worn by Paladins. Made to offer good grip for swords and shields alike.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/518">Frigid Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for braving the coldest of climates. Thick and warm to prevent frostbite.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/526">Grotto Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for delving into Reveria's caverns. Extra grip for clambering over slippery rocks.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/533">Beastly Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made from top-grade leather. Durable leather hand guards.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/662">Gaudy Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Garish gloves worn by Port Puerto's elite. The larger the gem, the higher one's status.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/684">Coastal Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for use in more tropical areas. Made using an especially breathable material.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/767">Gold Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets fashioned from pure gold. Very sturdy, but incredibly heavy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/768">Magic Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made using Magic Ingots. Stronger than steel, light as a feather.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/774">Savage Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>High-quality leather gauntlets. Provide good protection as far as light armour goes.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/806">Merc Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Tough gauntlets worn by Mercenaries. Protect against any blows to your hands.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/819">Magic Mittens</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Mittens brimming with magical power. Just wearing them gives a surge of magic energy.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/846">Sandy Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for trekking in the desert. Perfectly suited to the most unforgiving of climates.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/851">Snakeskin Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made of snake scales. Not all that protective. Be careful, or you'll be hiss-tory!</td>
+      </tr>
+      <tr>
+        <td><a href="/items/878">Sky-High Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for exploring Levitania. Well suited to the unique conditions above the clouds.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/883">Dragon Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made of dragon scales. Provide excellent protection against any attack.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/904">Tidal Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made using Marine Ingots. Keep you cool in the heat of battle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/924">Carpenter's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves designed by Carpenters. Plenty of grip where you need it most.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/931">Holy Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets of the very highest quality. Valued for their strength and their beauty.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/949">Inferno Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made using Magma Ingots. Protective, while giving off a slight warmth.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/983">Cook's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for use in the kitchen. Designed for handling all sorts of food.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1072">Origin Island Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves made for Origin Island's climate. Offer protection from any strange beasts</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1077">Rune Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>A strange power is sealed within. They pack a punch and protect your hands.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1148">Lord's Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Red hand guards worn by warriors in a far off land. They make you want to bark orders.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1170">Freya's Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Hand guards for female warriors, modelled after those worn by a battle goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1357">Fafnir's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves made from Ancient Dragon's Scales, giving you dragon-like strength.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1363">Godly Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets made from godly materials. Bestow divine power onto your arms.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1369">Shadow Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Finest gauntlets made from Monster Hide. They give you a very good grip on weapons.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1373">Officer's Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Brown hand guards worn by warriors in a far off land. Protect your hands with these.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1380">Shogun Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Golden hand guards worn for protection by battle commanders in foreign lands.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1386">Ares Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Made from godly materials. Wearing them makes you feel divine power in your arms.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1400">Metal Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets for heroic Mercenaries. Provide unrivalled protection for the hands.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1495">Philosopher's Mitts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for enlightened sages. Wisdom seems to emanate from them.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1498">Sacred Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Holding the power of a Protection Stone, these gloves turn strength into holy power.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1503">Minerva's Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Black hand guards for female warriors. Said to have been worn by a warring goddess.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1506">Valkyrie Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Shiny hand guards for female warriors, blessed by divine spirits of battle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1510">Hammer Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for heroic Blacksmiths. Wearing them helps you forge intricate masterpieces.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1516">Grand Miner's Mitts</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for heroic Miners. They make you feel at one with the pickaxe.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1519">Chief's Hand Guards</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Hand guards for heroic Carpenters. Use even complex tools with utter confidence.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1522">Famous Fisher's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for heroic Anglers. Feel at one with the rod, the river and the fish.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1527">Silk Pincushion</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>A fine pincushion for heroic Tailors. Proves your status as master of the needle.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1535">Sniper's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves for heroic Hunters. Provide perfect grip for any type of bow.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1540">Monarch Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves inspired by the King's official garb. Equal in quality to those of the King himself.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1583">Miracle Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Miracle-working gloves that let you revive non-player party members to full HP.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1584">Treasure Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves of a legendary treasure hunter. Lets you get two items from each treasure chest.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1647">Bandit Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>The gloves of choice for any mischievous Bandit worth his salt.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1648">Danuta's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves that look like the Great Spirit's paws. Complete with soft toe beans.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1649">Buccaneer's Wristbands</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Pirate fashion. They're said to naturally snap open when a wish you've made comes true.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1650">Celestial Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Versatile gloves that are great for anything - from tilling the soil to celestial office work.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1651">Goddess's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves woven from the night sky itself. They make the stars seem within your reach.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1652">Gold Dragon Claws</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Golden Dragon claws. Dragon-like strength... is not something they grant.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1653">Odin's Gloves</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gloves used by Maajiknight Captain Odin. As cold as his icy stare.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1654">Dragon King's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets worn by the Dragon King, the hero of centuries-old Castele legend.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1655">Sea Lord's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets worn by the Sea Lord, tales of whom have long been told in Port Puerto.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1656">Dark Sultan's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets of the Legendary Dark Sultan, hero of age-old tales from Al Maajik.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1657">Spirit King's Gauntlets</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Gauntlets of the Spirit King, featuring in old legends of the Elderwood.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1704">Carrotella Hands</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Huge carrot hands. Just what you need to dress up as Carrotella.</td>
+      </tr>
+      <tr>
+        <td><a href="/items/1708">Daemon's Bangles</a></td>
+        <td><a href="/items/category/Armour">Armour</a></td>
+        <td>
+            <a href="/items/category/Gloves">Gloves</a>
+        </td>
+        <td>Made with the finest Al Maajikan materials to satisfy the Dark Sultan's needs.</td>
+      </tr>
+  </tbody></table>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
